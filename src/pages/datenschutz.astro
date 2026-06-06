@@ -1,0 +1,18 @@
+---
+import LegalLayout from '../layouts/LegalLayout.astro';
+import rawContent from '../data/datenschutz-content.html?raw';
+
+const content = rawContent
+  .replace(/class="datenschutz-section"/g, 'class="legal-section"')
+  .replace(/class="datenschutz-section /g, 'class="legal-section ');
+---
+<LegalLayout
+  title="Datenschutzerklärung – DMK Bau Reichelsheim | Odenwald"
+  description="Datenschutzerklärung von DMK Bau Reichelsheim mit Informationen zur Verarbeitung personenbezogener Daten gemäß DSGVO."
+  badge="Datenschutz & Datensicherheit"
+  heading="Datenschutzerklärung – DMK Bau Reichelsheim"
+  intro="Transparenz und Sicherheit im Umgang mit Ihren Daten: Hier erfahren Sie, wie wir Ihre personenbezogenen Daten bei der Nutzung unserer Website im Odenwald, im Kontaktformular und bei WhatsApp-Kommunikation schützen und verarbeiten."
+  currentPage="datenschutz"
+>
+  <Fragment set:html={content} />
+</LegalLayout>

@@ -1,0 +1,209 @@
+---
+---
+<!-- Modal: Innenausbau -->
+<div class="innenausbau-modal" id="innenausbau-modal" aria-hidden="true">
+  <div class="innenausbau-dialog" role="dialog" aria-modal="true" aria-labelledby="innenausbau-title">
+    <button class="innen-close" type="button" aria-label="Auswahl schließen">&times;</button>
+    <header class="innen-header">
+      <div class="innen-kicker">Ihre Auswahl</div>
+      <h2 class="innen-title" id="innenausbau-title">Welche Leistung im Innenausbau interessiert Sie?</h2>
+      <div class="innen-accent"></div>
+    </header>
+    <section class="innen-card">
+      <nav class="innen-gewerke-nav" aria-label="Innenausbau Gewerke">
+        {[
+          { href: "/trockenbau", title: "Trockenbau", teaser: "Leichte Innenwände, Decken, Schallschutz und flexible Raumaufteilung." },
+          { href: "/estricharbeiten", title: "Estricharbeiten", teaser: "Solide Basis für alle Bodenbeläge – eben, tragfähig und fachgerecht verlegt." },
+          { href: "/fenster-tueren-montage-reichelsheim-odenwald", title: "Fenster- & Türeinbau", teaser: "Mehr Licht, Sicherheit und Energieeffizienz durch präzise Montage." },
+          { href: "/treppenbau", title: "Treppenbau", teaser: "Sichere und optisch stimmige Verbindung der Etagen – passend zu Ihrem Stil." },
+          { href: "/fliesenarbeiten", title: "Fliesenarbeiten", teaser: "Präzise verlegte Fliesen für Bäder, Küchen, Wohnräume und Treppen." },
+          { href: "/putzarbeiten", title: "Putzarbeiten", teaser: "Glatt, strukturiert oder kreativ – wir schaffen die Basis für perfekte Wände." },
+          { href: "/montagearbeiten", title: "Fertigbauteile", teaser: "Clever vorgefertigte Elemente, sauber integriert und exakt montiert." },
+          { href: "/barrierefreies-bauen", title: "Barrierefreies Bauen", teaser: "Komfortabel und sicher wohnen – mit durchdachten, schwellenlosen Lösungen." },
+        ].map(item => (
+          <a class="innen-link" href={item.href}>
+            <div class="innen-dot-wrap"><div class="innen-dot"></div></div>
+            <div class="innen-text">
+              <span class="innen-link-title">{item.title}</span>
+              <span class="innen-link-teaser">{item.teaser}</span>
+            </div>
+            <span class="innen-chevron">›</span>
+          </a>
+        ))}
+      </nav>
+    </section>
+  </div>
+</div>
+
+<!-- Modal: Badsanierung -->
+<div class="innenausbau-modal" id="bad-modal" aria-hidden="true">
+  <div class="innenausbau-dialog" role="dialog" aria-modal="true" aria-labelledby="bad-modal-title">
+    <button class="innen-close" type="button" aria-label="Auswahl schließen">&times;</button>
+    <header class="innen-header">
+      <div class="innen-kicker">Ihre Auswahl</div>
+      <h2 class="innen-title" id="bad-modal-title">Welche Art von Badsanierung planen Sie?</h2>
+      <div class="innen-accent"></div>
+    </header>
+    <section class="innen-card">
+      <nav class="innen-gewerke-nav" aria-label="Badsanierung Optionen">
+        {[
+          { href: "/bestehendes-bad-sanieren", title: "Bestehendes Bad sanieren", teaser: "Ihr vorhandenes Bad modernisieren, ohne den Grundriss komplett zu verändern." },
+          { href: "/neubau-badezimmer", title: "Neubau-Badezimmer umsetzen", teaser: "Komplett neues Badezimmer – von der Planung bis zur fertigen Oberfläche." },
+          { href: "/fugenloses-bad", title: "Fugenloses Bad gestalten", teaser: "Nahtlose, pflegeleichte Oberflächen für ein ruhiges, modernes Bad-Design." },
+          { href: "/barrierefreies-bad-umbauen", title: "Barrierefreies Bad umbauen", teaser: "Dusche ohne Schwelle, mehr Bewegungsfläche und Details für ein wirklich barrierefreies Bad." },
+        ].map(item => (
+          <a class="innen-link" href={item.href}>
+            <div class="innen-dot-wrap"><div class="innen-dot"></div></div>
+            <div class="innen-text">
+              <span class="innen-link-title">{item.title}</span>
+              <span class="innen-link-teaser">{item.teaser}</span>
+            </div>
+            <span class="innen-chevron">›</span>
+          </a>
+        ))}
+      </nav>
+    </section>
+  </div>
+</div>
+
+<!-- Modal: Außenanlagen -->
+<div class="innenausbau-modal" id="aussen-modal" aria-hidden="true">
+  <div class="innenausbau-dialog" role="dialog" aria-modal="true" aria-labelledby="aussen-modal-title">
+    <button class="innen-close" type="button" aria-label="Auswahl schließen">&times;</button>
+    <header class="innen-header">
+      <div class="innen-kicker">Ihre Auswahl</div>
+      <h2 class="innen-title" id="aussen-modal-title">Welche Außenanlage planen Sie?</h2>
+      <div class="innen-accent"></div>
+    </header>
+    <section class="innen-card">
+      <nav class="innen-gewerke-nav" aria-label="Außenanlagen Optionen">
+        {[
+          { href: "/fassadenarbeiten", title: "Fassadenarbeiten", teaser: "Putz, Dämmung und optische Aufwertung Ihrer Hausfassade aus einer Hand." },
+          { href: "/pflasterarbeiten", title: "Pflasterarbeiten", teaser: "Hof- und Wegeflächen, die dauerhaft tragfähig und optisch harmonisch sind." },
+          { href: "/terrassen-balkone-dmk-bau-reichelsheim", title: "Terrassen und Balkone", teaser: "Freisitzflächen, auf denen Sie gerne Zeit verbringen – technisch dicht und schön gestaltet." },
+          { href: "/aussentreppen-reichelsheim-odenwald", title: "Treppen im Außenbereich", teaser: "Sichere, rutschhemmende Treppenanlagen, die sich stimmig in Ihre Außenanlage einfügen." },
+        ].map(item => (
+          <a class="innen-link" href={item.href}>
+            <div class="innen-dot-wrap"><div class="innen-dot"></div></div>
+            <div class="innen-text">
+              <span class="innen-link-title">{item.title}</span>
+              <span class="innen-link-teaser">{item.teaser}</span>
+            </div>
+            <span class="innen-chevron">›</span>
+          </a>
+        ))}
+      </nav>
+    </section>
+  </div>
+</div>
+
+<style>
+  .innenausbau-modal {
+    position: fixed; inset: 0; z-index: 99999;
+    display: none; align-items: center; justify-content: center;
+    padding: 16px; background: rgba(15,23,42,.75);
+  }
+  .innenausbau-modal.is-open { display: flex; }
+  body.no-scroll { overflow: hidden; }
+
+  .innenausbau-dialog {
+    position: relative; background: #ffffff; border-radius: 20px;
+    box-shadow: 0 20px 55px rgba(15,23,42,.45);
+    width: 100%; max-width: 580px; max-height: calc(100vh - 120px);
+    display: flex; flex-direction: column; padding: 12px 12px 16px;
+  }
+  .innen-header {
+    text-align: center; background: #f3faf4; margin-bottom: 14px;
+    display: flex; flex-direction: column; align-items: center; gap: 4px;
+    padding: 10px 8px; border-radius: 10px;
+  }
+  .innen-kicker { font-size: 14px; text-transform: uppercase; letter-spacing: .16em; color: #2E6C3A; font-weight: 800; }
+  .innen-title { font-size: clamp(20px,3vw,24px); font-weight: 700; font-family: "Quicksand", sans-serif; }
+  .innen-accent { width: 96px; height: 3px; border-radius: 999px; margin-top: 10px; background: linear-gradient(135deg, #3A7D44, #2E6C3A); }
+
+  .innen-close {
+    position: absolute; top: -18px; right: -18px;
+    width: 40px; height: 40px; border-radius: 999px;
+    border: 1px solid rgba(15,23,42,.12); background: #ffffff; color: #111827;
+    cursor: pointer; display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 4px 14px rgba(0,0,0,.15); font-size: 20px; line-height: 1;
+    transition: transform .15s, background .2s;
+  }
+  .innen-close:hover { background: #e5e7eb; }
+
+  .innen-card {
+    margin: 0 auto; width: 100%; max-width: 100%;
+    background: transparent; border-radius: 0; box-shadow: none;
+    padding: 6px 6px 10px; border: 0;
+    max-height: 360px; overflow-y: auto;
+  }
+  .innen-card::-webkit-scrollbar { width: 10px; }
+  .innen-card::-webkit-scrollbar-track { background: #e8f2ea; border-radius: 10px; }
+  .innen-card::-webkit-scrollbar-thumb { background: #2E6C3A; border-radius: 10px; }
+
+  .innen-gewerke-nav { display: flex; flex-direction: column; gap: 12px; }
+
+  .innen-link {
+    display: flex; align-items: center; gap: 16px; padding: 12px 16px;
+    border-radius: 999px; background: #f5f7f5; text-decoration: none; color: #202422;
+    position: relative; overflow: hidden;
+    transition: background .12s ease, box-shadow .12s ease, transform .1s ease;
+  }
+  .innen-link::before {
+    content: ""; position: absolute; inset: 0;
+    background: linear-gradient(90deg, rgba(58,125,68,.12), transparent);
+    opacity: 0; transition: opacity .18s ease;
+  }
+  .innen-link:hover { background: #ecf6ee; transform: translateY(-1px); box-shadow: 0 10px 18px rgba(24,57,34,.12); }
+  .innen-link:hover::before { opacity: 1; }
+
+  .innen-dot-wrap {
+    width: 32px; height: 24px; border-radius: 999px; background: transparent;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 0 0 1px rgba(58,125,68,.22); flex-shrink: 0;
+  }
+  .innen-dot { width: 12px; height: 12px; border-radius: 999px; background: linear-gradient(135deg, #3A7D44, #2E6C3A); }
+  .innen-text { display: flex; flex-direction: column; gap: 2px; }
+  .innen-link-title { font-size: 1.02rem; font-weight: 700; }
+  .innen-link-teaser { font-size: .94rem; color: #5c645f; }
+  .innen-chevron { margin-left: auto; font-size: 1.4rem; font-weight: 700; color: #2E6C3A; flex-shrink: 0; transition: transform .12s ease; }
+  .innen-link:hover .innen-chevron { transform: translateX(3px); }
+</style>
+
+<script>
+  // Generische Modal-Logik für alle 3 Modals
+  function setupModal(modalId: string, triggerSelector: string) {
+    const modal = document.getElementById(modalId);
+    if (!modal) return;
+
+    function openModal(e?: Event) {
+      if (e) e.preventDefault();
+      modal.classList.add('is-open');
+      document.body.classList.add('no-scroll');
+      modal.setAttribute('aria-hidden', 'false');
+    }
+    function closeModal() {
+      modal.classList.remove('is-open');
+      document.body.classList.remove('no-scroll');
+      modal.setAttribute('aria-hidden', 'true');
+    }
+
+    const trigger = document.querySelector<HTMLElement>(triggerSelector);
+    trigger?.addEventListener('click', (e) => {
+      if ((e.target as HTMLElement).closest('a')) e.preventDefault();
+      openModal();
+    });
+
+    modal.querySelector('.innen-close')?.addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modal.classList.contains('is-open')) closeModal();
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    setupModal('innenausbau-modal', '[data-innenausbau-card]');
+    setupModal('bad-modal',         '[data-bad-card]');
+    setupModal('aussen-modal',      '[data-aussen-card]');
+  });
+</script>

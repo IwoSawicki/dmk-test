@@ -1,0 +1,18 @@
+---
+import LegalLayout from '../layouts/LegalLayout.astro';
+import rawContent from '../data/agb-content.html?raw';
+
+const content = rawContent
+  .replace(/class="agb-section"/g, 'class="legal-section"')
+  .replace(/class="agb-section /g, 'class="legal-section ');
+---
+<LegalLayout
+  title="AGB – DMK Bau Reichelsheim | Bauunternehmen Odenwald"
+  description="Allgemeine Geschäftsbedingungen von DMK Bau Reichelsheim für Sanierungs- und Ausbauleistungen im Odenwald."
+  badge="Vertragsbedingungen"
+  heading="Allgemeine Geschäftsbedingungen – DMK Bau Reichelsheim"
+  intro="Als erfahrenes Bauunternehmen stehen Transparenz und Rechtssicherheit im Mittelpunkt unserer Arbeit. Die AGB von DMK Bau bilden die transparent und rechtssicher geregelte Grundlage für Bau-, Sanierungs- und Ausbauleistungen."
+  currentPage="agb"
+>
+  <Fragment set:html={content} />
+</LegalLayout>

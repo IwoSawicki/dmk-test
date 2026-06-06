@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>News & Aktuelles – DMK Bau Reichelsheim</title>
+<link rel="icon" type="image/webp" href="images/dmk-bau-reichelsheim-favicon.webp">
+<meta content="News DMK Bau Reichelsheim: Aktuelle Projekte, Tipps für Innenausbau, Badsanierung, Außenanlagen und Bauwissen für den Odenwald. Jetzt informieren!" name="description"/>
+<!-- Performance: Preconnects -->
+<link crossorigin="" href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<!-- Quicksand Font -->
+<link rel="preload" as="style"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap"
+      onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap">
+</noscript>
+<style>
+/* =========================
+   Design Tokens – exakt wie Startseite
+   ========================= */
+:root{
+  --brand:#369142;
+  --brand-2:#2B7A37;
+  --text:#1f1f1f;
+  --muted:#6b7280;
+  --card:#fff;
+  --bg:#f9fafb;
+  --ring:#e3e8ee;
+  --shadow:0 12px 38px rgba(0,0,0,.08);
+  --radius:18px;
+  --speed:160ms;
+  --flow:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:"Quicksand",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  background:var(--bg);color:var(--text);line-height:1.5;
+}
+
+/* =========================
+   Header & Navigation – EXAKT übernommen
+   ========================= */
+header{
+  background:var(--brand);
+  position:sticky; top:0; z-index:100;
+  box-shadow:0 1px 6px rgba(0,0,0,.06);
+}
+.nav-wrap{
+  max-width: 1440px;margin:0 auto;padding:0 18px;height:60px;
+  display:flex;align-items:center;justify-content:flex-end;gap:12px;position:relative;flex-wrap:wrap;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+.nav-logo img {
+  height: 42px;
+  width: auto;
+  display: block;
+}
+.menu{display:flex;align-items:center;gap:22px;flex-wrap:wrap;justify-content:center}
+.nav-toggle{display:none;margin-left:auto;background:transparent;border:0;padding:7px;border-radius:999px;cursor:pointer;transform:translateY(0);transition:transform .16s ease,box-shadow .16s ease;}
+.nav-toggle:hover{transform:translateY(-1px);}
+.nav-toggle-box{position:relative;width:32px;height:24px;display:inline-block;}
+.nav-toggle-bar, .nav-toggle-bar::before, .nav-toggle-bar::after{content:"";position:absolute;left:0;right:0;height:3px;background:#ffffff;border-radius:999px;bottom:-8px;}
+.nav-toggle-bar{top:50%;transform:translateY(-50%);}
+.nav-toggle-bar::before{content:"";position:absolute;left:0;right:0;height:3px;background:#ffffff;border-radius:999px;top:-8px;}
+.nav-toggle-bar::after{content:"";position:absolute;left:0;right:0;height:3px;background:#ffffff;border-radius:999px;bottom:-8px;}
+.nav-link{
+  color:#ffffff !important;
+  text-decoration:none !important;
+  font-weight:600;
+}
+.nav-link:hover{
+  opacity:0.8;
+}
+.call-display{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  background:#ffffff;
+  color:#000000 !important;
+  padding:8px 14px;
+  border-radius:10px;
+  text-decoration:none !important;
+  font-weight:600;
+  transition:background .2s;
+}
+.call-display svg{stroke:#000000;}
+.call-display:hover{background:#f4f4f4;}
+
+/* Mobile Menu */
+@media (max-width: 1024px){
+  .nav-toggle{display:inline-flex;align-items:center;justify-content:center;}
+  header .nav-wrap{
+    height:60px;
+    padding-top:8px;
+    padding-bottom:8px;
+    justify-content:space-between;
+    align-items:center;
+    row-gap:0;
+    flex-wrap:nowrap;
+  }
+  header .menu{
+    position:absolute;
+    left:12px;
+    right:12px;
+    top:100%;
+    margin-top:8px;
+    background:linear-gradient(145deg, rgba(0,0,0,.24), rgba(0,0,0,.32));
+    backdrop-filter:blur(18px);
+    flex-direction:column;
+    align-items:flex-start;
+    gap:6px;
+    padding:12px 14px 14px;
+    border-radius:18px;
+    box-shadow:0 20px 38px rgba(0,0,0,.5);
+    max-height:0;
+    opacity:0;
+    overflow:hidden;
+    pointer-events:none;
+    transform:translateY(-8px) translateZ(0);
+    transition:max-height .26s ease, opacity .2s ease, transform .22s ease;
+  }
+  header .menu.open{
+    max-height:260px;
+    opacity:1;
+    pointer-events:auto;
+    transform:translateY(0) translateZ(0);
+  }
+  header .menu .nav-link{
+    width:100%;
+    padding:8px 4px;
+    border-radius:12px;
+    position:relative;
+    overflow:hidden;
+    transform:translateX(0);
+    transition:
+      background .18s ease,
+      transform .18s ease,
+      box-shadow .18s ease;
+  }
+  header .menu .nav-link::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    opacity:0;
+    background:linear-gradient(90deg, rgba(255,255,255,.15), rgba(255,255,255,0));
+    transform:translateX(-18px);
+    transition:opacity .18s ease, transform .22s ease;
+    pointer-events:none;
+  }
+  header .menu .nav-link:hover{
+    background:rgba(255,255,255,.09);
+    transform:translateX(4px);
+    box-shadow:0 6px 14px rgba(0,0,0,.45);
+  }
+  header .menu .nav-link:hover::before{
+    opacity:1;
+    transform:translateX(0);
+  }
+  header .menu .call-display{
+    width:100%;
+    justify-content:center;
+    margin-top:4px;
+  }
+}
+
+/* =========================
+   Main Content – News Seite
+   ========================= */
+.main-wrap {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 70px 18px 90px;
+}
+
+/* News Hero */
+.news-hero {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  padding: 0 18px;
+}
+.news-hero h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--brand);
+  margin-bottom: 16px;
+}
+.news-hero .subtitle {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  color: var(--muted);
+  max-width: 800px;
+  margin: 0 auto;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+/* News Coming Soon Banner */
+.news-coming-soon {
+  background: linear-gradient(135deg, rgba(54,145,66,.1), rgba(54,145,66,.05));
+  border-radius: var(--radius);
+  padding: 50px 30px;
+  text-align: center;
+  margin: 60px auto;
+  max-width: 900px;
+  border: 1px solid rgba(54,145,66,.15);
+  box-shadow: 0 8px 24px rgba(0,0,0,.04);
+}
+.news-coming-soon-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 24px;
+  background: var(--brand);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.news-coming-soon h2 {
+  font-size: 1.8rem;
+  color: var(--brand-2);
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+.news-coming-soon p {
+  font-size: 1.1rem;
+  color: #5a6a5a;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.news-coming-soon .highlight {
+  font-size: 1.2rem;
+  color: var(--brand-2);
+  font-weight: 600;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: rgba(54,145,66,.08);
+  border-radius: 12px;
+  display: inline-block;
+}
+
+/* News Grid (für zukünftige Artikel) */
+.news-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  margin: 40px 0;
+}
+@media (min-width: 768px) {
+  .news-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .news-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.news-article-placeholder {
+  background: var(--card);
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid #edf2ee;
+  transition: all .25s ease;
+  opacity: 0.7;
+}
+.news-article-placeholder:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+.article-image {
+  height: 200px;
+  background: linear-gradient(135deg, rgba(54,145,66,.1), rgba(54,145,66,.05));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--brand);
+  font-weight: 600;
+}
+.article-content {
+  padding: 24px;
+}
+.article-date {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+  display: block;
+}
+.article-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #2a392a;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+.article-excerpt {
+  color: #5a6a5a;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+.read-more {
+  color: var(--brand);
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.read-more:hover {
+  color: var(--brand-2);
+}
+
+/* Informative Content für SEO */
+.seo-content-section {
+  margin: 80px 0;
+  padding: 40px;
+  background: linear-gradient(135deg, #f8fbf9, #f0f7f1);
+  border-radius: var(--radius);
+  border: 1px solid #e2ebe4;
+}
+.seo-content-section h2 {
+  font-size: 1.8rem;
+  color: var(--brand-2);
+  margin-bottom: 24px;
+  font-weight: 700;
+}
+.seo-content-section h3 {
+  font-size: 1.4rem;
+  color: var(--brand);
+  margin: 30px 0 16px;
+  font-weight: 700;
+}
+.seo-content-section p {
+  margin-bottom: 18px;
+  line-height: 1.7;
+  color: #4a5a4a;
+}
+.seo-content-section ul {
+  margin: 18px 0;
+  padding-left: 24px;
+}
+.seo-content-section li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: #4a5a4a;
+}
+
+/* Call-to-Action */
+.news-cta {
+  text-align: center;
+  background: linear-gradient(135deg, #f8fbf9, #f0f7f1);
+  border-radius: var(--radius);
+  padding: 48px 32px;
+  margin: 60px 0;
+  border: 1px solid #e2ebe4;
+  box-shadow: 0 8px 24px rgba(0,0,0,.04);
+}
+.news-cta h3 {
+  font-size: 1.8rem;
+  color: var(--brand);
+  margin-bottom: 18px;
+  font-weight: 700;
+}
+.news-cta p {
+  font-size: 1.1rem;
+  color: #5a6a5a;
+  margin-bottom: 28px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--brand);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 16px 32px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  transition: all .2s ease;
+  box-shadow: 0 6px 20px rgba(54,145,66,.25);
+}
+.cta-button:hover {
+  background: var(--brand-2);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(54,145,66,.3);
+}
+
+/* =========================
+   "Das könnte dich auch interessieren" Sektion
+   ========================= */
+.dmk-related-checkbox {
+  max-width: 1440px;
+  margin: 80px auto 0;
+  padding: 0;
+}
+
+.dmk-related-checkbox .wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #f8fbf9, #f0f7f1);
+  border-radius: var(--radius);
+  padding: 40px 24px;
+  border: 1px solid #e2ebe4;
+  box-shadow: 0 8px 24px rgba(0,0,0,.04);
+}
+
+.dmk-related-checkbox .title {
+  font-size: clamp(1.5rem, 2.5vw, 1.9rem);
+  font-weight: 700;
+  color: #2B7A37;
+  text-align: center;
+  margin-bottom: 32px;
+  letter-spacing: -0.3px;
+}
+
+.dmk-related-checkbox .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 880px) {
+  .dmk-related-checkbox .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.dmk-related-checkbox .card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  background: white;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 1px solid #e0e8e1;
+  transition: all .25s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,.03);
+}
+
+.dmk-related-checkbox .card.hidden {
+  display: none;
+}
+
+.dmk-related-checkbox .card:hover {
+  border-color: var(--brand);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(54,145,66,.15);
+  background: #f8fbf9;
+}
+
+.dmk-related-checkbox .checkbox {
+  flex: 0 0 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  background: #e8f0e9;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .25s ease;
+}
+
+.dmk-related-checkbox .card:hover .checkbox {
+  background: var(--brand);
+}
+
+.dmk-related-checkbox .checkbox svg {
+  width: 16px;
+  height: 16px;
+  stroke: var(--brand);
+  stroke-width: 2.5;
+  transition: all .25s ease;
+}
+
+.dmk-related-checkbox .card:hover .checkbox svg {
+  stroke: white;
+}
+
+.dmk-related-checkbox .text {
+  font-weight: 600;
+  color: #2a392a;
+  font-size: 15.5px;
+  line-height: 1.4;
+  flex: 1;
+}
+
+.dmk-related-checkbox .more-btn {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 12px 28px;
+  background: var(--brand);
+  color: white;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all .2s ease;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(54,145,66,.25);
+  border: none;
+}
+
+.dmk-related-checkbox .more-btn:hover {
+  background: var(--brand-2);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(54,145,66,.3);
+}
+
+/* =========================
+   Footer – EXAKT übernommen
+   ========================= */
+footer.dmk-footer{
+  background: #ffffff;
+  border-top: 1px solid #eef2ee;
+  padding: 48px 20px 24px;
+}
+.dmk-foot-wrap{
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  position: relative;
+}
+@media (min-width: 820px){
+  .dmk-foot-wrap{
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .dmk-foot-wrap::before,
+  .dmk-foot-wrap::after,
+  .dmk-foot-wrap section:nth-of-type(4)::before {
+    content: "";
+    position: absolute;
+    top: 0; bottom: 0;
+    width: 1px;
+    background: #e9eee9;
+  }
+  .dmk-foot-wrap::before { left: calc(25% - 0.5px); }
+  .dmk-foot-wrap::after { left: calc(50% - 0.5px); }
+  .dmk-foot-wrap section:nth-of-type(4)::before { left: calc(75% - 0.5px); }
+}
+.dmk-foot h4{
+  font-weight:700;
+  font-size:18px;
+  margin-bottom:14px;
+  background:linear-gradient(90deg,var(--brand),var(--brand-2));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.dmk-list{list-style:none;display:grid;gap:10px;}
+.dmk-link{
+  text-decoration:none;
+  color:#2a2f2b;
+  font-weight:600;
+  display:inline-block;
+  transition:all .25s ease;
+}
+.dmk-link:hover{
+  color:var(--brand);
+  transform:translateY(-2px) scale(1.1);
+}
+.dmk-contact{display:grid;gap:10px;color:#2b2f2c;}
+.dmk-row{display:flex;align-items:flex-start;gap:10px;}
+.dmk-ico{
+  width:20px;height:20px;flex:0 0 20px;
+  display:inline-flex;align-items:center;justify-content:center;
+  color:var(--brand);
+}
+.dmk-contact a{color:var(--brand);text-decoration:none;font-weight:700;}
+.dmk-contact a:hover{text-decoration:underline;}
+.dmk-social{display:flex;gap:18px;align-items:center;flex-wrap:wrap;}
+.dmk-sbtn{
+  width:56px;height:56px;
+  border-radius:16px;
+  background:linear-gradient(145deg,#ffffff,#e9efe9);
+  box-shadow:6px 6px 12px #d9ded9,-6px -6px 12px #ffffff;
+  display:flex;align-items:center;justify-content:center;
+  transition:all .25s ease;
+  color:var(--brand-2);
+  position:relative;
+  overflow:hidden;
+}
+.dmk-sbtn svg{width:32px;height:24px;z-index:2;}
+.dmk-sbtn span.label{
+  position:absolute;
+  left:65px;
+  opacity:0;
+  white-space:nowrap;
+  color:var(--brand-2);
+  font-weight:700;
+  transition:all .25s ease;
+  transform:translateX(-10px);
+}
+.dmk-sbtn:hover{
+  transform:translateY(-4px);
+  box-shadow:4px 4px 10px rgba(58,125,68,.25),-4px -4px 10px #ffffff;
+  background:linear-gradient(145deg,#f1f6f2,#ffffff);
+  color:var(--brand);
+}
+.dmk-sbtn:hover span.label{
+  opacity:1;
+  transform:translateX(0);
+}
+.dmk-sbtn:active{
+  transform:translateY(0);
+  box-shadow:inset 3px 3px 6px #d9ded9,inset -3px -3px 6px #ffffff;
+}
+.dmk-copy{
+  max-width: 1440px;
+  margin:32px auto 0;
+  padding-top:18px;
+  border-top:1px solid #eef2ee;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  font-size:14px;
+  font-weight:600;
+  color:#4d534e;
+}
+.dmk-copy a{color:var(--brand);text-decoration:none;font-weight:700;}
+.dmk-copy a:hover{text-decoration:underline;}
+
+/* =========================
+   News Banner - FULL RESPONSIVE
+   ========================= */
+.news-banner {
+  margin-bottom: 40px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+.news-banner-inner {
+  width: 100%;
+  height: clamp(260px, 25vw, 360px);
+  border-radius: 22px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 18px 42px rgba(0,0,0,.08);
+}
+
+.news-banner-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 22px;
+  display: block;
+}
+
+/* Mobile Optimierung für Banner */
+@media (max-width: 768px) {
+  .news-banner {
+    padding: 0 12px;
+  }
+  
+  .news-banner-inner {
+    height: clamp(180px, 30vw, 260px);
+    border-radius: 18px;
+  }
+  
+}
+
+@media (max-width: 480px) {
+  .news-banner-inner {
+    height: clamp(150px, 35vw, 200px);
+    border-radius: 16px;
+  }
+}
+</style>
+</head>
+<body>
+<!-- =========================
+     Header – EXAKT wie Startseite
+     ========================= -->
+<header>
+<nav class="nav-wrap" aria-label="Hauptnavigation">
+<a href="index.html" class="nav-logo">
+  <img src="images/dmk-bau-firmenlogo-reichelsheim-odenwald-1.webp" alt="DMK Bau Logo">
+</a>
+<button class="nav-toggle" aria-label="Hauptmenü öffnen" aria-expanded="false" type="button">
+  <span class="nav-toggle-box">
+    <span class="nav-toggle-bar"></span>
+  </span>
+</button>
+<div class="menu" id="primary-nav">
+<a class="nav-link" href="index.html#unternehmen">Unternehmen</a>
+<a class="nav-link" href="index.html#dmk-sec3">Leistungen</a>
+<a class="nav-link" href="index.html#dmk-sec6">Kontaktformular</a>
+<a aria-label="Jetzt anrufen: 0160 7791280" class="call-display" href="tel:01607791280">
+<svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="18">
+<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6
+                   19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.3 1.78.54 2.64
+                   a2 2 0 0 1-.45 2.11L8 9a16 16 0 0 0 7 7l.53-1.2a2 2 0 0 1 2.11-.45c.86.24 1.74.42 2.64.54A2 2 0 0 1 22 16.92z"></path>
+</svg>
+        0160 7791280
+      </a>
+</div>
+</nav>
+</header>
+
+<!-- =========================
+     Hauptinhalt News Seite
+     ========================= -->
+<main class="main-wrap">
+
+<!-- =========================
+     News Banner mit responsive Bild
+     ========================= -->
+<section class="news-banner">
+  <div class="news-banner-inner">
+    <img 
+      src="images/news-dmk-bau-reichelsheim.webp"
+      alt="News DMK Bau Reichelsheim – Aktuelle Projekte, Tipps für Innenausbau, Badsanierung und Außenanlagen im Odenwald"
+      title="Aktuelle News und Bauwissen von DMK Bau Reichelsheim"
+      loading="eager"
+      decoding="async"
+      width="1200"
+      height="630"
+    />
+    
+  </div>
+</section>
+
+<div class="news-hero">
+<h1>News & Aktuelles – DMK Bau Reichelsheim</h1>
+<p class="subtitle">Aktuelle Projekte, wertvolle Tipps für Innenausbau, Badsanierung, Außenanlagen und Bauwissen für den Odenwald. Ihr Bauprofi informiert über Neuigkeiten rund um nachhaltiges Bauen, Fördermittel und praktische Lösungen.</p>
+</div>
+
+<!-- News Coming Soon Message -->
+<section class="news-coming-soon">
+  <div class="news-coming-soon-icon">
+    <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" width="40" height="40">
+      <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+      <path d="m15 9-6 6"></path>
+      <path d="m9 9 6 6"></path>
+    </svg>
+  </div>
+  <h2>Bald gibt es hier spannende News!</h2>
+  <p>Wir arbeiten derzeit an interessanten Artikeln, Projektvorstellungen und praktischen Tipps rund um Innenausbau, Badsanierung, Außenanlagen und Bauwissen für den Odenwald.</p>
+  <p>Unsere News-Seite wird bald mit aktuellen Informationen, Projektberichten und wertvollen Insights für Ihr Bauvorhaben gefüllt sein.</p>
+  <div class="highlight">Bleiben Sie auf dem Laufenden – wir informieren Sie bald über Neuigkeiten und aktuelle Projekte!</div>
+</section>
+
+<!-- Platzhalter für zukünftige News-Artikel -->
+<div class="news-grid">
+  <article class="news-article-placeholder">
+    <div class="article-image">
+      <span>Bald verfügbar</span>
+    </div>
+    <div class="article-content">
+      <span class="article-date">Bald verfügbar</span>
+      <h3 class="article-title">Neue Trends im nachhaltigen Bauen</h3>
+      <p class="article-excerpt">Erfahren Sie bald mehr über aktuelle Entwicklungen und nachhaltige Materialien für Ihr Bauprojekt im Odenwald.</p>
+      <a href="news-dmk-bau-reichelsheim.html#" class="read-more">Bald verfügbar</a>
+    </div>
+  </article>
+  
+  <article class="news-article-placeholder">
+    <div class="article-image">
+      <span>Bald verfügbar</span>
+    </div>
+    <div class="article-content">
+      <span class="article-date">Bald verfügbar</span>
+      <h3 class="article-title">Projektvorstellung: Moderne Badsanierung</h3>
+      <p class="article-excerpt">Bald zeigen wir Ihnen ein aktuelles Projekt mit fugenlosem Bad und barrierefreien Lösungen.</p>
+      <a href="news-dmk-bau-reichelsheim.html#" class="read-more">Bald verfügbar</a>
+    </div>
+  </article>
+  
+  <article class="news-article-placeholder">
+    <div class="article-image">
+      <span>Bald verfügbar</span>
+    </div>
+    <div class="article-content">
+      <span class="article-date">Bald verfügbar</span>
+      <h3 class="article-title">Fördermittel-Update 2025</h3>
+      <p class="article-excerpt">Aktuelle Informationen zu KfW, BAFA und regionalen Förderprogrammen für Bauherren im Odenwald.</p>
+      <a href="news-dmk-bau-reichelsheim.html#" class="read-more">Bald verfügbar</a>
+    </div>
+  </article>
+</div>
+
+<!-- SEO-optimierter Content -->
+<section class="seo-content-section">
+  <h2>Bauwissen und aktuelle Informationen für den Odenwald</h2>
+  
+  <p>Als Ihr Fachbetrieb für Innenausbau, Trockenbau, Badsanierung und Außenanlagen im Raum Reichelsheim und Odenwald informieren wir Sie hier regelmäßig über Neuigkeiten, aktuelle Projekte und wertvolles Bauwissen. Unsere News-Seite ist Ihre zuverlässige Quelle für Informationen rund um Bauen, Sanieren und Modernisieren in der Region.</p>
+  
+  <h3>Aktuelle Projekte und Referenzen</h3>
+  <p>In unseren zukünftigen News-Beiträgen werden wir regelmäßig aktuelle Projekte aus Reichelsheim und dem gesamten Odenwald vorstellen. Sie erhalten Einblicke in unsere Arbeit bei Innenausbau, Badsanierung, Außenanlagen und Trockenbau. Wir zeigen Ihnen praktische Lösungen, innovative Materialien und die handwerkliche Präzision, die DMK Bau auszeichnet.</p>
+  
+  <h3>Praktische Tipps für Bauherren</h3>
+  <p>Wir teilen wertvolles Wissen zu Themen wie:</p>
+  <ul>
+    <li>Planung und Umsetzung von Badsanierungen</li>
+    <li>Moderne Lösungen für barrierefreies Bauen</li>
+    <li>Energieeffiziente Sanierung und Fördermöglichkeiten</li>
+    <li>Materialauswahl für nachhaltiges Bauen</li>
+    <li>Pflege und Instandhaltung von Außenanlagen</li>
+    <li>Zeit- und Kostenplanung bei Bauprojekten</li>
+  </ul>
+  
+  <h3>Fördermittel und aktuelle Regelungen</h3>
+  <p>Bleiben Sie informiert über aktuelle Fördermöglichkeiten für Bau- und Sanierungsvorhaben. Wir halten Sie auf dem Laufenden über Programme der KfW, BAFA und regionale Förderinitiativen im Odenwald. So können Sie Ihr Bauprojekt optimal planen und von finanziellen Unterstützungen profitieren.</p>
+  
+  <h3>Innovationen und nachhaltiges Bauen</h3>
+  <p>Die Baubranche entwickelt sich ständig weiter. Wir berichten über neue Materialien, innovative Technologien und nachhaltige Bauweisen, die auch für private Bauherren im Odenwald relevant sind. Von fugenlosen Bädern über energieeffiziente Dämmungen bis hin zu smarten Haustechniklösungen – wir zeigen, was heute möglich ist.</p>
+  
+  <h3>Regionaler Service im Odenwald</h3>
+  <p>Als regional verwurzelter Betrieb in Reichelsheim kennen wir die besonderen Gegebenheiten und Anforderungen im Odenwald. Unsere News-Beiträge berücksichtigen regionale Besonderheiten, lokale Materialverfügbarkeit und die Zusammenarbeit mit Handwerkern und Lieferanten in der Region. Wir sind Ihr Partner für alle Bauprojekte in Reichelsheim, Michelstadt, Erbach und dem gesamten Odenwaldkreis.</p>
+</section>
+
+<!-- Call-to-Action -->
+<div class="news-cta">
+  <h3>Haben Sie Fragen zu unseren Leistungen?</h3>
+  <p>Sprechen Sie uns an! Wir beraten Sie persönlich und kompetent zu Ihrem Bauvorhaben in den Bereichen Innenausbau, Trockenbau, Badsanierung und Außenarbeiten im Raum Reichelsheim/Odenwald.</p>
+  <a class="cta-button" href="index.html#dmk-sec6">
+    <svg aria-hidden="true" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="20">
+      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+    </svg>
+    Jetzt unverbindliche Beratung anfragen
+  </a>
+</div>
+
+<!-- =========================
+     "Das könnte dich auch interessieren" Sektion
+     ========================= -->
+<section class="dmk-related-checkbox">
+  <div class="wrapper">
+
+    <h2 class="title">Das könnte dich auch interessieren</h2>
+
+    <div class="grid">
+
+<!-- ############################ -->
+<!--  ALLE 21 LEISTUNGEN         -->
+<!-- ############################ -->
+
+<!-- 1 -->
+<a href="aussentreppen-reichelsheim-odenwald.html" class="card">
+  <div class="checkbox">
+    <svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg>
+  </div>
+  <div class="text">Außentreppen Reichelsheim</div>
+</a>
+
+<!-- 2 -->
+<a href="barrierefreies-bad-umbauen.html" class="card">
+  <div class="checkbox">
+    <svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg>
+  </div>
+  <div class="text">Barrierefreies Bad umbauen</div>
+</a>
+
+<!-- 3 -->
+<a href="barrierefreies-bauen.html" class="card">
+  <div class="checkbox"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></div>
+  <div class="text">Barrierefreies Bauen</div>
+</a>
+
+<!-- 4 -->
+<a href="bestehendes-bad-sanieren.html" class="card">
+  <div class="checkbox"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></div>
+  <div class="text">Bestehendes Bad sanieren</div>
+</a>
+
+<!-- 5 -->
+<a href="dmk-bau-foerdermittelberatung-antragstellung-reichelsheim-odenwald.html" class="card">
+  <div class="checkbox"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></div>
+  <div class="text">Fördermittelberatung & Antragstellung</div>
+</a>
+
+<!-- 6 -->
+<a href="dmk-bau-immobilienservice-verkauf-maklerdienste-reichelsheim-odenwald.html" class="card">
+  <div class="checkbox"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></div>
+  <div class="text">Immobilienservice & Maklerdienste</div>
+</a>
+
+<!-- 7 -->
+<a href="dmk-bau-individuelle-sonderloesungen-reichelsheim-odenwald.html" class="card">
+  <div class="checkbox"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></div>
+  <div class="text">Individuelle Sonderlösungen</div>
+</a>
+
+<!-- 8 -->
+<a href="estricharbeiten.html" class="card">
+  <div class="checkbox"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></div>
+  <div class="text">Estricharbeiten</div>
+</a>
+
+<!-- AB HIER HIDDEN ITEMS (Rest über Button) -->
+
+<!-- 9 -->
+<a href="fassadenarbeiten.html" class="card hidden">
+  <div class="checkbox"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></div>
+  <div class="text">Fassadenarbeiten</div>
+</a>
+
+<!-- 10 -->
+<a href="fenster-tueren-montage-reichelsheim-odenwald.html" class="card hidden">
+  <div class="checkbox"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></div>
+  <div class="text">Fenster & Türen Montage</div>
+</a>
+
+<!-- 11 -->
+<a href="fliesenarbeiten.html" class="card hidden">
+  <div class="checkbox"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></div>
+  <div class="text">Fliesenarbeiten</div>
+</a>
+
+<!-- 12 -->
+<a href="fugenloses-bad.html" class="card hidden">
+  <div class="checkbox"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></div>
+  <div class="text">Fugenloses Bad</div>
+</a>
+
+<!-- 13 -->
+<a href="montagearbeiten.html" class="card hidden">
+  <div class="checkbox"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></div>
+  <div class="text">Montagearbeiten</div>
+</a>
+
+<!-- 14 -->
+<a href="neubau-badezimmer.html" class="card hidden">
+  <div class="checkbox"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></div>
+  <div class="text">Neubau Badezimmer</div>
+</a>
+
+<!-- 15 -->
+<a href="pflasterarbeiten.html" class="card hidden">
+  <div class="checkbox"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></div>
+  <div class="text">Pflasterarbeiten</div>
+</a>
+
+<!-- 16 -->
+<a href="putzarbeiten.html" class="card hidden">
+  <div class="checkbox"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></div>
+  <div class="text">Putzarbeiten</div>
+</a>
+
+<!-- 17 -->
+<a href="regionale-beratung-reichelsheim-odenwald-dmk-bau.html" class="card hidden">
+  <div class="checkbox"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></div>
+  <div class="text">Regionale Beratung</div>
+</a>
+
+<!-- 18 -->
+<a href="renovierung-modernisierung-reichelsheim-odenwald.html" class="card hidden">
+  <div class="checkbox"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></div>
+  <div class="text">Renovierung & Modernisierung</div>
+</a>
+
+<!-- 19 -->
+<a href="terrassen-balkone-dmk-bau-reichelsheim.html" class="card hidden">
+  <div class="checkbox"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></div>
+  <div class="text">Terrassen & Balkone</div>
+</a>
+
+<!-- 20 -->
+<a href="treppenbau.html" class="card hidden">
+  <div class="checkbox"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></div>
+  <div class="text">Treppenbau</div>
+</a>
+
+<!-- 21 -->
+<a href="trockenbau.html" class="card hidden">
+  <div class="checkbox"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></div>
+  <div class="text">Trockenbau</div>
+</a>
+
+    </div>
+
+    <div class="more-btn" id="dmk-more-btn">Mehr anzeigen</div>
+
+  </div>
+</section>
+
+</main>
+
+<!-- =========================
+     Footer – EXAKT wie Startseite
+     ========================= -->
+<footer aria-label="DMK Bau Footer" class="dmk-footer" role="contentinfo">
+<div class="dmk-foot-wrap">
+<section class="dmk-foot">
+<h4>Unternehmen</h4>
+<ul class="dmk-list">
+<li><a class="dmk-link" href="index.html#unternehmen">Über uns</a></li>
+<li><a class="dmk-link" href="news-dmk-bau-reichelsheim.html">News</a></li>
+<li><a class="dmk-link" href="faq-dmk-bau-reichelsheim.html">FAQ</a></li>
+</ul>
+</section>
+<section class="dmk-foot">
+<h4>Rechtliches</h4>
+<ul class="dmk-list">
+<li><a class="dmk-link" href="datenschutz.html">Datenschutz</a></li>
+<li><a class="dmk-link" href="impressum.html">Impressum</a></li>
+<li><a class="dmk-link" href="agb.html">AGB</a></li>
+</ul>
+</section>
+<section class="dmk-foot">
+<h4>Kontakt</h4>
+<div class="dmk-contact">
+<div class="dmk-row">
+<span class="dmk-ico">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0Z"></path>
+<circle cx="12" cy="10" r="3"></circle>
+</svg>
+</span>
+<div>Heidelberger Straße 5,<br/>64385 Reichelsheim</div>
+</div>
+<div class="dmk-row">
+<span class="dmk-ico">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.3 1.78.54 2.64a2 2 0 0 1-.45 2.11L8 9a16 16 0 0 0 7 7l.53-1.2a2 2 0 0 1 2.11-.45c.86.24 1.74.42 2.64.54A2 2 0 0 1 22 16.92z"></path>
+</svg>
+</span>
+<a href="tel:01607791280">0160 77 91 28 0</a>
+</div>
+<div class="dmk-row">
+<span class="dmk-ico">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"></path>
+<path d="m22 6-10 7L2 6"></path>
+</svg>
+</span>
+<a href="mailto:info@dmk-bau.de">info@dmk-bau.de</a>
+</div>
+<div class="dmk-row">
+<span class="dmk-ico">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="10"></circle>
+<path d="M12 6v6l4 2"></path>
+</svg>
+</span>
+<div>Mo–Fr: 09:00–17:00<br/>Sa–So: Geschlossen</div>
+</div>
+</div>
+</section>
+<section class="dmk-foot">
+<h4>Social Media</h4>
+<div class="dmk-social">
+<a aria-label="Facebook" class="dmk-sbtn" href="https://www.facebook.com/people/DMK-bau/100057634561646/">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+</svg>
+<span class="label">Facebook</span>
+</a>
+<a aria-label="Instagram" class="dmk-sbtn" href="https://www.instagram.com/dmkbau/">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect>
+<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+<line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+</svg>
+<span class="label">Instagram</span>
+</a>
+<a aria-label="TikTok" class="dmk-sbtn" href="https://www.tiktok.com/@dmkbau">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M32.3 14.3a11 11 0 0 0 6.7 2.3v5.3a16 16 0 0 1-6.7-1.5v10.2c0 6.5-5.3 11.7-11.8 11.4A11.6 11.6 0 0 1 9 29.7c.2-6 5.4-10.9 11.5-10.9 1 0 2 .1 2.9.4v5.8a6 6 0 0 0-2.8-.6c-3.2 0-5.9 2.6-6 5.8a6 6 0 0 0 6.4 6.2c3.1-.2 5.5-2.9 5.5-6.1V6h5.8v8.3Z"></path>
+</svg>
+<span class="label">TikTok</span>
+</a>
+</div>
+</section>
+</div>
+<div class="dmk-copy">
+<span>©2025 DMK Bau</span>
+<span>Created by <a href="https://webpage-seo.de" rel="noopener noreferrer" target="_blank">webpage-seo.de</a></span>
+</div>
+</footer>
+
+<!-- =========================
+     JavaScript
+     ========================= -->
+<script>
+// Mobile Navigation – exakt wie Startseite
+document.addEventListener('DOMContentLoaded', function(){
+  var toggle = document.querySelector('.nav-toggle');
+  var menu   = document.getElementById('primary-nav');
+  if(!toggle || !menu) return;
+
+  function closeMenu(){
+    menu.classList.remove('open');
+    toggle.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }
+
+  toggle.addEventListener('click', function(){
+    var isOpen = !menu.classList.contains('open');
+    if(isOpen){
+      menu.classList.add('open');
+      toggle.classList.add('open');
+      toggle.setAttribute('aria-expanded', 'true');
+    }else{
+      closeMenu();
+    }
+  });
+
+  menu.querySelectorAll('.nav-link').forEach(function(link){
+    link.addEventListener('click', function(){
+      if(window.innerWidth <= 1024){
+        closeMenu();
+      }
+    });
+  });
+
+  window.addEventListener('resize', function(){
+    if(window.innerWidth > 1024 && menu.classList.contains('open')){
+      closeMenu();
+    }
+  });
+});
+
+// JavaScript für "Mehr anzeigen" Button
+(function(){
+    const btn = document.getElementById("dmk-more-btn");
+    const cards = document.querySelectorAll(".dmk-related-checkbox .card.hidden");
+    let expanded = false;
+
+    btn.addEventListener("click", function(){
+
+        expanded = !expanded;
+
+        if(expanded){
+            cards.forEach(c => c.style.display = "flex");
+            btn.textContent = "Weniger anzeigen";
+        } else {
+            const limit = window.innerWidth < 880 ? 4 : 8;
+            cards.forEach((c, index) => {
+                if(index + 9 > limit) c.style.display = "none";
+            });
+            btn.textContent = "Mehr anzeigen";
+        }
+    });
+
+})();
+</script>
+
+<!-- =========================
+     Schema.org Structured Data für News
+     ========================= -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "headline": "News & Aktuelles – DMK Bau Reichelsheim | Ihr Bauprofi im Odenwald",
+  "description": "Aktuelle Projekte, wertvolle Tipps für Innenausbau, Badsanierung, Außenanlagen und Bauwissen für den Odenwald. Ihr Bauprofi informiert über Neuigkeiten rund um nachhaltiges Bauen, Fördermittel und praktische Lösungen.",
+  "datePublished": "2025-01-01",
+  "dateModified": "2025-01-01",
+  "author": {
+    "@type": "Organization",
+    "name": "DMK Bau Reichelsheim"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "DMK Bau Reichelsheim",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.dmk-bau.de/images/dmk-bau-firmenlogo-reichelsheim-odenwald-1.webp"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.dmk-bau.de/news.html"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.dmk-bau.de/images/news-dmk-bau-reichelsheim.webp",
+    "width": "1200",
+    "height": "630"
+  }
+}
+</script>
+
+<!-- Organisation Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "DMK Bau Reichelsheim",
+  "url": "https://www.dmk-bau.de",
+  "logo": "https://www.dmk-bau.de/images/dmk-bau-firmenlogo-reichelsheim-odenwald-1.webp",
+  "description": "Fachbetrieb für Innenausbau, Trockenbau, Badsanierung und Außenarbeiten im Odenwald. Präzise, terminsicher und nachhaltig aus einer Hand.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Heidelberger Str. 5",
+    "addressLocality": "Reichelsheim",
+    "postalCode": "64385",
+    "addressRegion": "Odenwald",
+    "addressCountry": "DE"
+  },
+  "telephone": "+49-160-7791280",
+  "email": "info@dmk-bau.de",
+  "areaServed": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": 49.7153,
+      "longitude": 8.8439
+    },
+    "geoRadius": "30000"
+  },
+  "sameAs": [
+    "https://www.facebook.com/people/DMK-bau/100057634561646/",
+    "https://www.instagram.com/dmkbau/",
+    "https://www.tiktok.com/@dmkbau"
+  ]
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,3531 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>DMK Bau Reichelsheim – Bauunternehmen für Innen & Außen</title>
+<link rel="icon" type="image/webp" href="images/dmk-bau-reichelsheim-favicon.webp">
+<meta content="DMK Bau Reichelsheim – Ihr Bauunternehmen für Innenausbau, Sanierung, Fliesenarbeiten und Trockenbau im Odenwald. Jetzt unverbindlich anfragen." name="description"/>
+<!-- Performance: Preconnects -->
+<!-- LCP-Hero-Bild mit hoher Ladepriorität -->
+<link rel="preload" as="image" fetchpriority="high"
+      href="images/dmk-bau-innenausbau-trockenbau-badsanierung-aussenanlagen-reichelsheim.webp"/>
+
+<link crossorigin="" href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<!-- Quicksand Font – per preload, nicht render-blockend -->
+<link rel="preload" as="style"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap"
+      onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap">
+</noscript>
+<!-- Eigenes Font-Face mit font-display:swap für Font Awesome Webfonts -->
+<style>
+
+.innen-card::-webkit-scrollbar {
+  width: 10px;
+}
+.innen-card::-webkit-scrollbar-track {
+  background: #e8f2ea;
+  border-radius:10px;
+}
+.innen-card::-webkit-scrollbar-thumb {
+  background: #2E6C3A; /* kräftiges Grün */
+  border-radius:10px;
+}
+
+
+
+.nav-link{
+  color:#ffffff !important;
+  text-decoration:none !important;
+  font-weight:600;
+}
+.nav-link:hover{
+  opacity:0.8;
+}
+
+
+
+.call-display{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  background:#ffffff;
+  color:#000000 !important;
+  padding:8px 14px;
+  border-radius:10px;
+  text-decoration:none !important;
+  font-weight:600;
+  transition:background .2s;
+}
+.call-display svg{stroke:#000000;}
+.call-display:hover{background:#f4f4f4;}
+
+
+.call-display{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  background:#ffffff;
+  color:#000000;
+  padding:8px 14px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:600;
+  transition:background .2s;
+}
+.call-display svg{stroke:#000000;}
+.call-display:hover{background:#f4f4f4;}
+
+/* =========================
+   Design Tokens
+   ========================= */
+:root{
+  --brand:#369142;
+  --brand-2:#2B7A37;
+  --text:#1f1f1f;
+  --muted:#6b7280;
+  --card:#fff;
+  --bg:#f9fafb;
+  --ring:#e3e8ee;
+  --shadow:0 12px 38px rgba(0,0,0,.08);
+  --radius:18px;
+  --speed:160ms;
+  --flow:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:"Quicksand",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  background:var(--bg);color:var(--text);line-height:1.5;
+}
+.flow > * + *{ margin-top: var(--flow); }
+p{color:#525252}
+
+/* Screenreader-only helper */
+.sr-only{
+  position:absolute!important; width:1px!important; height:1px!important;
+  padding:0!important; margin:-1px!important; overflow:hidden!important;
+  clip:rect(0,0,0,0)!important; white-space:nowrap!important; border:0!important;
+}
+
+/* =========================
+   Header & Navigation
+   ========================= */
+header{
+  background:var(--brand);
+  position:sticky; top:0; z-index:100;
+  box-shadow:0 1px 6px rgba(0,0,0,.06);
+}
+.nav-wrap{
+  max-width:1440px;margin:0 auto;padding:0 18px;height:60px;
+  display:flex;align-items:center;justify-content:flex-end;gap:12px;position:relative;flex-wrap:wrap;
+}
+.menu{display:flex;align-items:center;gap:22px;flex-wrap:wrap;justify-content:center}
+/* === Mobile & Tablet Burger-Menü – 3D Style === */
+.nav-toggle{display:none;margin-left:auto;background:transparent;border:0;padding:7px;border-radius:999px;cursor:pointer;transform:translateY(0);transition:transform .16s ease,box-shadow .16s ease;}
+.nav-toggle:hover{transform:translateY(-1px);}
+.nav-toggle:active{transform:translateY(1px);}
+.nav-toggle:focus-visible{outline:3px solid rgba(255,255,255,.85);outline-offset:3px;}
+
+.nav-toggle-box{position:relative;width:32px;height:24px;display:inline-block;}
+
+.nav-toggle-bar, .nav-toggle-bar::before, .nav-toggle-bar::after{content:"";position:absolute;left:0;right:0;height:3px;background:#ffffff;border-radius:999px;bottom:-8px;}
+
+.nav-toggle-bar{top:50%;transform:translateY(-50%);}
+.nav-toggle-bar::before{content:"";position:absolute;left:0;right:0;height:3px;background:#ffffff;border-radius:999px;top:-8px;}
+.nav-toggle-bar::after{content:"";position:absolute;left:0;right:0;height:3px;background:#ffffff;border-radius:999px;bottom:-8px;}
+
+.nav-toggle.open .nav-toggle-bar{top:50%;transform:translateY(-50%);}
+.nav-toggle.open .nav-toggle-bar::before{content:"";position:absolute;left:0;right:0;height:3px;background:#ffffff;border-radius:999px;top:-8px;}
+.nav-toggle.open .nav-toggle-bar::after{content:"";position:absolute;left:0;right:0;height:3px;background:#ffffff;border-radius:999px;bottom:-8px;}
+
+@media (max-width: 1024px){
+  .nav-toggle{display:inline-flex;align-items:center;justify-content:center;}
+
+  header .nav-wrap{
+    height:60px;
+    padding-top:8px;
+    padding-bottom:8px;
+    justify-content:space-between;
+    align-items:center;
+    row-gap:0;
+    flex-wrap:nowrap;
+  }
+  .nav-toggle{display:none;margin-left:auto;background:transparent;border:0;padding:7px;border-radius:999px;cursor:pointer;transform:translateY(0);transition:transform .16s ease,box-shadow .16s ease;}
+  header .menu{
+    position:absolute;
+    left:12px;
+    right:12px;
+    top:100%;
+    margin-top:8px;
+    background:linear-gradient(145deg, rgba(0,0,0,.24), rgba(0,0,0,.32));
+    backdrop-filter:blur(18px);
+    flex-direction:column;
+    align-items:flex-start;
+    gap:6px;
+    padding:12px 14px 14px;
+    border-radius:18px;
+    box-shadow:0 20px 38px rgba(0,0,0,.5);
+    max-height:0;
+    opacity:0;
+    overflow:hidden;
+    pointer-events:none;
+    transform:translateY(-8px) translateZ(0);
+    transition:max-height .26s ease, opacity .2s ease, transform .22s ease;
+  }
+  header .menu.open{
+    max-height:260px;
+    opacity:1;
+    pointer-events:auto;
+    transform:translateY(0) translateZ(0);
+  }
+  header .menu .nav-link{
+    width:100%;
+    padding:8px 4px;
+    border-radius:12px;
+    position:relative;
+    overflow:hidden;
+    transform:translateX(0);
+    transition:
+      background .18s ease,
+      transform .18s ease,
+      box-shadow .18s ease;
+  }
+  header .menu .nav-link::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    opacity:0;
+    background:linear-gradient(90deg, rgba(255,255,255,.15), rgba(255,255,255,0));
+    transform:translateX(-18px);
+    transition:opacity .18s ease, transform .22s ease;
+    pointer-events:none;
+  }
+  header .menu .nav-link:hover{
+    background:rgba(255,255,255,.09);
+    transform:translateX(4px);
+    box-shadow:0 6px 14px rgba(0,0,0,.45);
+  }
+  header .menu .nav-link:hover::before{
+    opacity:1;
+    transform:translateX(0);
+  }
+  header .menu .call-display{
+    width:100%;
+    justify-content:center;
+    margin-top:4px;
+  }
+}
+
+.nav-link,.menu-link,
+.nav-link:hover,.menu-link:hover{opacity:.9}
+
+
+
+.chev{width:14px;height:14px;margin-left:6px;display:inline-block;transition:transform var(--speed)}
+.menu-link[aria-expanded="true"] .chev{transform:rotate(180deg)}
+
+/* =========================
+   Mega-Menü (Dropdown)
+   ========================= */
+.dropdown{display:none;position:absolute;left:0;right:0;top:calc(100% + 14px);}
+.dropdown.open{display:block;}
+.panel{
+  width:min(1180px,calc(100% - 28px));margin:0 auto;background:var(--card);
+  border-radius:var(--radius);box-shadow:var(--shadow);
+  padding:26px 28px;border:1px solid #eaeaea;
+}
+.grid{display:grid;gap:22px;grid-template-columns:1fr}
+@media (min-width:640px){ .grid{ grid-template-columns:repeat(2,1fr); } }
+@media (min-width:1024px){ .grid{ grid-template-columns:repeat(5,1fr); } }
+.card{
+  text-decoration:none;color:inherit;border-radius:var(--radius);overflow:hidden;background:transparent;
+  border:1px solid #f0f0f0;transition:transform var(--speed), box-shadow var(--speed);
+}
+.card:hover{transform:translateY(-4px);box-shadow:0 10px 22px rgba(0,0,0,.08)}
+.thumb{
+  aspect-ratio:16/9;background:linear-gradient(135deg,#f2f4f2 0%,#e8ebe8 100%);
+  display:flex;align-items:center;justify-content:center;font-size:13px;color:#999;border-bottom:1px solid #eaeaea
+}
+.thumb::before{content:"Bildplatzhalter";}
+.card-body{padding:18px 16px 22px;}
+.card-title{
+  font-weight:600;font-size:15.5px;color:var(--text);margin-bottom:8px;letter-spacing:0.1px;
+  border-left:3px solid var(--brand);padding-left:8px
+}
+.card-sub{font-size:14px;color:var(--muted);line-height:1.55;max-width:280px}
+
+/* Ebene 2: Subpanels */
+.subpanel{display:none}
+.subpanel.open{display:block}
+.sub-head{display:flex;gap:10px;align-items:center;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap}
+.back{
+  background:transparent;border:0;color:#6b7280;font-weight:600;font-size:14px;cursor:pointer;border-radius:10px;padding:6px 10px;letter-spacing:.1px;
+}
+.back:hover,.back:focus-visible{color:#44505b;text-decoration:underline;text-underline-offset:2px}
+.sub-title{font-weight:500;font-size:16px;color:#2c2c2c;letter-spacing:0.2px;line-height:1.4;}
+.sub-title span{color:#6b7280;font-weight:400}
+.sub-wrap{display:grid;gap:18px;grid-template-columns:1fr}
+@media(min-width:820px){ .sub-wrap{ grid-template-columns:1fr 1.1fr; } }
+.sub-media{border:1px solid #eaeaea;border-radius:16px;overflow:hidden;background:transparent;box-shadow:0 8px 24px rgba(0,0,0,.06)}
+.sub-hero{aspect-ratio:16/9;background:repeating-linear-gradient(45deg,#eef2f6 0 10px,#e6edf3 10px 20px);display:flex;align-items:center;justify-content:center;color:#9aa3ab;font-size:14px}
+.sub-list{display:grid;gap:12px;grid-template-columns:1fr}
+@media(min-width:560px){ .sub-list{grid-template-columns:1fr 1fr} }
+.sub-item{
+  display:flex;align-items:center;gap:12px;background:transparent;border:1px solid var(--ring);
+  border-radius:16px;padding:14px 16px;text-decoration:none;color:inherit;
+  transition:background .16s, border-color .16s, transform .05s, box-shadow .16s;
+  box-shadow:0 1px 0 rgba(0,0,0,.02);
+}
+.sub-item:hover{background:#f8fbf9;border-color:#d8e1e8;transform:translateY(-1px);box-shadow:0 2px 6px rgba(0,0,0,.04)}
+.sub-dot{width:10px;height:10px;border-radius:999px;background:var(--brand);opacity:.9;flex:0 0 10px}
+.sub-txt{font-weight:600;font-size:15px}
+
+/* =========================
+   Hero Section – Bild + Overlay
+   ========================= */
+.hero-main{
+  position:relative;
+  min-height:56vh;
+  display:flex;
+  align-items:center;
+  border-bottom:1px solid #e6e6e6;
+  background:#0b0b0b;
+}
+@media(min-width:1024px){ .hero-main{ min-height:850px; } }
+
+.hero-main::before{
+  content:""; position:absolute; inset:0; z-index:0;
+  background:
+    radial-gradient(120% 70% at 80% 50%, rgba(0,0,0,.18) 0%, rgba(0,0,0,0) 60%),
+    url("images/dmk-bau-innenausbau-trockenbau-badsanierung-aussenanlagen-reichelsheim.webp") center/cover no-repeat;
+}
+.hero-main::after{
+  content:""; position:absolute; inset:0; z-index:1;
+  background:
+    linear-gradient(90deg,
+      rgba(0,0,0,.68) 0%,
+      rgba(0,0,0,.50) 28%,
+      rgba(0,0,0,.32) 54%,
+      rgba(0,0,0,.14) 74%,
+      rgba(0,0,0,0) 100%),
+    linear-gradient(180deg,
+      rgba(0,0,0,.10) 0%,
+      rgba(0,0,0,0) 35%);
+  pointer-events:none;
+}
+@media(max-width:900px){
+  .hero-main::after{
+    background:
+      linear-gradient(90deg,
+        rgba(0,0,0,.75) 0%,
+        rgba(0,0,0,.55) 34%,
+        rgba(0,0,0,.34) 60%,
+        rgba(0,0,0,.16) 78%,
+        rgba(0,0,0,0) 100%),
+      linear-gradient(180deg,
+        rgba(0,0,0,.14) 0%,
+        rgba(0,0,0,0) 40%);
+  }
+}
+
+/* Hero-Content – 200px Einzug links */
+.hero-inner{
+  width:100%;
+  margin:0;
+  padding:64px 18px 64px 200px;
+  position:relative; z-index:2;
+}
+@media(max-width:1200px){
+  .hero-inner{ padding-left:140px; }
+}
+@media(max-width:900px){
+  .hero-inner{ padding-left:26px; }
+}
+
+.hero-card{
+  max-width:980px;
+  padding:28px 28px;
+  background:transparent;border:0;box-shadow:none;
+  margin-top:clamp(-60px, -4vh, -12px);
+  margin-left:0;
+}
+.hero-card.flow > * + *{ margin-top:12px; }
+
+/* Typo */
+.h1-hero{
+  color:#fff;
+  line-height:1.08;
+  font-weight:600;
+  font-size:clamp(26px, 3vw + 14px, 46px);
+  letter-spacing:.04px;
+  text-wrap:balance;
+  text-shadow:0 1px 8px rgba(0,0,0,.14);
+}
+.h1-hero .h1-line{ display:block; }
+
+/* Brand-Text */
+.brand-text{
+  color:var(--brand);
+  font-weight:800;
+  letter-spacing:.25px;
+  font-size:1.35em;
+  text-shadow:0 2px 12px rgba(0,0,0,.28);
+}
+@media (min-width: 900px){
+  .brand-text{ font-size:1.5em; }
+}
+
+/* Lead & Claim */
+.hero-lead{ color:#eef4f1; font-size:clamp(15px, 1.2vw + 12px, 18px); line-height:1.65; max-width:900px; text-shadow:0 1px 8px rgba(0,0,0,.12) }
+.claim{ color:#cfe7d5; font-size:clamp(16px, 1vw + 12px, 20px); font-weight:700; letter-spacing:.2px }
+.hero-cta{ display:flex; gap:12px; flex-wrap:wrap; }
+
+/* Geo highlight */
+.geo{
+  background-image:linear-gradient(transparent 62%, rgba(54,145,66,.32) 62%);
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+  padding:0 .06em;
+  border-radius:.1em;
+  font-weight:700;
+}
+@media (hover:hover){
+  .geo:hover{
+    background-image:linear-gradient(transparent 50%, rgba(54,145,66,.45) 50%);
+  }
+}
+
+/* CTAs */
+.btn-primary{
+  background:var(--brand);color:#fff;text-decoration:none;font-weight:800;padding:14px 18px;border-radius:12px;
+  display:inline-flex;align-items:center;justify-content:center;
+  transition:transform .15s ease, filter .2s, box-shadow .2s;
+  box-shadow:0 6px 20px rgba(54,145,66,.28);
+}
+.btn-primary:hover{filter:brightness(0.95); transform:translateY(-2px)}
+.btn-ghost{
+  background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.26);color:#fff;text-decoration:none;
+  padding:14px 18px;border-radius:12px;font-weight:700;display:inline-flex;align-items:center;gap:8px;
+  transition:background .2s,border-color .2s, transform .15s;
+}
+.btn-ghost:hover{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.36); transform:translateY(-1px)}
+
+/* Trust badges */
+.trust-rail{ display:grid; grid-template-columns:1fr; gap:10px; margin-top:10px; }
+@media(min-width:400px){ .trust-rail{ grid-template-columns:repeat(2,1fr); } }
+@media(min-width:980px){ .trust-rail{ grid-template-columns:repeat(4,1fr); } }
+.trust-badge{
+  position:relative; display:flex;align-items:center;gap:12px; padding:13px 14px;
+  border-radius:16px; color:#fff; background:rgba(0,0,0,.18); border:1px solid rgba(255,255,255,.28);
+  box-shadow:0 3px 14px rgba(0,0,0,.22); backdrop-filter:saturate(120%) blur(5px); -webkit-backdrop-filter:saturate(120%) blur(5px);
+  transition:transform .18s ease, box-shadow .18s ease, background .18s ease, border-color .18s ease; overflow:hidden;
+}
+.trust-badge::after{
+  content:""; position:absolute; inset:auto -10% -60% -10%;
+  height:140%; background:radial-gradient(60% 60% at 50% 0%, rgba(255,255,255,.22), rgba(255,255,255,0));
+  transform:translateY(-10%); pointer-events:none;
+}
+.trust-badge:hover{ transform:translateY(-2px); background:rgba(255,255,255,.14); border-color:rgba(255,255,255,.36); box-shadow:0 8px 22px rgba(0,0,0,.32); }
+.trust-ico{ width:34px;height:34px;flex:0 0 34px; display:inline-flex;align-items:center;justify-content:center; border-radius:12px;
+  background:linear-gradient(135deg,var(--brand),var(--brand-2)); box-shadow:inset 0 0 0 1px rgba(255,255,255,.22), 0 3px 10px rgba(0,0,0,.25);}
+.trust-ico svg, .trust-ico text{ width:20px; height:20px; color:#fff; fill:currentColor; }
+.trust-txt{ display:flex;flex-direction:column;line-height:1.25; }
+.trust-title{ font-weight:800; font-size:15px; letter-spacing:.2px; }
+.trust-sub{ font-weight:700; font-size:13px; opacity:.92 }
+.stars{ display:inline-flex; gap:2px; margin-left:6px; vertical-align:middle; }
+.stars .star{ font-size:12px; color:#FFD166; }
+
+/* Reveal */
+@keyframes fadeUp { from{opacity:0; transform:translateY(26px)} to{opacity:1; transform:translateY(0)} }
+.hero-card{ animation: fadeUp 820ms cubic-bezier(.2,.7,.2,1) both; }
+@media (prefers-reduced-motion: reduce){ .hero-card{ animation:none } }
+
+/* Fokus */
+:focus-visible{outline:3px solid rgba(54,145,66,.36);outline-offset:2px}
+</style>
+<style>
+/* Fix: remove any background/overlay behind the Section 6 headline block only */
+#dmk-sec6 .head,
+#dmk-sec6 .head *,
+#dmk-sec6 header.head {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: 0 !important;
+}
+#dmk-sec6 .head::before,
+#dmk-sec6 .head::after { display:none !important; background:transparent !important; }
+#dmk-sec6 { margin-top: 0 !important; padding-top: 0 !important; }
+</style>
+<style>
+/* Übergang Sektion 5 → 6 nahtlos */
+#dmk-sec5 {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+#dmk-sec6,
+#dmk-sec6-wrap {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  background: transparent !important;
+}
+
+/* Entfernt eventuelle graue Übergangsflächen */
+section[style*="#f7"],
+div[style*="#f7"],
+section[style*="#f8"],
+div[style*="#f8"],
+section[style*="rgb(247"],
+div[style*="rgb(247"] {
+  display: none !important;
+}
+</style>
+<style>
+/* Sektion 6 Headline wie Sektion 5 (FAQ – DMK Bau Reichelsheim) */
+#dmk-sec6 .head h2,
+#dmk-sec6 .head h3,
+#dmk-sec6 .head h1 {
+  font-family: 'Quicksand', sans-serif !important;
+  font-weight: 700 !important;
+  color: #369142 !important;
+  font-size: clamp(1.5rem, 2vw + 1rem, 2.2rem) !important;
+  text-align: center !important;
+}
+</style>
+<style>
+
+/* Fix: Section 6 soll beim Anscrollen nicht unter die Navigation rutschen */
+#dmk-sec6[data-dmk="6"]{
+  scroll-margin-top: 90px;
+  position: relative;
+  z-index: 1;
+}
+header{ z-index: 200; }
+
+/* Sektion 6 Headline wie Sektion 5, linksbündig */
+#dmk-sec6 .head h2,
+#dmk-sec6 .head h3,
+#dmk-sec6 .head h1 {
+  font-family: 'Quicksand', sans-serif !important;
+  font-weight: 700 !important;
+  color: #369142 !important;
+  font-size: clamp(1.5rem, 2vw + 1rem, 2.2rem) !important;
+  text-align: left !important;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+</style>
+<style>
+
+/* === DMK: gruene Haken vor den Vorteils-Bullets === */
+.bullets.dmk-feats{ list-style: none; margin: 8px 0 14px; padding: 0; display: grid; gap: 8px; }
+.bullets.dmk-feats li{ display: flex; align-items: flex-start; gap: 10px; font-weight: 500; color: #2b392c; }
+.bullets.dmk-feats li > span[aria-hidden="true"] svg{
+  width: 18px; height: 18px; stroke: #369142; stroke-width: 3;
+}
+
+</style>
+
+<style>
+/* Anker-Versatz für Hauptnavigation (Unternehmen / Leistungen / Kontaktformular) */
+#unternehmen,
+#dmk-sec3[data-dmk="3"],
+#dmk-sec6[data-dmk="6"]{
+  scroll-margin-top: 92px;
+}
+@media (max-width: 900px){
+  #unternehmen,
+  #dmk-sec3[data-dmk="3"],
+  #dmk-sec6[data-dmk="6"]{
+    scroll-margin-top: 76px;
+  }
+}
+</style>
+
+
+<style>
+/* Globale mobile & Tablet-Optimierungen – Desktop bleibt unverändert */
+@media (max-width: 1024px){
+  .nav-toggle{display:inline-flex;align-items:center;justify-content:center;}
+
+  header .nav-wrap{
+    height:auto;
+    padding-top:8px;
+    padding-bottom:8px;
+    justify-content:center;
+    row-gap:8px;
+  }
+  header .menu{
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+  .hero-main{
+    min-height:auto;
+  }
+  .hero-inner{
+    padding-top:48px;
+    padding-bottom:48px;
+  }
+}
+
+/* Zusätzliche Optimierungen für Smartphones */
+@media (max-width: 768px){
+  .hero-card{
+    padding:22px 18px;
+  }
+  .trust-rail{
+    grid-template-columns:1fr !important;
+  }
+  /* Sicherstellen, dass Grids und Container nicht überlaufen */
+  [data-dmk] .wrap,
+  [data-dmk] .container{
+    max-width:100%;
+  }
+  /* Slider-Karten etwas schmaler, damit sie gut ins Viewport passen */
+  #dmk-sec4[data-dmk="4"] .rail{
+    grid-auto-columns:minmax(260px, 88vw);
+  }
+}
+</style>
+
+</head>
+<body>
+<!-- =========================
+     Header & Mega-Menü
+     ========================= -->
+<header>
+<nav class="nav-wrap" aria-label="Hauptnavigation">
+	<!-- LOGO LINKS – CONTENT-BÜNDIG -->
+<a href="index.html" class="nav-logo">
+  <img src="images/dmk-bau-firmenlogo-reichelsheim-odenwald-1.webp" alt="DMK Bau Logo">
+</a>
+
+<style>
+  /* Logo ist Teil des normalen Layouts */
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto; /* schiebt Menü & Call-Button nach rechts */
+  }
+
+  .nav-logo img {
+    height: 42px;
+    width: auto;
+    display: block;
+  }
+</style>
+
+<button class="nav-toggle" aria-label="Hauptmenü öffnen" aria-expanded="false" type="button">
+  <span class="nav-toggle-box">
+    <span class="nav-toggle-bar"></span>
+  </span>
+</button>
+<div class="menu" id="primary-nav">
+<a class="nav-link" href="index.html#unternehmen">Unternehmen</a>
+<a class="nav-link" href="index.html#dmk-sec3">Leistungen</a>
+<a class="nav-link" href="index.html#dmk-sec6">Kontaktformular</a>
+<a aria-label="Jetzt anrufen: 0160 7791280" class="call-display" href="tel:01607791280">
+<svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="18">
+<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6
+                   19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.3 1.78.54 2.64
+                   a2 2 0 0 1-.45 2.11L8 9a16 16 0 0 0 7 7l.53-1.2a2 2 0 0 1 2.11-.45c.86.24 1.74.42 2.64.54A2 2 0 0 1 22 16.92z"></path>
+</svg>
+        0160 7791280
+      </a>
+</div>
+</nav>
+</header>
+
+<!-- =========================
+     Hero Section
+     ========================= -->
+<section aria-label="Innenausbau Reichelsheim – moderner Wohnraum mit Terrasse" class="hero-main">
+<div class="hero-inner">
+<div class="hero-card flow">
+<h1 class="h1-hero">
+<span class="h1-line"><span class="brand-text">DMK Bau</span> – Ihr Partner für: Präzisen Innenausbau, modernen Trockenbau, hochwertige Badsanierung &amp; gepflegte Außenanlagen.</span>
+</h1>
+<p class="hero-lead">
+    Das Bauunternehmen DMK Bau ist Ihr Partner für präzisen Innenausbau, modernen Trockenbau, hochwertige Badsanierung und gepflegte Außenanlagen. Wir planen und bauen präzise Lösungen – vom fugenlosen Bad bis zur kompletten Renovierung – und realisieren Außenarbeiten wie Pflasterarbeiten für Einfahrt, Terrasse und Wege im Raum <span class="geo">Reichelsheim</span> (<span class="geo">Odenwald</span>). Terminsicher, präzise und aus einer Hand.
+</p>
+
+
+<p class="claim">Andere sehen Probleme – wir sehen Lösungen.</p>
+<div class="hero-cta">
+<a class="btn-primary" href="index.html#dmk-sec6">Kostenlose Erstberatung starten</a>
+<a aria-label="Jetzt anrufen: 0160 7791280" class="btn-ghost" href="tel:01607791280">
+<svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="18"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.3 1.78.54 2.64a2 2 0 0 1-.45 2.11L8 9a16 16 0 0 0 7 7l.53-1.2a2 2 0 0 1 2.11-.45c.86.24 1.74.42 2.64.54A2 2 0 0 1 22 16.92z"></path></svg><span aria-hidden="true"> 0160 7791280</span>
+</a>
+</div>
+<!-- ========== TRUST-BUTTONS (Premium) ========== -->
+<div aria-label="Vertrauenssiegel" class="trust-rail">
+<div aria-label="80 Google-Bewertungen, Durchschnitt 5,0 von 5 Sternen" class="trust-badge" role="img">
+<span aria-hidden="true" class="trust-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="white" opacity="0.15"></circle><text x="12" y="16" text-anchor="middle" font-size="12" font-family="system-ui, sans-serif" fill="white">G</text></svg></span>
+<span class="trust-txt">
+<span class="trust-title">
+              Top Google-Bewertungen
+              <span aria-hidden="true" class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></span>
+</span>
+<span class="trust-sub">80 Bewertungen – Ø 5,0 / 5 – verifiziert</span>
+<span class="sr-only">80 Bewertungen, Durchschnitt 5,0 von 5 Sternen</span>
+</span>
+</div>
+<div aria-label="Zertifizierter Fachbetrieb, Qualität nach Handwerksnorm" class="trust-badge" role="img">
+<span aria-hidden="true" class="trust-ico"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></span>
+<span class="trust-txt">
+<span class="trust-title">Zertifizierter Fachbetrieb</span>
+<span class="trust-sub">Qualität nach Handwerksnorm</span>
+</span>
+</div>
+<div aria-label="Regionale Beratung, direkt bei Ihnen im Odenwald" class="trust-badge" role="img">
+<span aria-hidden="true" class="trust-ico"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8.7 2 6 4.7 6 8c0 4.5 3 7.5 6 12 3-4.5 6-7.5 6-12 0-3.3-2.7-6-6-6z"/><circle cx="12" cy="8" r="2.4" fill="white"/></svg></span>
+<span class="trust-txt">
+<span class="trust-title">Regionale Beratung</span>
+<span class="trust-sub">Direkt bei Ihnen im Odenwald</span>
+</span>
+</div>
+<div aria-label="Kostenlose Erstberatung, unverbindlich und transparent" class="trust-badge" role="img">
+<span aria-hidden="true" class="trust-ico"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 0 1 16 0v5a2 2 0 0 1-2 2h-2"/><path d="M4 12v5a2 2 0 0 0 2 2h2"/><rect x="5" y="11" width="3" height="6" rx="1"/><rect x="16" y="11" width="3" height="6" rx="1"/></svg></span>
+<span class="trust-txt">
+<span class="trust-title">Kostenlose Erstberatung</span>
+<span class="trust-sub">Unverbindlich &amp; transparent</span>
+</span>
+</div>
+</div>
+<!-- ========== /TRUST-BUTTONS ========== -->
+</div>
+</div>
+</section>
+<!-- =========================
+     SECTION 2 – Konfliktsicher mit hartem Grün & Inline-SVG-Haken
+     ========================= -->
+<div id="unternehmen"></div>
+<section aria-labelledby="dmk-sec2-title" data-dmk="2" id="dmk-sec2">
+<style>
+    /* Sektion 2: gleicher linker Einzug wie Hero (200/140/26) */
+    #dmk-sec2[data-dmk="2"]{font-family:"Quicksand",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:transparent;color:#1f1f1f}
+    #dmk-sec2[data-dmk="2"] .wrap{
+      width:100%;            /* volle Breite, damit linker Einzug wie im Hero wirkt */
+      margin:0;              /* nicht zentrieren */
+      padding:70px 18px 70px 200px; /* linker Einzug = Hero */
+    }
+    @media(max-width:1200px){
+      #dmk-sec2[data-dmk="2"] .wrap{ padding-left:140px; }
+    }
+    @media(max-width:900px){
+      #dmk-sec2[data-dmk="2"] .wrap{ padding-left:26px; }
+    }
+
+    #dmk-sec2[data-dmk="2"] .grid{
+      display:grid;grid-template-columns:1fr;gap:44px;align-items:stretch;
+      max-width:1440px;      /* deine gewünschte Maxbreite bleibt erhalten */
+    }
+    @media(min-width:980px){
+      #dmk-sec2[data-dmk="2"] .grid{grid-template-columns:1.15fr .85fr;gap:86px}
+    }
+
+    /* Headline + Signatur */
+    #dmk-sec2[data-dmk="2"] h2.title{font-weight:600;line-height:1.12;font-size:clamp(28px,4vw,42px);margin:0 0 8px}
+    #dmk-sec2[data-dmk="2"] .accent{color:#369142!important;font-weight:700!important}
+    #dmk-sec2[data-dmk="2"] .sig{display:block;font-weight:700;color:#369142!important;letter-spacing:.1px;margin-bottom:16px}
+
+    /* Text + Highlights */
+    #dmk-sec2[data-dmk="2"] p.sub{font-size:clamp(16px,2vw,18px);color:#4a5157;margin:0 0 26px;font-weight:500}
+    #dmk-sec2[data-dmk="2"] .hl{color:#369142!important;font-weight:600}
+
+    /* Checkpoints (Glass) */
+    #dmk-sec2[data-dmk="2"] ul.points{list-style:none;padding:0;margin:0;display:grid;gap:14px}
+    #dmk-sec2[data-dmk="2"] .point{
+      position:relative;display:flex;align-items:flex-start;gap:12px;border-radius:18px;padding:14px 18px;
+      background:linear-gradient(180deg,rgba(255,255,255,.82),rgba(255,255,255,.6));
+      border:1px solid rgba(54,145,66,.14)!important;
+      border-left:5px solid #369142!important;
+      box-shadow:0 12px 28px rgba(0,0,0,.06);
+      backdrop-filter:saturate(150%) blur(10px);-webkit-backdrop-filter:saturate(150%) blur(10px)
+    }
+    #dmk-sec2[data-dmk="2"] .ico{flex:0 0 auto;width:20px;height:20px;margin-top:2px}
+    #dmk-sec2[data-dmk="2"] .ico svg{width:20px;height:20px;display:block;stroke:#369142!important}
+
+    #dmk-sec2[data-dmk="2"] .point strong{display:block;color:#369142!important;font-weight:600;margin-bottom:2px}
+    #dmk-sec2[data-dmk="2"] .point .hint{font-size:13.5px;color:#6b7280;font-weight:500}
+
+    /* Foto */
+    #dmk-sec2[data-dmk="2"] .owner{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;margin-top:28px}
+    #dmk-sec2[data-dmk="2"] .photo{overflow:hidden;border-radius:18px;background:transparent;box-shadow:0 12px 38px rgba(0,0,0,.08);height:100%}
+    #dmk-sec2[data-dmk="2"] .photo img{display:block;width:auto;height:100%;max-height:600px;object-fit:cover;border-radius:18px}
+    #dmk-sec2[data-dmk="2"] .caption{margin-top:12px;text-align:center;color:#6b7280}
+    #dmk-sec2[data-dmk="2"] .caption strong{display:block;font-size:17px;font-weight:600;color:#222}
+  </style>
+<div class="wrap">
+<div class="grid">
+<div>
+<h2 class="title" id="dmk-sec2-title">
+<span class="accent">Bauen mit Verantwortung, Vertrauen und Handwerksehre</span> – dafür stehe ich mit meinem Namen.
+        </h2>
+<span class="sig">DMK Bau · Reichelsheim</span>
+<p class="sub">
+          Seit über 10 Jahren stehen wir bei <span class="hl">DMK Bau</span> für ehrliches Handwerk,
+          <span class="hl">verbindliche Zusagen</span> und <span class="hl">Perfektion bis ins Detail</span>.
+          Unsere Werte sind nicht verhandelbar: <span class="hl">Zuverlässigkeit</span>, <span class="hl">Fairness</span>,
+          <span class="hl">Sauberkeit</span> und <span class="hl">Respekt</span> – gegenüber unseren Kunden, Partnern und jedem einzelnen Projekt.
+          Wir glauben an traditionelle Tugenden kombiniert mit moderner Ausführung.
+          Jede Baustelle ist für uns ein Versprechen: <span class="hl">termingerecht</span>, <span class="hl">präzise</span> und mit dem Anspruch,
+          dass Sie am Ende sagen können – <em>„Das war Handwerk, wie man es sich wünscht."</em>
+</p>
+<ul aria-label="Vorzüge – deshalb DMK Bau" class="points">
+<li class="point">
+<span aria-hidden="true" class="ico">
+<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewbox="0 0 24 24">
+<polyline points="20 6 9 17 4 12"></polyline>
+</svg>
+</span>
+<div>
+<strong>Verbindliche Zusagen</strong>
+<div class="hint">Termine und Preise, auf die Sie sich verlassen können – ohne Nachverhandlungen oder Verzögerungen.</div>
+</div>
+</li>
+<li class="point">
+<span aria-hidden="true" class="ico">
+<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewbox="0 0 24 24">
+<polyline points="20 6 9 17 4 12"></polyline>
+</svg>
+</span>
+<div>
+<strong>Ein Ansprechpartner – der Inhaber</strong>
+<div class="hint">Direkter Kontakt zu mir persönlich: kurze Wege, klare Entscheidungen und ein reibungsloser Ablauf von Anfang bis Ende.</div>
+</div>
+</li>
+<li class="point">
+<span aria-hidden="true" class="ico">
+<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewbox="0 0 24 24">
+<polyline points="20 6 9 17 4 12"></polyline>
+</svg>
+</span>
+<div>
+<strong>Saubere, respektvolle Ausführung</strong>
+<div class="hint">Sorgfalt auf jeder Baustelle: Schutz Ihres Eigentums, ordentliche Arbeitsweise und Rücksicht auf Ihr Zuhause.</div>
+</div>
+</li>
+<li class="point">
+<span aria-hidden="true" class="ico">
+<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewbox="0 0 24 24">
+<polyline points="20 6 9 17 4 12"></polyline>
+</svg>
+</span>
+<div>
+<strong>Erfahrung &amp; regionale Verwurzelung</strong>
+<div class="hint">Seit über 10 Jahren im Odenwald – ehrliche Handwerksqualität aus der Region, auf die man bauen kann.</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="owner">
+<div class="photo">
+<img alt="Dariusz Krzysztoń – Inhaber DMK Bau" loading="lazy" src="images/dariusz-krzyszton-dmk-bau-reichelsheim.webp"/>
+</div>
+<div class="caption">
+<strong>Dariusz Krzysztoń</strong>
+<span>Inhaber · DMK Bau</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================
+     SECTION 3 – Leistungen (8 Karten, grüne Buttons + weiße Schrift)
+     ========================= -->
+<section aria-labelledby="dmk-sec3-title" data-dmk="3" id="dmk-sec3">
+<style>
+    /* Sektion 3: linker Einzug wie Hero/Sektion 2 (200/140/26) + Design-Tokens */
+    #dmk-sec3[data-dmk="3"]{
+      font-family:"Quicksand",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:transparent; color:var(--text);
+    }
+    #dmk-sec3[data-dmk="3"] .wrap{
+      width:100%;
+      margin:0;
+      padding:70px 18px 70px 200px;
+    }
+    @media(max-width:1200px){ #dmk-sec3[data-dmk="3"] .wrap{ padding-left:140px; } }
+    @media(max-width:900px){  #dmk-sec3[data-dmk="3"] .wrap{ padding-left:26px; } }
+
+    #dmk-sec3[data-dmk="3"] .container{ width:min(1440px,100%); }
+
+    /* Kopf */
+    #dmk-sec3[data-dmk="3"] .head{ text-align:left; max-width:980px; margin:0 0 28px 0; }
+    #dmk-sec3[data-dmk="3"] h3#dmk-sec3-title{
+  font-weight:700;
+  line-height:1.12;
+  font-size:clamp(28px,4vw,42px);
+  color:var(--brand); /* grünes Marken-Grün (#369142) */
+  letter-spacing:.2px;
+  margin-bottom:12px;
+  text-wrap:balance;
+    }
+    #dmk-sec3[data-dmk="3"] .lead{
+      color:#4a5157;
+      font-weight:500;
+      max-width:72ch;
+      margin:0;
+      font-size:clamp(15px,1vw + 12px,17px);
+      line-height:1.6;
+    }
+
+    /* Grid */
+    #dmk-sec3[data-dmk="3"] .grid{ display:grid; gap:18px; grid-template-columns:1fr; }
+    @media (min-width:768px){  #dmk-sec3[data-dmk="3"] .grid{ grid-template-columns:repeat(2,1fr);} }
+    @media (min-width:1100px){ #dmk-sec3[data-dmk="3"] .grid{ grid-template-columns:repeat(3,1fr);} }
+    @media (min-width:1400px){ #dmk-sec3[data-dmk="3"] .grid{ grid-template-columns:repeat(4,1fr);} }
+
+    /* Karte */
+    #dmk-sec3[data-dmk="3"] .card{
+      display:flex; flex-direction:column; overflow:hidden; background:transparent;
+      border:1.5px solid #dfe6e2; border-radius:var(--radius);
+      box-shadow:0 4px 16px rgba(0,0,0,.05);
+      transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+    }
+    #dmk-sec3[data-dmk="3"] .card:hover{ transform:translateY(-3px); box-shadow:0 12px 24px rgba(0,0,0,.12); border-color:#cbd6ce; }
+
+    /* Bild */
+    #dmk-sec3[data-dmk="3"] .media{ margin:12px 12px 0; border-radius:12px; overflow:hidden; aspect-ratio:3/2; background:#f2f5f3; }
+    #dmk-sec3[data-dmk="3"] .media img{ width:100%; height:100%; object-fit:cover; display:block; transition:transform .4s ease; }
+    #dmk-sec3[data-dmk="3"] .card:hover .media img{ transform:scale(1.05); }
+
+    /* Body */
+    #dmk-sec3[data-dmk="3"] .body{ padding:18px; display:flex; flex-direction:column; gap:10px; flex:1; }
+    #dmk-sec3[data-dmk="3"] .content{ display:flex; flex-direction:column; gap:8px; flex:1; }
+    #dmk-sec3[data-dmk="3"] .title{ font-weight:600; font-size:16px; border-left:3px solid var(--brand); padding-left:8px; line-height:1.3; letter-spacing:.1px; }
+    #dmk-sec3[data-dmk="3"] .sub{ color:#555; font-size:14.5px; }
+
+    /* Chips */
+    #dmk-sec3[data-dmk="3"] .chips{ display:flex; flex-wrap:wrap; gap:8px; }
+    #dmk-sec3[data-dmk="3"] .chip{
+      padding:6px 10px; border-radius:999px; font-weight:600; font-size:.82rem;
+      color:var(--brand-2); background:#F1F6F2; border:1px solid #E1EDE4; white-space:nowrap;
+    }
+
+    /* Buttons – GRÜN + WEISS, an Tokens gebunden */
+    #dmk-sec3[data-dmk="3"] .btn-green{
+      margin-top:auto; width:100%; height:46px; display:inline-flex; align-items:center; justify-content:center;
+      background:var(--brand) !important; color:#fff !important; text-decoration:none !important;
+      font-weight:700; font-size:15px; border:none; border-radius:12px;
+      box-shadow:0 6px 18px rgba(54,145,66,.25); transition:transform .2s, box-shadow .2s, filter .2s;
+    }
+    #dmk-sec3[data-dmk="3"] .btn-green:hover{ background:var(--brand-2) !important; transform:translateY(-2px); box-shadow:0 10px 26px rgba(43,122,55,.35); }
+    #dmk-sec3[data-dmk="3"] .btn-green:focus-visible{ outline:3px solid rgba(54,145,66,.45); outline-offset:2px; }
+  </style>
+<div class="wrap">
+<div class="container">
+<div class="head">
+<h3 id="dmk-sec3-title">Von der Wand bis zur Einfahrt – Bauqualität, die man sieht und spürt.</h3>
+<p class="lead">
+<strong>Unsere Leistungen im Innenausbau, der Sanierung und im Außenbereich</strong> – präzise geplant, sauber umgesetzt und terminsicher ausgeführt.<br/>
+          Entdecken Sie hier, was wir im Odenwald für Ihr Projekt leisten.
+        </p>
+</div>
+<div class="grid" role="list">
+<!-- 1: Innenausbau & Trockenbau -->
+<article class="card" role="listitem" data-innenausbau-card>
+<figure class="media"><img alt="Innenausbau &amp; Trockenbau" loading="lazy" src="images/dmk-bau-innenausbau-trockenbau-reichelsheim.webp"/></figure>
+<div class="body">
+<div class="content">
+<div class="title">Innenausbau &amp; Handwerksleistungen im Detail – präzise geplant, sauber umgesetzt</div>
+<p class="sub">Im Innenausbau verbinden wir handwerkliche Präzision mit einem klaren Blick fürs Detail.
+Wir bieten Ihnen alle wichtigen Gewerke aus einer Hand – von Trockenbau und Putzarbeiten über Estrich und Fliesen bis hin zu Fenstern, Türen und Treppen.</p>
+<div class="chips"><span class="chip">Innenausbau von A–Z</span></div>
+</div>
+<a class="btn-green" href="index.html#leistungen">Innenausbau einsehen</a>
+</div>
+</article>
+<!-- 2: Badsanierung -->
+<article class="card" role="listitem" data-bad-card>
+<figure class="media"><img alt="Badsanierung &amp; fugenlose Oberflächen" loading="lazy" src="images/dmk-bau-badsanierung-fugenlos-odenwald.webp"/></figure>
+<div class="body">
+<div class="content">
+<div class="title">Badsanierung &amp; fugenlose Oberflächen – modernes Design trifft Handwerksqualität</div>
+<p class="sub">Wir gestalten Bäder, die mehr sind als funktionale Räume: langlebig, pflegeleicht und fugenlos schön.
+Von der Planung bis zur fertigen Oberfläche erhalten Sie alles aus einer Hand – präzise umgesetzt mit hochwertigen Materialien und viel Liebe zum Detail.</p>
+<div class="chips"><span class="chip">Badsanierung von A-Z</span></div>
+</div>
+<a class="btn-green" href="index.html#leistungen">Badgestaltung einsehen</a>
+</div>
+</article>
+<!-- 3: Außenanlagen -->
+<article class="card" role="listitem" data-aussen-card>
+<figure class="media"><img alt="Pflaster- &amp; Außenanlagen" loading="lazy" src="images/dmk-bau-aussenanlagen-pflasterarbeiten-odenwald.webp"/></figure>
+<div class="body">
+<div class="content">
+<div class="title">Pflaster- &amp; Außenanlagen – langlebig, formschön und fachgerecht ausgeführt</div>
+<p class="sub">Ob Hofeinfahrt, Terrasse oder Gartenweg – wir gestalten Außenflächen mit handwerklicher Präzision und hochwertigen Materialien.
+So entstehen Anlagen, die Charakter zeigen und sich harmonisch in Haus und Umgebung einfügen.</p>
+<div class="chips"><span class="chip">Pflaster- &amp; Außenanlagen von A-Z</span></div>
+</div>
+<a class="btn-green" href="index.html#leistungen">Außenanlagen einsehen</a>
+</div>
+</article>
+<!-- 4: Renovierung -->
+<article class="card" role="listitem">
+<figure class="media"><img alt="Renovierung &amp; Modernisierung" loading="lazy" src="images/dmk-bau-renovierung-modernisierung-odenwald.webp"/></figure>
+<div class="body">
+<div class="content">
+<div class="title">Renovierung &amp; Modernisierung – neue Frische für Haus und Raum in DMK Bau Qualität</div>
+<p class="sub">Ob einzelne Räume oder das ganze Haus – wir renovieren und modernisieren mit handwerklicher Sorgfalt und Blick fürs Ganze.
+Dabei verbinden wir moderne Materialien mit bewährter Bauqualität, um Ihr Zuhause dauerhaft zu verschönern und seinen Wert zu erhalten.</p>
+<div class="chips"><span class="chip">Renovierung &amp; Modernisierung von A-Z</span></div>
+</div>
+<a class="btn-green" href="renovierung-modernisierung-reichelsheim-odenwald.html">Renovierung einsehen</a>
+</div>
+</article>
+<!-- 5: Sonderlösungen -->
+<article class="card" role="listitem">
+<figure class="media"><img alt="Individuelle Sonderlösungen" loading="lazy" src="images/dmk-bau-sonderloesungen-individuell-odenwald-reichelsheim.webp"/></figure>
+<div class="body">
+<div class="content">
+<div class="title">Individuelle Sonderlösungen &amp; maßgeschneiderte Konzepte – passgenau geplant in DMK Bau Qualität</div>
+<p class="sub">Wenn Standardlösungen an ihre Grenzen stoßen, beginnt unsere Stärke.
+Wir planen und realisieren individuelle Konzepte, exakt abgestimmt auf Ihre Anforderungen – technisch präzise, funktional durchdacht und ästhetisch überzeugend.
+Alles in bewährter DMK Bau Qualität.</p>
+<div class="chips"><span class="chip">Individuelle Sonderlösungen</span></div>
+</div>
+<a class="btn-green" href="dmk-bau-individuelle-sonderloesungen-reichelsheim-odenwald.html">Sonderlösungen einsehen</a>
+</div>
+</article>
+<!-- 6: Regionale Beratung -->
+<article class="card" role="listitem">
+<figure class="media"><img alt="Regionale Beratung" loading="lazy" src="images/dmk-bau-regionale-beratung-reichelsheim-odenwald.webp"/></figure>
+<div class="body">
+<div class="content">
+<div class="title">Regionale Beratung in Reichelsheim im Odenwald – persönlich, unabhängig und auf Augenhöhe</div>
+<p class="sub">Wir beraten Sie direkt vor Ort – ehrlich, praxisnah und mit klarem Blick für Ihre Möglichkeiten.
+Ob Neubau, Sanierung oder energetische Modernisierung: Sie erhalten Empfehlungen, die zu Ihrem Objekt, Ihrem Budget und Ihrer Region passen.
+Verlässlich begleitet – in echter DMK Bau Qualität.</p>
+<div class="chips"><span class="chip">Regionale Beratung</span></div>
+</div>
+<a class="btn-green" href="regionale-beratung-reichelsheim-odenwald-dmk-bau.html">Beratung ansehen</a>
+</div>
+</article>
+<!-- 7: Zusätzliche Leistungen -->
+<article class="card" role="listitem">
+<figure class="media"><img alt="Zusätzliche Leistungen – Beratung &amp; Fördermittel" loading="lazy" src="images/dmk-bau-foerdermittel-beratung-odenwald.webp"/></figure>
+<div class="body">
+<div class="content">
+<div class="title">Zusätzliche Leistungen – Fördermittel, Anträge &amp; Planung für reibungslose Prozesse und spürbare Einsparungen</div>
+<p class="sub">Wir unterstützen Sie schon in der Planungsphase – mit durchdachter Projektvorbereitung, Fördermittelberatung und Hilfe bei Anträgen.
+So vermeiden Sie Verzögerungen, nutzen finanzielle Vorteile und starten Ihr Bauvorhaben mit Sicherheit und Struktur – in bewährter DMK Bau Qualität.</p>
+<div class="chips"><span class="chip">Zusätzliche Leistungen</span></div>
+</div>
+<a class="btn-green" href="dmk-bau-foerdermittelberatung-antragstellung-reichelsheim-odenwald.html">Fördermittel ansehen</a>
+</div>
+</article>
+<!-- 8: Immobilien -->
+<article class="card" role="listitem">
+<figure class="media"><img alt="Immobilien – Maklerdienstleistungen, Verkauf, Vertretung" loading="lazy" src="images/dmk-bau-immobilienservice-verkauf-vermittlung-reichelsheim.webp"/></figure>
+<div class="body">
+<div class="content">
+<div class="title">Immobilienservice – Verkauf, Maklerdienste &amp; Vertretung in DMK Bau Qualität</div>
+<p class="sub">Wir stehen Ihnen in allen Immobilienfragen zuverlässig zur Seite – ob beim Verkauf, bei Maklerdienstleistungen oder als Vertreter Ihres Objekts.
+Mit Erfahrung, Marktkenntnis und einem klaren Blick für Details sorgen wir für einen reibungslosen Ablauf und transparente Prozesse – in bewährter DMK Bau Qualität.</p>
+<div class="chips"><span class="chip">Immobilienservice von A-Z</span></div>
+</div>
+<a class="btn-green" href="dmk-bau-immobilienservice-verkauf-maklerdienste-reichelsheim-odenwald.html">Immobilienservice ansehen</a>
+</div>
+</article>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================
+     SECTION 4 – Kundenbewertungen (kompakt, Volltext-Popup, kein Autoplay)
+     ========================= -->
+<section aria-labelledby="dmk-sec4-title" data-dmk="4" id="dmk-sec4">
+<style>
+    #dmk-sec4[data-dmk="4"]{
+      --brand:#3A7D44; --brand-2:#2E6C3A; --gold:#FFC107;
+      --ink:#1f1f1f; --muted:#475547; --ring:#dce8dd; --wash:#f9faf9;
+      font-family:"Quicksand",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:linear-gradient(180deg,#f9faf9 0%,#ffffff 60%);
+      color:var(--ink);
+    }
+    /* linker Einzug wie Hero + Maxbreite 1440px */
+    #dmk-sec4[data-dmk="4"] .wrap{padding:58px 18px 64px 200px;width:100%;}
+    @media(max-width:1200px){#dmk-sec4[data-dmk="4"] .wrap{padding-left:140px;}}
+    @media(max-width:900px){ #dmk-sec4[data-dmk="4"] .wrap{padding-left:26px;}}
+    #dmk-sec4[data-dmk="4"] .container{width:min(1440px,100%);}
+
+    /* Kopf */
+    #dmk-sec4[data-dmk="4"] .head{max-width:880px;margin-bottom:18px;}
+    #dmk-sec4[data-dmk="4"] h3#dmk-sec4-title{
+      font-weight:700;font-size:clamp(28px,4vw,42px);line-height:1.15;margin-bottom:6px;
+      background:linear-gradient(90deg,var(--brand),var(--brand-2));
+      -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+    }
+    #dmk-sec4[data-dmk="4"] .lead{color:#344234;font-size:clamp(14px,1vw+11px,16px);font-weight:500;line-height:1.6;}
+
+    /* Slider (horizontal, manuell) */
+    #dmk-sec4[data-dmk="4"] .slider{position:relative;margin-top:20px;}
+    #dmk-sec4[data-dmk="4"] .rail{
+      display:grid;grid-auto-flow:column;gap:16px;
+      grid-auto-columns:minmax(clamp(260px,35vw,360px),1fr);
+      overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:28px;scrollbar-width:thin;
+    }
+    #dmk-sec4[data-dmk="4"] .rail:focus{outline:3px solid rgba(58,125,68,.35);outline-offset:2px;}
+    #dmk-sec4[data-dmk="4"] .rail::-webkit-scrollbar{height:6px;}
+    #dmk-sec4[data-dmk="4"] .rail::-webkit-scrollbar-thumb{background:#c9dacb;border-radius:99px;}
+    #dmk-sec4[data-dmk="4"] .slide{scroll-snap-align:start;}
+
+    /* Karten */
+    #dmk-sec4[data-dmk="4"] .card-wrap{
+      border-radius:16px;border:1px solid var(--ring);background:transparent;
+      box-shadow:0 6px 14px rgba(0,0,0,.08);transition:transform .25s,box-shadow .25s;
+    }
+    #dmk-sec4[data-dmk="4"] .card-wrap:hover{transform:translateY(-2px);box-shadow:0 10px 20px rgba(0,0,0,.12);}
+    #dmk-sec4[data-dmk="4"] .headbar{
+      display:flex;align-items:center;gap:10px;padding:10px 14px;
+      background:linear-gradient(90deg,rgba(58,125,68,.08),rgba(46,108,58,.05));
+      border-bottom:1px solid #e4ede6;border-radius:16px 16px 0 0;
+    }
+    #dmk-sec4[data-dmk="4"] .avatar{
+      width:36px;height:36px;border-radius:999px;background:linear-gradient(135deg,var(--brand),var(--brand-2));
+      color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:13px;letter-spacing:.4px;
+    }
+    #dmk-sec4[data-dmk="4"] .name{font-weight:700;font-size:14.5px;color:#1c2b1f;}
+    #dmk-sec4[data-dmk="4"] .meta{font-size:12.5px;color:var(--muted);font-weight:600;}
+    #dmk-sec4[data-dmk="4"] .stars{display:inline-flex;gap:3px;margin-left:4px;vertical-align:middle;}
+    #dmk-sec4[data-dmk="4"] .stars svg{width:13px;height:13px;filter:drop-shadow(0 1px 0 rgba(0,0,0,.08));}
+
+    #dmk-sec4[data-dmk="4"] .body{padding:12px 14px 14px;display:flex;flex-direction:column;gap:10px;}
+    #dmk-sec4[data-dmk="4"] .text{
+      font-size:14.5px;line-height:1.6;color:#1e271f;font-weight:500;
+      display:-webkit-box;-webkit-line-clamp:4;line-clamp:4;-webkit-box-orient:vertical;overflow:hidden;
+    }
+    #dmk-sec4[data-dmk="4"] .actions{display:flex;align-items:center;justify-content:space-between;margin-top:6px;}
+    #dmk-sec4[data-dmk="4"] .verified{display:flex;align-items:center;gap:6px;font-size:12.6px;color:#2b3c2b;font-weight:700;}
+    #dmk-sec4[data-dmk="4"] .verified svg{color:#34A853;stroke:#34A853;}
+
+    #dmk-sec4[data-dmk="4"] .btn-more{
+      padding:8px 12px;border-radius:10px;border:0;cursor:pointer;
+      font-weight:700;font-size:13px;color:#fff;
+      background:linear-gradient(90deg,var(--brand),var(--brand-2));
+      box-shadow:0 6px 14px rgba(46,108,58,.25);transition:transform .15s,filter .2s;
+    }
+    #dmk-sec4[data-dmk="4"] .btn-more:hover{transform:translateY(-1px);filter:brightness(.96);}
+
+    /* Pfeile (manuell) */
+    #dmk-sec4[data-dmk="4"] .ctrl{position:absolute;right:0;top:-8px;display:flex;gap:8px;}
+    #dmk-sec4[data-dmk="4"] .btn{
+      width:34px;height:34px;border-radius:999px;background:transparent;border:1.5px solid #cfe0d3;
+      display:flex;align-items:center;justify-content:center;box-shadow:0 3px 10px rgba(0,0,0,.1);
+      cursor:pointer;transition:transform .15s,background .2s;
+    }
+    #dmk-sec4[data-dmk="4"] .btn:hover{background:#F1F6F2;transform:translateY(-2px);}
+    #dmk-sec4[data-dmk="4"] .btn svg{width:14px;height:14px;stroke:#1e2d1e;}
+
+    /* Footer Button */
+    #dmk-sec4[data-dmk="4"] .foot{margin-top:18px;}
+    #dmk-sec4[data-dmk="4"] .btn-brand{
+      background:linear-gradient(90deg,var(--brand),var(--brand-2));color:#fff;padding:10px 16px;border-radius:10px;
+      font-weight:700;display:inline-flex;align-items:center;gap:8px;box-shadow:0 6px 18px rgba(46,108,58,.35);
+      transition:transform .15s,filter .2s;text-decoration:none;font-size:14px;
+    }
+    #dmk-sec4[data-dmk="4"] .btn-brand:hover{transform:translateY(-2px);filter:brightness(.96);}
+    #dmk-sec4[data-dmk="4"] .btn-brand svg{width:16px;height:16px;fill:#fff;}
+
+    /* MODAL – Volltext */
+    #dmk-sec4[data-dmk="4"] .modal{
+      position:fixed;inset:0;display:none;place-items:center;padding:18px;z-index:1000;
+      background:rgba(0,0,0,.35);backdrop-filter:blur(2px);
+    }
+    #dmk-sec4[data-dmk="4"] .modal.open{display:grid;}
+    #dmk-sec4[data-dmk="4"] .dialog{
+      width:min(760px,92vw);max-height:85vh;overflow:auto;border-radius:16px;background: #ffffff;
+      box-shadow:0 24px 60px rgba(0,0,0,.25);transform:scale(.96);opacity:0;
+      transition:transform .2s ease,opacity .2s ease;
+    }
+    #dmk-sec4[data-dmk="4"] .modal.open .dialog{transform:scale(1);opacity:1;}
+    #dmk-sec4[data-dmk="4"] .dialog-head{
+      display:flex;align-items:center;justify-content:space-between;gap:12px;
+      padding:12px 14px;border-bottom:1px solid #e9efe9;
+      background:linear-gradient(90deg,rgba(58,125,68,.08),rgba(46,108,58,.05));
+      border-radius:16px 16px 0 0;
+    }
+    #dmk-sec4[data-dmk="4"] .dialog-title{display:flex;align-items:center;gap:10px;}
+    #dmk-sec4[data-dmk="4"] .close{
+      border:0;background:transparent;border:1px solid #dfe8e1;width:34px;height:34px;border-radius:10px;cursor:pointer;
+      display:inline-flex;align-items:center;justify-content:center;
+      box-shadow:0 4px 12px rgba(0,0,0,.1);transition:transform .15s,background .2s;
+    }
+    #dmk-sec4[data-dmk="4"] .close:hover{background:#F1F6F2;transform:translateY(-1px);}
+    #dmk-sec4[data-dmk="4"] .dialog-body{padding:14px 16px 18px;}
+    #dmk-sec4[data-dmk="4"] .full-text{font-size:15.5px;line-height:1.75;color:#1f251f;font-weight:600;}
+  </style>
+<div class="wrap">
+<div class="container">
+<div class="head">
+<h3 id="dmk-sec4-title">Echte Erfahrungen mit DMK Bau</h3>
+<p class="lead">
+    Erfahren Sie, wie <strong>DMK Bau Reichelsheim</strong> im <strong>Innenausbau</strong>, <strong>Trockenbau</strong>,
+    bei <strong>Badsanierungen</strong> und <strong>Pflasterarbeiten</strong> im <strong>Odenwald</strong> überzeugt.
+    Unsere Kunden berichten von <strong>sauberer Arbeit</strong>, <strong>verlässlichen Terminen</strong> und
+    <em>handwerklicher Präzision bis ins Detail</em>. Lesen Sie echte Erfahrungen aus Projekten rund um
+    <em>Renovierung, Sanierung und Außenanlagen</em> – direkt von Bauherren und Eigentümern, die mit DMK Bau gebaut haben.
+  </p>
+</div>
+<div aria-label="Bewertungen Slider" class="slider" role="region">
+<div aria-label="Bewertungsliste (horizontal scrollen)" class="rail" id="sec4Rail" tabindex="0"></div>
+<div aria-hidden="false" class="ctrl">
+<button aria-label="Zurück" class="btn" id="sec4Prev">
+<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<polyline points="15 18 9 12 15 6"></polyline></svg>
+</button>
+<button aria-label="Weiter" class="btn" id="sec4Next">
+<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<polyline points="9 18 15 12 9 6"></polyline></svg>
+</button>
+</div>
+</div>
+<div class="foot">
+<a class="btn-brand" href="https://share.google/H7Urx8joBSNdlnLaa" rel="noopener" target="_blank">
+<svg viewbox="0 0 48 48"><path d="M43.6 20.5h-1.8H24v7h11.3C33.8 31.8 29.5 35 24 35c-6.1 0-11-4.9-11-11s4.9-11 11-11c2.8 0 5.3 1.1 7.2 2.8l4.9-4.9C33.4 8.1 28.9 6 24 6 13 6 4 15 4 26s9 20 20 20 20-9 20-20c0-1.9-.2-3.3-.4-5.5z"></path></svg>
+          Alle Google-Bewertungen
+        </a>
+</div>
+</div>
+</div>
+<!-- Modal für Volltext -->
+<div aria-hidden="true" aria-labelledby="sec4DlgTitle" aria-modal="true" class="modal" id="sec4Modal" role="dialog">
+<div class="dialog" role="document">
+<div class="dialog-head">
+<div class="dialog-title">
+<div class="avatar" id="sec4DlgAvatar">A</div>
+<div>
+<div class="name" id="sec4DlgName">Name</div>
+<div class="meta" id="sec4DlgMeta">Zeit <span class="stars" id="sec4DlgStars"></span></div>
+</div>
+</div>
+<button aria-label="Schließen" class="close" id="sec4DlgClose">
+<svg fill="none" height="16" stroke="#1e2d1e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16">
+<line x1="18" x2="6" y1="6" y2="18"></line><line x1="6" x2="18" y1="6" y2="18"></line>
+</svg>
+</button>
+</div>
+<div class="dialog-body">
+<p class="full-text" id="sec4DlgText"></p>
+</div>
+</div>
+</div>
+<script>
+  (function(){
+    const rail = document.getElementById('sec4Rail');
+    const prev = document.getElementById('sec4Prev');
+    const next = document.getElementById('sec4Next');
+
+    const modal     = document.getElementById('sec4Modal');
+    const dlgClose  = document.getElementById('sec4DlgClose');
+    const dlgName   = document.getElementById('sec4DlgName');
+    const dlgMeta   = document.getElementById('sec4DlgMeta');
+    const dlgAvatar = document.getElementById('sec4DlgAvatar');
+    const dlgStars  = document.getElementById('sec4DlgStars');
+    const dlgText   = document.getElementById('sec4DlgText');
+
+    /* 10 echte Bewertungen – Langtext */
+    const reviews = [
+      {name:"Kevin Scriba",when:"vor 2 Monaten",
+       text:"Ich bin absolut begeistert von der Arbeit der Firma DMK Bau! Unser Bad wurde komplett renoviert – alte Badewanne raus, moderne Dusche rein, Wände und Böden neu gefliest, hochwertige Badmöbel aufgebaut und ein stabiler Sockel für Waschmaschine und Trockner gefertigt. Alles wurde zuverlässig, pünktlich und sauber umgesetzt – mit hohem Qualitätsanspruch. Wir können DMK Bau uneingeschränkt weiterempfehlen!"},
+      {name:"Jana Seemann",when:"vor 1 Monat",
+       text:"Unser Eingangsbereich wurde komplett renoviert: verputzt, Estrich neu, abgehängte Decke mit integrierten Lampen, Fenster und Türen neu eingebaut. Alles sauber, termingerecht und zuverlässig ausgeführt. Wir sind sehr zufrieden und empfehlen DMK Bau uneingeschränkt weiter!"},
+      {name:"Andrea Sponagel",when:"vor 5 Monaten",
+       text:"Wir sind mit DMK Bau sehr zufrieden. Es wurde gründlich und sauber gearbeitet. Auch bei Problemen wurden tolle Lösungen gefunden. Besonders lobenswert: die Zeit, die sich das Team für Fragen nahm, und die Erreichbarkeit. Vielen Dank an Chef und Chefin für den tollen Service und das kleine Geschenk zum Abschluss!"},
+      {name:"Svenja",when:"vor 1 Woche",
+       text:"Das DMK-Bau Team hat einen super Job gemacht. Sehr ordentlich und zuverlässig gearbeitet, das Ergebnis ist wunderschön geworden. Wir würden das Team jederzeit wieder engagieren!"},
+      {name:"Stella Dabura",when:"vor 1 Jahr",
+       text:"Wir haben DMK Bau mit der kompletten Sanierung unseres Hauses beauftragt – Decken, Wände, Böden, Türen, Bad und Gäste-WC. Alles perfekt umgesetzt! Kompetent, lösungsorientiert und immer erreichbar. Hervorragende Arbeit, pünktlich, sauber, nett und höflich. Sehr empfehlenswert!"},
+      {name:"Thomas Pfeifer",when:"vor 1 Jahr",
+       text:"Wir haben unser 20 Jahre altes Bad barrierefrei renovieren lassen und sind sehr zufrieden. Jedes Problem wurde professionell und kreativ gelöst. Besonders positiv: die saubere Arbeitsweise. Wir werden DMK Bau wieder anfragen!"},
+      {name:"Angela Ebert",when:"vor 1 Jahr",
+       text:"Ich bin äußerst zufrieden mit den Arbeiten von DMK Bau. Bad und Gäste-WC wurden saniert, Kommunikation und Ausführung waren top. Sehr angenehmer Kontakt mit Herrn Krzysztoń und seinem Team. Ergebnisse absolut überzeugend – klare Weiterempfehlung!"},
+      {name:"Markus Lorenz",when:"vor 11 Monaten",
+       text:"DMK Bau war von der Planungsphase bis zur Fertigstellung an unserer Seite. Kompetente Beratung, pünktliche Ausführung, saubere Baustelle. Das Ergebnis hat unsere Erwartungen übertroffen. Danke an Mirek und das Team für Professionalität und Herzblut!"},
+      {name:"Gerald Reingardt",when:"vor 2 Monaten",
+       text:"Zum zweiten Mal hat DMK Bau bei uns sehr ordentliche Arbeit abgeliefert – dieses Mal die Sanierung der Außentreppe. Sauber, zügig, zuverlässig und mit stets guter Kommunikation. Absolut empfehlenswert!"},
+      {name:"Heinz Vetter",when:"vor 2 Jahren",
+       text:"Die Firma DMK Bau hat unseren Hof saniert. Unsere Erwartungen wurden weit übertroffen: tolle und saubere Arbeit, freundliche, fachkundige Arbeiter. Mit Herrn Krzysztoń wurden Probleme schnell und kompetent gelöst. Vielen Dank, Christine + Heinz Vetter."}
+    ];
+
+    const star  = `<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#FFC107" d="M12 2l3.09 6.34 7 1.02-5.05 4.92 1.19 6.98L12 17.77 5.77 21.26l1.19-6.98L1.91 9.36l7-1.02L12 2z"/></svg>`;
+    const stars = `<span class="stars">${star.repeat(5)}</span>`;
+    const initials = n => (n.split(' ')[0]?.[0]||'') + (n.split(' ')[1]?.[0]||'');
+
+    function cardHTML(r, idx){
+      return `
+        <div class="slide">
+          <div class="card-wrap">
+            <div class="headbar">
+              <div class="avatar">${initials(r.name)}</div>
+              <div>
+                <div class="name">${r.name}</div>
+                <div class="meta">${r.when} ${stars}</div>
+              </div>
+            </div>
+            <div class="body">
+              <p class="text">${r.text}</p>
+              <div class="actions">
+                <div class="verified"><svg aria-hidden="true" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M9 12.5l2 2 4-4"></path></svg>Verifiziert über Google</div>
+                <button class="btn-more" type="button" data-idx="${idx}">Weiter lesen</button>
+              </div>
+            </div>
+          </div>
+        </div>`;
+    }
+
+    // Render Karten
+    rail.insertAdjacentHTML('beforeend', reviews.map(cardHTML).join(''));
+
+    // Manuelle Navigation (Buttons + Pfeiltasten)
+    function scrollBy(dir){ rail.scrollBy({ left: dir * rail.clientWidth * 0.85, behavior:'smooth' }); }
+    prev.addEventListener('click', ()=>scrollBy(-1));
+    next.addEventListener('click', ()=>scrollBy(1));
+    rail.addEventListener('keydown', (e)=>{
+      if(e.key === 'ArrowRight') scrollBy(1);
+      if(e.key === 'ArrowLeft')  scrollBy(-1);
+    });
+
+    // Modal
+    function openModal(r){
+      document.getElementById('sec4DlgAvatar').textContent = initials(r.name);
+      dlgName.textContent   = r.name;
+      dlgMeta.innerHTML     = `${r.when} ${stars}`;
+      dlgText.textContent   = r.text;
+
+      modal.classList.add('open');
+      modal.setAttribute('aria-hidden','false');
+      document.documentElement.style.overflow = 'hidden';
+      dlgClose.focus();
+    }
+    function closeModal(){
+      modal.classList.remove('open');
+      modal.setAttribute('aria-hidden','true');
+      document.documentElement.style.overflow = '';
+    }
+
+    modal.addEventListener('click', (e)=>{ if(e.target === modal) closeModal(); });
+    dlgClose.addEventListener('click', closeModal);
+    document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape' && modal.classList.contains('open')) closeModal(); });
+
+    // Delegation für „Weiter lesen"
+    rail.addEventListener('click', (e)=>{
+      const btn = e.target.closest('.btn-more');
+      if(!btn) return;
+      const idx = +btn.dataset.idx;
+      openModal(reviews[idx]);
+    });
+  })();
+  </script>
+</section>
+<!-- =========================
+     SECTION 5 – FAQ (eingefügt)
+     ========================= -->
+<section aria-labelledby="dmk-sec5-title" data-dmk="5" id="dmk-sec5">
+<style>
+    #dmk-sec5[data-dmk="5"]{
+      --brand:#369142; --brand-2:#2B7A37;
+      --ink:#1f1f1f; --muted:#4a5157; --ring:#e2ebe4; --radius:18px;
+      font-family:"Quicksand",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:transparent; color:var(--ink);
+    }
+    #dmk-sec5[data-dmk="5"] .wrap{width:100%; padding:70px 18px 84px;}
+    #dmk-sec5[data-dmk="5"] .container{width:100%; max-width:1440px; margin:0 auto;}
+
+    .head{max-width:980px; margin:0 0 26px 0;}
+    #dmk-sec5-title{
+      margin:0 0 10px 0; font-weight:700; line-height:1.12; letter-spacing:.2px;
+      font-size:clamp(28px,4vw,42px);
+      background:linear-gradient(90deg,var(--brand),var(--brand-2));
+      -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+    }
+    .lead{margin:0; color:var(--muted); font-weight:500; font-size:clamp(15px,1vw+12px,17px); line-height:1.6;}
+
+    /* NEU: echte 2 Spalten per Flex, damit sich Höhen nicht beeinflussen */
+    .grid{display:flex; flex-direction:column; gap:14px;}
+    .col{display:flex; flex-direction:column; gap:14px;}
+    @media (min-width:980px){
+      .grid{flex-direction:row;}
+      .col{flex:1;}
+    }
+
+    .item{
+      border:1.5px solid var(--ring); border-radius:var(--radius); background:transparent;
+      box-shadow:0 6px 18px rgba(0,0,0,.05);
+      transition:border-color .2s, box-shadow .2s, transform .08s;
+    }
+    .item:hover{border-color:#d4e2d8; box-shadow:0 12px 28px rgba(0,0,0,.09); transform:translateY(-1px);}
+
+    .q{
+      width:100%; border:0; background:transparent; cursor:pointer;
+      display:flex; align-items:center; justify-content:space-between; gap:14px;
+      padding:16px 18px; border-radius:var(--radius); text-align:left;
+    }
+    .qt{font-weight:500; font-size:16px; line-height:1.35; color:#213021; letter-spacing:.1px;}
+
+    .ico{flex:0 0 22px; width:22px; height:22px; color:var(--brand); display:inline-grid; place-items:center;}
+    .ico svg{width:22px; height:22px; display:block}
+    .q:hover .ico{color:var(--brand-2);}
+
+    .a{display:grid; grid-template-rows:0fr; transition:grid-template-rows .25s ease, padding .25s ease;}
+    .a>div{overflow:hidden;}
+    .body{padding:0 18px 0;}
+    .item.open .a{grid-template-rows:1fr;}
+    .item.open .body{padding:0 18px 16px;}
+    .a p{margin:0; color:#2a392a; font-weight:600; font-size:14.5px; line-height:1.65;}
+  </style>
+<div class="wrap">
+<div class="container">
+<div class="head">
+<h3 id="dmk-sec5-title">FAQ – DMK Bau Reichelsheim</h3>
+<p class="lead">Kompakte Antworten zu Ablauf, Kosten, Dauer, Staubschutz, Fördermitteln und Region – mit DMK Bau.</p>
+</div>
+<!-- Zwei unabhängige Spalten -->
+<div class="grid" id="dmk-faq" role="list">
+<div class="col">
+<!-- 1 -->
+<article class="item" role="listitem">
+<button aria-expanded="false" class="q">
+<span class="qt">Wie startet die Zusammenarbeit – was passiert in der Erstberatung?</span>
+<span aria-hidden="true" class="ico">
+<svg class="plus" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></svg>
+<svg class="minus" fill="none" stroke="currentColor" stroke-width="2" style="display:none" viewbox="0 0 24 24"><path d="M5 12h14"></path></svg>
+</span>
+</button>
+<div class="a"><div class="body"><p>Wir klären Ziel, Budget und Zeitfenster, prüfen Machbarkeit vor Ort und nehmen Aufmaß. Danach erhalten Sie ein <strong>klar strukturiertes Festpreis-Angebot</strong> inkl. Zeitplan.</p></div></div>
+</article>
+<!-- 3 -->
+<article class="item" role="listitem">
+<button aria-expanded="false" class="q">
+<span class="qt">Wie lange dauern Bad, Trockenbau oder Pflasterarbeiten?</span>
+<span aria-hidden="true" class="ico">
+<svg class="plus" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></svg>
+<svg class="minus" fill="none" stroke="currentColor" stroke-width="2" style="display:none" viewbox="0 0 24 24"><path d="M5 12h14"></path></svg>
+</span>
+</button>
+<div class="a"><div class="body"><p>Die Ausführungszeit hängt vom Umfang und der Komplexität des Projekts ab (Gewerke, Fläche, Material- und Trocknungszeiten). Nach dem Aufmaß erstellen wir gemeinsam mit Ihnen einen detaillierten, realistischen Zeitplan mit klaren Meilensteinen. Dieser wird verbindlich abgestimmt und bei Bedarf transparent aktualisiert – terminsicher und planbar.</p></div></div>
+</article>
+<!-- 5 -->
+<article class="item" role="listitem">
+<button aria-expanded="false" class="q">
+<span class="qt">Unterstützt ihr bei KfW/BAFA-Förderung und Anträgen?</span>
+<span aria-hidden="true" class="ico">
+<svg class="plus" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></svg>
+<svg class="minus" fill="none" stroke="currentColor" stroke-width="2" style="display:none" viewbox="0 0 24 24"><path d="M5 12h14"></path></svg>
+</span>
+</button>
+<div class="a"><div class="body"><p>Ja. Wir prüfen Förderfähigkeit, stellen die nötigen Unterlagen zusammen und koordinieren auf Wunsch den Antrag mit Energie-Effizienz-Experten.</p></div></div>
+</article>
+<!-- 7 -->
+<article class="item" role="listitem">
+<button aria-expanded="false" class="q">
+<span class="qt">In welchen Orten seid ihr unterwegs?</span>
+<span aria-hidden="true" class="ico">
+<svg class="plus" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></svg>
+<svg class="minus" fill="none" stroke="currentColor" stroke-width="2" style="display:none" viewbox="0 0 24 24"><path d="M5 12h14"></path></svg>
+</span>
+</button>
+<div class="a"><div class="body"><p>Reichelsheim (Odenwald) und Umfeld: Odenwaldkreis, Reinheim, Michelstadt, Höchst, Brensbach, Erbach, Groß-Bieberau u. a.</p></div></div>
+</article>
+</div>
+<div class="col">
+<!-- 2 -->
+<article class="item" role="listitem">
+<button aria-expanded="false" class="q">
+<span class="qt">Festpreis oder Nachträge – wie kalkuliert DMK Bau?</span>
+<span aria-hidden="true" class="ico">
+<svg class="plus" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></svg>
+<svg class="minus" fill="none" stroke="currentColor" stroke-width="2" style="display:none" viewbox="0 0 24 24"><path d="M5 12h14"></path></svg>
+</span>
+</button>
+<div class="a"><div class="body"><p>Wir arbeiten bevorzugt mit <strong>Festpreis</strong> basierend auf sauberem Aufmaß und Leistungsbeschreibung. Nur bei <em>zusätzlichen</em> Kundenwünschen oder verdeckten Schäden stimmen wir Nachträge vor Ausführung schriftlich ab.</p></div></div>
+</article>
+<!-- 4 -->
+<article class="item" role="listitem">
+<button aria-expanded="false" class="q">
+<span class="qt">Wie schützt ihr mein Zuhause vor Staub und Schmutz?</span>
+<span aria-hidden="true" class="ico">
+<svg class="plus" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></svg>
+<svg class="minus" fill="none" stroke="currentColor" stroke-width="2" style="display:none" viewbox="0 0 24 24"><path d="M5 12h14"></path></svg>
+</span>
+</button>
+<div class="a"><div class="body"><p>Staubschutztüren, Abklebungen, Abdeckvlies, Absaugung und tägliche Reinigung der Laufwege gehören zum Standard. Möbel und Böden werden zuverlässig geschützt.</p></div></div>
+</article>
+<!-- 6 -->
+<article class="item" role="listitem">
+<button aria-expanded="false" class="q">
+<span class="qt">Stellt ihr Materialien oder können wir selbst einkaufen?</span>
+<span aria-hidden="true" class="ico">
+<svg class="plus" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></svg>
+<svg class="minus" fill="none" stroke="currentColor" stroke-width="2" style="display:none" viewbox="0 0 24 24"><path d="M5 12h14"></path></svg>
+</span>
+</button>
+<div class="a"><div class="body"><p>Beides möglich. Wir liefern Markenmaterial inkl. Gewährleistung oder verbauen kundenseitig beigestellte Ware nach Prüfung der Eignung.</p></div></div>
+</article>
+<!-- 8 -->
+<article class="item" role="listitem">
+<button aria-expanded="false" class="q">
+<span class="qt">Welche Gewährleistung erhalte ich?</span>
+<span aria-hidden="true" class="ico">
+<svg class="plus" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></svg>
+<svg class="minus" fill="none" stroke="currentColor" stroke-width="2" style="display:none" viewbox="0 0 24 24"><path d="M5 12h14"></path></svg>
+</span>
+</button>
+<div class="a"><div class="body"><p>Nach BGB/VOB: <strong>5 Jahre</strong> auf Bauleistungen gemäß gesetzlicher Gewährleistung. Für Produkte gelten die jeweiligen Hersteller-Garantien.</p></div></div>
+</article>
+</div>
+</div>
+</div>
+</div>
+<script>
+    document.querySelectorAll('#dmk-sec5[data-dmk="5"] .item').forEach(item=>{
+      const btn=item.querySelector('.q');
+      const plus=btn.querySelector('.plus');
+      const minus=btn.querySelector('.minus');
+      btn.addEventListener('click',()=>{
+        const open=item.classList.toggle('open');
+        btn.setAttribute('aria-expanded', String(open));
+        plus.style.display=open?'none':'block';
+        minus.style.display=open?'block':'none';
+      });
+    });
+  </script>
+<!-- ✅ SCHEMA.ORG FAQ MARKUP -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wie startet die Zusammenarbeit – was passiert in der Erstberatung?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Wir klären Ziel, Budget und Zeitfenster, prüfen Machbarkeit vor Ort und nehmen Aufmaß. Danach erhalten Sie ein klar strukturiertes Festpreis-Angebot inklusive Zeitplan."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Festpreis oder Nachträge – wie kalkuliert DMK Bau?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Wir arbeiten bevorzugt mit Festpreis basierend auf sauberem Aufmaß und Leistungsbeschreibung. Nur bei zusätzlichen Kundenwünschen oder verdeckten Schäden stimmen wir Nachträge vor Ausführung schriftlich ab."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie lange dauern Bad, Trockenbau oder Pflasterarbeiten?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Richtwerte: Gäste-WC 5–7 Tage, Bad komplett 10–14 Tage, Zimmer-Trockenbau 2–5 Tage, Terrasse/Einfahrt je nach Fläche 3–10 Tage. Wir arbeiten terminsicher mit abgestimmter Logistik."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie schützt ihr mein Zuhause vor Staub und Schmutz?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Staubschutztüren, Abklebungen, Abdeckvlies, Absaugung und tägliche Reinigung der Laufwege gehören zum Standard. Möbel und Böden werden zuverlässig geschützt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Unterstützt ihr bei KfW/BAFA-Förderung und Anträgen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. Wir prüfen Förderfähigkeit, stellen die nötigen Unterlagen zusammen und koordinieren auf Wunsch den Antrag mit Energie-Effizienz-Experten."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Stellt ihr Materialien oder können wir selbst einkaufen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Beides möglich. Wir liefern Markenmaterial inklusive Gewährleistung oder verbauen kundenseitig beigestellte Ware nach Prüfung der Eignung."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "In welchen Orten seid ihr unterwegs?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Reichelsheim (Odenwald) und Umfeld: Odenwaldkreis, Reinheim, Michelstadt, Höchst, Brensbach, Erbach, Groß-Bieberau u. a."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Welche Gewährleistung erhalte ich?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nach BGB/VOB: 5 Jahre auf Bauleistungen gemäß gesetzlicher Gewährleistung. Für Produkte gelten die jeweiligen Hersteller-Garantien."
+        }
+      }
+    ]
+  }
+  </script>
+</section>
+<!-- =========================
+     Platzhalter weiterer Seiteninhalte
+     ========================= -->
+<main class="flow" style="max-width:1200px;margin:0 auto;padding:28px 18px;">
+</main>
+<script>
+/* =========================
+   Mega-Menü Interaktionen
+   ========================= */
+(function(){
+  const trigger = document.getElementById('leistungenBtn');
+  const menu    = document.getElementById('megaMenu');
+  const lvl1    = document.getElementById('lvl1');
+  if(!trigger || !menu) return;
+
+  const panels = {
+    innenausbau:   document.getElementById('sub-innenausbau'),
+    aussen:        document.getElementById('sub-aussen'),
+    rohbau:        document.getElementById('sub-rohbau'),
+    immobilien:    document.getElementById('sub-immobilien'),
+    foerdermittel: document.getElementById('sub-foerdermittel')
+  };
+
+  function openMenu(){ menu.classList.add('open'); trigger.setAttribute('aria-expanded','true'); }
+  function closeMenu(){
+    menu.classList.remove('open'); trigger.setAttribute('aria-expanded','false');
+    if(lvl1) lvl1.style.display = 'grid';
+    Object.values(panels).forEach(p => p && p.classList.remove('open'));
+  }
+  function toggleMenu(){ (trigger.getAttribute('aria-expanded')==='true') ? closeMenu() : openMenu(); }
+
+  trigger.addEventListener('click', e => { e.stopPropagation(); toggleMenu(); });
+  document.addEventListener('click', e => { if(menu && !menu.contains(e.target) && e.target!==trigger) closeMenu(); });
+  document.addEventListener('keydown', e => { if(e.key==='Escape') closeMenu(); });
+
+  document.querySelectorAll('[data-sub]').forEach(link=>{
+    link.addEventListener('click', e=>{
+      const key = link.getAttribute('data-sub');
+      if(!panels[key]) return;
+      e.preventDefault();
+      if(lvl1) lvl1.style.display = 'none';
+      Object.values(panels).forEach(p => p && p.classList.remove('open'));
+      panels[key].classList.add('open');
+    });
+  });
+
+  document.querySelectorAll('.back').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      Object.values(panels).forEach(p => p && p.classList.remove('open'));
+      if(lvl1) lvl1.style.display = 'grid';
+    });
+  });
+})();
+</script>
+<!-- === SECTION 6 (final) === -->
+<section id="dmk-sec6-wrap" style="margin-top:0!important;padding-top:0!important;background:transparent;">
+<!-- =========================
+     SECTION 6 – Kontakt / Abschluss-CTA (refined + responsive)
+     ========================= -->
+<section aria-labelledby="dmk-sec6-title" data-dmk="6" id="dmk-sec6">
+<style>
+/* Overrides: no gradient/bars on headline */
+#dmk-sec6 #dmk-sec6-title,
+#dmk-sec6 #dmk-sec6-title * { background: transparent !important; }
+#dmk-sec6 #dmk-sec6-title .title-main { color: var(--brand) !important; -webkit-text-fill-color: currentColor !important; -webkit-background-clip: initial !important; background-clip: initial !important; }
+
+    /* Centering & overflow safety */
+    #dmk-sec6, #dmk-sec6 * { box-sizing: border-box; }
+    #dmk-sec6 { overflow-x: hidden; }
+    #dmk-sec6 .container { margin: 0 auto; }
+
+    #dmk-sec6[data-dmk="6"]{
+      --brand:#369142; --brand-2:#2B7A37; --ink:#202420; --muted:#5e6a63; --ring:#e8efea;
+      --radius:16px; --shadow:0 8px 28px rgba(0,0,0,.06);
+      font-family:"Quicksand",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:linear-gradient(180deg,#ffffff 0%, #f8fbf9 100%); color:var(--ink);
+    }
+
+    /* Layout */
+    #dmk-sec6 .wrap{width:100%;margin:0 auto;padding:70px 24px 90px;}
+    @media(max-width:1200px){ #dmk-sec6 .wrap{padding:70px 24px 90px;} }
+    @media(max-width:900px){  #dmk-sec6 .wrap{padding:50px 18px 80px;} }
+
+    #dmk-sec6 .container{max-width:1440px; margin:0 auto;}
+
+    /* Kopf – fein (Überschrift optimiert) */
+    #dmk-sec6 #dmk-sec6-title{
+      margin:0 0 8px;
+      line-height:1.12;
+      letter-spacing:.1px;
+      font-size:clamp(26px,4vw,38px);
+      font-weight:600;
+      color:var(--ink); /* Grundfarbe: Text, Verlauf liegt nur auf .title-main */
+     }
+    #dmk-sec6 #dmk-sec6-title .title-main{
+      display:block;
+      
+        
+     color:var(--brand); font-weight:600; }
+    #dmk-sec6 #dmk-sec6-title .title-sub{
+      display:block;
+      margin-top:2px;
+      font-weight:500;
+      color:#2E6C3A; /* feines, ruhiges Grün */
+      letter-spacing:.05px;
+    }
+    /* optional: leichte Responsive-Abstufung für die zweite Zeile */
+    @media(max-width:520px){
+      #dmk-sec6 #dmk-sec6-title .title-sub{ font-size:calc(1em - 1px); }
+    }
+
+    #dmk-sec6 .lead{
+      color:#334134; font-weight:500; font-size:clamp(15px,1vw+12px,16.5px); line-height:1.65; margin:0;
+      max-width:72ch;
+    }
+
+    /* Grid */
+    #dmk-sec6 .grid{display:grid; gap:18px; grid-template-columns:1fr;}
+    @media(min-width:980px){ #dmk-sec6 .grid{grid-template-columns:1.05fr .95fr;} }
+
+    /* Cards */
+    #dmk-sec6 .card{ border:1px solid var(--ring); border-radius:var(--radius); background:transparent; box-shadow:var(--shadow); }
+
+    /* Linke Info-Card */
+    #dmk-sec6 .cta{padding:22px;}
+    #dmk-sec6 .cta h4{ font-weight:600; font-size:19px; line-height:1.25; margin:0 0 10px; color:#263726; }
+
+    /* Telefon-CTAs (2 Nummern) */
+    #dmk-sec6 .phones{ display:grid; gap:10px; margin:0 0 12px; grid-template-columns:1fr; }
+    @media(min-width:520px){ #dmk-sec6 .phones{ grid-template-columns:1fr 1fr; } }
+    #dmk-sec6 .phone-cta{
+      display:flex; align-items:center; gap:10px; padding:12px 14px;
+      border:1px solid #e3eee6; border-radius:14px; background:linear-gradient(180deg,#f5fbf7, #eef6f0);
+    }
+    #dmk-sec6 .phone-cta a{ text-decoration:none; color:#1f2e20; font-weight:600; font-size:17px; letter-spacing:.1px; }
+    #dmk-sec6 .ico{ width:19px; height:19px; flex:0 0 19px; color:var(--brand); }
+
+    /* Bullet-Vorteile – feiner */
+    #dmk-sec6 .bullets{list-style:none; display:grid; gap:7px; margin:6px 0 14px; padding:0;}
+    #dmk-sec6 .bullets li{display:flex; gap:9px; align-items:flex-start; font-weight:500; color:#2b392c;}
+    #dmk-sec6 .dot{ width:15px; height:15px; border-radius:9px; display:inline-grid; place-items:center; flex:0 0 15px;
+      background:linear-gradient(135deg,var(--brand),var(--brand-2)); box-shadow:inset 0 0 0 1px rgba(255,255,255,.35);}
+    #dmk-sec6 .dot svg{width:9px;height:9px;stroke:#fff}
+
+    /* Map */
+    #dmk-sec6 .map{ margin-top:6px; border:1px solid #e6efe9; border-radius:14px; overflow:hidden; background:transparent; }
+    #dmk-sec6 .map .bar{ display:flex; justify-content:space-between; align-items:center; gap:12px; padding:10px 12px;
+      background:linear-gradient(90deg,rgba(54,145,66,.06),rgba(43,122,55,.03)); border-bottom:1px solid #e7efe9;}
+    #dmk-sec6 .map .addr{ display:flex; flex-wrap:wrap; gap:6px 10px; align-items:center; font-weight:500; font-size:13.5px; color:#223321;}
+    #dmk-sec6 .map .addr .ico{ width:18px; height:24px; }
+    #dmk-sec6 .map .open{ margin-left:auto; font-weight:600; font-size:12.5px; color:#1e3a22; text-decoration:none; border:1px solid #e2ede6; padding:6px 10px; border-radius:10px; background:#f3f8f5;}
+    #dmk-sec6 .map .canvas{ aspect-ratio:16/9; background:#eef5ef; }
+    #dmk-sec6 .map .canvas iframe{ width:100%; height:100%; border:0; display:block; max-width:100%; }
+
+       /* Formular */
+    #dmk-sec6 .form{padding:18px;}
+    #dmk-sec6 .fieldset{display:grid; gap:12px; grid-template-columns:1fr;}
+    @media(min-width:640px){ #dmk-sec6 .fieldset{grid-template-columns:1fr 1fr;} }
+    #dmk-sec6 .row-2{grid-column:1/-1;}
+    #dmk-sec6 .ctrl{ display:flex; flex-direction:column; gap:6px; }
+    #dmk-sec6 label{font-weight:500; font-size:13.5px; color:#2a392a;}
+    #dmk-sec6 input,#dmk-sec6 textarea{
+      width:100%; border:1px solid var(--ring); border-radius:12px; padding:12px 12px;
+      font:500 15px/1.4 Quicksand, system-ui, sans-serif; background:transparent; color:#1f1f1f;
+      transition:border-color .2s, box-shadow .2s;
+    }
+    #dmk-sec6 textarea{min-height:120px; resize:vertical;}
+    #dmk-sec6 input:focus,#dmk-sec6 textarea:focus{outline:none; border-color:#d5e7dc; box-shadow:0 0 0 3px rgba(54,145,66,.10);}
+    #dmk-sec6 .consent{display:flex; gap:10px; align-items:flex-start; font-weight:500; color:#2b3c2b; font-size:13.5px;}
+    #dmk-sec6 .consent input{width:18px; height:24px; margin-top:2px;}
+    #dmk-sec6 .actions{display:flex; gap:10px; flex-wrap:wrap; align-items:center;}
+    #dmk-sec6 .btn-green{
+      background:var(--brand); color:#fff; text-decoration:none; border:0; cursor:pointer;
+      display:inline-flex; align-items:center; justify-content:center; gap:10px;
+      padding:14px 22px; border-radius:14px; font-weight:700; font-size:16px; box-shadow:0 6px 20px rgba(54,145,66,.22);
+      transition:transform .15s, filter .2s;
+    }
+    #dmk-sec6 .btn-green:hover{filter:brightness(.98); transform:translateY(-1px);}
+    #dmk-sec6 .note{font-size:12.5px; color:#6b7a6c; font-weight:500;}
+
+    /* Alerts – sicher versteckt bis aktiv */
+    #dmk-sec6 .alert{ border-radius:12px; padding:10px 12px; font-weight:600; font-size:14px; }
+    #dmk-sec6 .alert[hidden]{ display:none !important; }
+    #dmk-sec6 .alert.ok{ background:#e9f6ec; color:#1c3a22; border:1px solid #cfe7d4;}
+    #dmk-sec6 .alert.err{ background:#fff2f2; color:#6b1f1f; border:1px solid #f3d0d0;}
+
+    /* Service-Select – feiner */
+    #dmk-sec6 .service-select{ position:relative; }
+    #dmk-sec6 .service-trigger{
+      display:flex; flex-wrap:wrap; gap:8px; align-items:center; min-height:46px; padding:10px 12px;
+      border:1px solid var(--ring); border-radius:12px; background:transparent; cursor:pointer;
+    }
+    #dmk-sec6 .chip{ display:inline-flex; align-items:center; gap:6px; padding:6px 10px; border-radius:999px; font-weight:500; font-size:13px; background:#f1f7f3; border:1px solid #e0eee6; }
+    #dmk-sec6 .chip .x{ cursor:pointer; font-weight:700; }
+    #dmk-sec6 .service-panel{
+      position:absolute; inset:auto 0 auto 0; top:calc(100% + 6px); z-index:50;
+      background:transparent; border:1px solid var(--ring); border-radius:14px; box-shadow:var(--shadow);
+      padding:12px; display:none; max-height:60vh; overflow:auto;
+    }
+    #dmk-sec6 .service-select.open .service-panel{ display:block; }
+    #dmk-sec6 .svc-grid{ display:grid; grid-template-columns:repeat(1,minmax(0,1fr)); gap:12px; }
+    @media(min-width:720px){ #dmk-sec6 .svc-grid{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
+    @media(min-width:1024px){ #dmk-sec6 .svc-grid{ grid-template-columns:repeat(3,minmax(0,1fr)); } }
+    #dmk-sec6 .svc-group{ border:1px solid #edf3ee; border-radius:12px; padding:10px; background:#fbfdfc; }
+    #dmk-sec6 .svc-group h5{ margin:0 0 8px; font-size:12.5px; letter-spacing:.1px; color:#2d3a2d; font-weight:600; }
+    #dmk-sec6 .svc-item{ display:flex; align-items:center; gap:8px; font-weight:500; }
+    #dmk-sec6 .svc-item input{ width:16px; height:16px; }
+    #dmk-sec6 .svc-footer{ display:flex; justify-content:space-between; align-items:center; gap:10px; padding-top:8px; }
+    #dmk-sec6 .btn-mini{ padding:8px 12px; border-radius:10px; border:1px solid #e1ede4; background:#F1F6F2; font-weight:600; cursor:pointer; }
+    #dmk-sec6 .btn-mini.primary{ background:var(--brand); color:#fff; border:0; }
+
+    /* Reveal */
+    @keyframes fadeUp6{from{opacity:0;transform:translateY(22px)} to{opacity:1;transform:translateY(0)}}
+    #dmk-sec6 .grid > *{animation:fadeUp6 .6s cubic-bezier(.2,.7,.2,1) both;}
+  </style>
+<div class="wrap">
+<div class="container">
+<header class="head" style="margin:0 0 18px 0;">
+<h3>Lassen Sie uns Ihr Projekt besprechen.<br/>Wir sind bereit – Sie auch?</h3>
+<p class="lead">Kostenlose Erstberatung – persönlich, transparent und fair. Auf Wunsch kommen wir zu Ihnen nach <strong>Reichelsheim</strong> und in den Odenwald.</p>
+</header>
+<div class="grid">
+<!-- Kontaktinfos / Telefon & Karte -->
+<aside aria-label="Kontakt &amp; Standort" class="card cta">
+<h4>Direktkontakt</h4>
+<!-- Zwei Nummern mit SVG-Icon -->
+<div class="phones">
+<div class="phone-cta">
+<svg aria-hidden="true" class="ico" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24">
+<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.1 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.86.32 1.7.59 2.5a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.58-1.16a2 2 0 0 1 2.11-.45c.8.27 1.64.47 2.5.59A2 2 0 0 1 22 16.92z"></path>
+</svg>
+<a aria-label="Jetzt anrufen: 0160 7791280" href="tel:01607791280">0160 7791280</a>
+</div>
+<div class="phone-cta">
+<svg aria-hidden="true" class="ico" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24">
+<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0  0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.1 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.86.32 1.7.59 2.5a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.58-1.16a2 2 0 0 1 2.11-.45c.8.27 1.64.47 2.5.59A2 2 0 0 1 22 16.92z"></path>
+</svg>
+<a aria-label="Jetzt anrufen: 06164 5039805" href="tel:061645039805">06164 5039805</a>
+</div>
+</div>
+<ul class="bullets dmk-feats" role="list">
+<li><span aria-hidden="true">
+<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+</span><span>Unverbindliche Erstberatung mit Festpreis-Angebot</span></li>
+<li><span aria-hidden="true">
+<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+</span><span>Vor-Ort-Termin im Odenwald &amp; Umgebung</span></li>
+<li><span aria-hidden="true">
+<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+</span><span>Fördermittel-Check (KfW/BAFA) möglich</span></li>
+</ul>
+<!-- Karte mit kompletter Adresse -->
+<div aria-label="Standort DMK Bau" class="map">
+<div class="bar">
+<div class="addr">
+<svg aria-hidden="true" class="ico" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24">
+<path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0Z"></path>
+<circle cx="12" cy="10" r="3"></circle>
+</svg>
+DMK Bau, Heidelberger Str. 5, 64385 Reichelsheim (Odenwald)
+              </div>
+<a class="open" href="https://maps.app.goo.gl/DD78znm6A7x9XRAb9" rel="noopener" target="_blank">In Google Maps öffnen</a>
+</div>
+<div class="canvas">
+<iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=DMK%20Bau%2C%20Heidelberger%20Str.%205%2C%2064385%20Reichelsheim%20(Odenwald)&amp;output=embed" title="DMK Bau – Heidelberger Str. 5, 64385 Reichelsheim (Odenwald)">
+</iframe>
+</div>
+</div>
+</aside>
+<!-- Formular -->
+<div aria-label="Kontaktformular" class="card form">
+<div class="alert ok" hidden="" id="c6-ok" role="status">Vielen Dank! Wir melden uns zeitnah.</div>
+<div class="alert err" hidden="" id="c6-err" role="status">Bitte prüfen Sie Ihre Eingaben.</div>
+<form id="dmk-form" action="https://dmk-bau.de/kontakt.php" method="post" novalidate onsubmit="return false;">
+<a id="kontaktformular" style="position:relative; top:-80px;"></a>
+<div class="fieldset">
+<div class="ctrl">
+<label for="c6-name">Ihr Name*</label>
+<input autocomplete="name" id="c6-name" name="name" required="" type="text"/>
+</div>
+<div class="ctrl">
+<label for="c6-phone">Telefon*</label>
+<input autocomplete="tel" id="c6-phone" inputmode="tel" name="phone" required="" type="tel"/>
+</div>
+
+<div class="ctrl row-2">
+<label for="c6-email">E-Mail</label>
+<input autocomplete="email" id="c6-email" name="email" placeholder="optional" type="email"/>
+</div>
+
+
+<div class="ctrl row-2">
+<label for="c6-plzort">PLZ &amp; Ort*</label>
+<input id="c6-plzort" name="plz_ort" required type="text" placeholder="z. B. 64720 Michelstadt"/>
+</div>
+
+<div class="ctrl row-2">
+<label for="c6-str">Straße &amp; Hausnummer*</label>
+<input id="c6-str" name="strasse" autocomplete="address-line1" required type="text" placeholder="Straße und Hausnummer"/>
+</div>
+
+<div class="ctrl row-2">
+<label for="c6-msg">Ihre Nachricht*</label>
+<textarea id="c6-msg" name="message" placeholder="Wie können wir Sie unterstützen?" required=""></textarea>
+</div>
+<input type="hidden" id="c6-services" name="services" value="Allgemeine Anfrage"/>
+<!-- Honeypot -->
+<input aria-hidden="true" autocomplete="off" id="c6-company" name="company" style="position:absolute; left:-9999px;" tabindex="-1" type="text"/>
+<div class="row-2 consent">
+<input id="c6-accept" required="" type="checkbox"/>
+<label for="c6-accept">Ich stimme zu, dass meine Angaben zur Kontaktaufnahme und Rückfrage gespeichert werden. (Datenschutz)</label>
+</div>
+<div class="row-2 actions">
+<button class="btn-green" type="submit">
+<svg class="ico" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" style="color:#fff;width:18px;height:18px" viewbox="0 0 24 24">
+<path d="m22 2-7 20-4-9-9-4 20-7z"></path><path d="M22 2 11 13"></path>
+</svg>
+                  Anfrage senden
+                </button>
+<span>* Pflichtfelder </span>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<script>
+    (function(){
+      const form   = document.getElementById('dmk-form');
+      const ok     = document.getElementById('c6-ok');
+      const err    = document.getElementById('c6-err');
+      const hp     = document.getElementById('c6-company');
+
+      const selectWrap  = document.getElementById('serviceSelect');
+      const trigger     = document.getElementById('serviceTrigger');
+      const panel       = selectWrap.querySelector('.service-panel');
+      const chipsBox    = trigger;
+      const hiddenInput = document.getElementById('c6-services');
+      const otherCb     = document.getElementById('svc-other');
+      const otherText   = document.getElementById('svc-other-text');
+
+      /* Alert helpers – nutzen `hidden` */
+      const show = el => el.removeAttribute('hidden');
+      const hide = el => el.setAttribute('hidden','');
+
+      /* Service-Select */
+      function getChecked(){
+        const items = [...panel.querySelectorAll('input[type="checkbox"]:checked')].map(i=>i.value);
+        const other = otherCb.checked && otherText.value.trim() ? `Sonstiges: ${otherText.value.trim()}` : (otherCb.checked ? 'Sonstiges' : null);
+        if(other && !items.includes(other)) items.push(other);
+        return items.filter(Boolean);
+      }
+      function renderChips(values){
+        chipsBox.innerHTML = '';
+        if(values.length===0){
+          chipsBox.innerHTML = '<span class="placeholder" style="color:#7a8b7b;font-weight:500;">Bitte auswählen…</span>';
+          return;
+        }
+        values.forEach(v=>{
+          const chip = document.createElement('span');
+          chip.className='chip';
+          chip.innerHTML = `<span>${v}</span> <span class="x" aria-label="entfernen" title="entfernen">×</span>`;
+          chip.querySelector('.x').addEventListener('click', ()=>{
+            const cb = [...panel.querySelectorAll('input[type="checkbox"]')].find(i=>i.value===v || (v.startsWith('Sonstiges') && i.id==='svc-other'));
+            if(cb){ cb.checked=false; }
+            if(v.startsWith('Sonstiges')) otherText.value='';
+            sync();
+          });
+          chipsBox.appendChild(chip);
+        });
+      }
+      function sync(){
+        const values = getChecked();
+        hiddenInput.value = values.join(', ');
+        renderChips(values);
+      }
+
+      function toggle(open){
+        selectWrap.classList[open?'add':'remove']('open');
+        trigger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      }
+      trigger.addEventListener('click', ()=>toggle(!selectWrap.classList.contains('open')));
+      trigger.addEventListener('keydown', (e)=>{ if(e.key==='Enter' || e.key===' '){ e.preventDefault(); toggle(!selectWrap.classList.contains('open')); }});
+      document.addEventListener('click', (e)=>{ if(!selectWrap.contains(e.target)) toggle(false); });
+
+      panel.querySelectorAll('input[type="checkbox"]').forEach(cb=>cb.addEventListener('change', sync));
+      otherCb.addEventListener('change', ()=>{
+        otherText.style.display = otherCb.checked ? 'block' : 'none';
+        if(!otherCb.checked) otherText.value='';
+        sync();
+      });
+      otherText.addEventListener('input', sync);
+      document.getElementById('svc-apply').addEventListener('click', ()=>{ sync(); toggle(false); trigger.focus(); });
+      document.getElementById('svc-clear').addEventListener('click', ()=>{
+        panel.querySelectorAll('input[type="checkbox"]').forEach(cb=>cb.checked=false);
+        otherText.value=''; sync();
+      });
+
+      // initial render
+      sync(); hide(ok); hide(err);
+
+     /* Submit – echtes Backend + reCAPTCHA v3 */
+form?.addEventListener('submit', async (e)=>{
+  e.preventDefault();
+  hide(ok); hide(err);
+
+  const name   = form.querySelector('#c6-name')?.value.trim();
+  const phone  = form.querySelector('#c6-phone')?.value.trim();
+  const email  = form.querySelector('#c6-email')?.value.trim();
+  const msg    = form.querySelector('#c6-msg')?.value.trim();
+  const accept = form.querySelector('#c6-accept')?.checked;
+  const services = hiddenInput.value.trim();
+
+  const basicValid = name && phone && msg && accept && services && !hp.value;
+  const emailValid = !email || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+  if(!basicValid || !emailValid){ show(err); return; }
+
+  const btn = form.querySelector('button[type="submit"]');
+  if(btn){ btn.disabled = true; btn.style.opacity = "0.7"; }
+
+  try {
+    const token = await new Promise((resolve, reject)=>{
+      grecaptcha.ready(()=>{
+        grecaptcha.execute(
+          '6Lf5p8IUAAAAADYKGk-KdEk_fbuuDFFfKRBjb6yI',
+          { action: 'kontakt' }
+        ).then(resolve).catch(reject);
+      });
+    });
+
+    const fd = new FormData(form);
+	  
+      fd.delete('services');
+      fd.delete('recaptcha_token');
+
+      fd.append('services', services);
+      fd.append('recaptcha_token', token);
+
+      const res  = await fetch(form.action, { method: 'POST', body: fd });
+    const text = await res.text();
+    if(!res.ok || !/ok/i.test(text)) throw new Error(text);
+
+    form.reset();
+    panel.querySelectorAll('input[type="checkbox"]').forEach(cb=>cb.checked=false);
+    otherText.value=''; sync();
+
+    show(ok);
+    setTimeout(()=>hide(ok), 6000);
+
+  } catch (e) {
+    console.error(e);
+    show(err);
+  } finally {
+    if(btn){ btn.disabled = false; btn.style.opacity = ""; }
+  }
+});
+ 
+    })();
+  </script>
+<!-- ✅ STRUCTURED DATA inkl. Adresse -->
+<script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"DMK Bau",
+    "areaServed":"Odenwald",
+    "url":"https://example.com/",
+    "telephone":"+49-160-7791280",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"Heidelberger Str. 5",
+      "postalCode":"64385",
+      "addressLocality":"Reichelsheim (Odenwald)",
+      "addressCountry":"DE"
+    },
+    "contactPoint":{
+      "@type":"ContactPoint",
+      "telephone":"+49-160-7791280",
+      "contactType":"customer service",
+      "areaServed":"DE",
+      "availableLanguage":["de"]
+    }
+  }
+  </script>
+ 
+</section>
+</section>
+<!-- =========================
+     START: Navigation seitlich DMK Bau (voll isoliert, keine Seiteneffekte)
+     ========================= -->
+<div id="dmk-side-dock">
+<!-- === DMKBau – "Fragen ?"-Button + seitliche Kontaktkarte (flush right) === -->
+<aside aria-label="Kontaktmöglichkeiten" class="kontakt-dock" id="kontaktDock">
+<!-- Öffnen-Button: Text "Fragen" + grüner Kreis mit "?" -->
+<button aria-expanded="false" aria-label="Kontaktkarte öffnen" class="ask-btn" id="dockToggle">
+<span class="ask-btn__label">Fragen</span>
+<span aria-hidden="true" class="ask-btn__bubble">?</span>
+</button>
+<!-- Ausfahrbares Kontakt-Panel -->
+<div aria-label="Kontaktkarte" class="dock-panel" id="dockPanel" role="region">
+<!-- WhatsApp -->
+<a class="dock-item" href="https://wa.me/491607791280?text=Hallo%20DMKBau%2C%20ich%20habe%20eine%20Frage%20..." rel="nofollow noopener noreferrer" target="_blank">
+<span aria-hidden="true" class="chip">
+<!-- neutrales Chat-Icon, monochrom -->
+<svg fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24" width="18">
+<path d="M20 11a7 7 0 0 1-7 7H8l-4 3 1.2-4.7A7 7 0 1 1 20 11Z"></path>
+<circle cx="10" cy="11" r="0.8"></circle><circle cx="13" cy="11" r="0.8"></circle><circle cx="16" cy="11" r="0.8"></circle>
+</svg>
+</span>
+<span class="txt">WhatsApp</span>
+</a>
+<!-- Mobil -->
+<a class="dock-item" href="tel:+491607791280">
+<span aria-hidden="true" class="chip">
+<svg fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24" width="18">
+<rect height="18.4" rx="2.2" width="10" x="7" y="2.8"></rect>
+<path d="M11 18.2h2"></path>
+</svg>
+</span>
+<span class="txt">Mobil: 0160 779 128 0</span>
+</a>
+<!-- Festnetz -->
+<a class="dock-item" href="tel:+4961645039805">
+<span aria-hidden="true" class="chip">
+<svg fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24" width="18">
+<path d="M22 17.2v2.3a2 2 0 0 1-2.2 2c-4.7-1.2-8.4-3.8-12-9.4A19.5 19.5 0 0 1 3 2.4 2 2 0 0 1 5 0.5h2.7a2 2 0 0 1 2 1.6l.5 2a2 2 0 0 1-.5 1.8L8 7.3c1.9 3.1 4.3 5.5 7.3 7.3l1.4-1.1a2 2 0 0 1 1.9-.6l2 .5A2 2 0 0 1 22 17.2Z"></path>
+</svg>
+</span>
+<span class="txt">Festnetz: 06164 503 9805</span>
+</a>
+<!-- E-Mail -->
+<a class="dock-item" href="mailto:info@dmk-bau.de?subject=Anfrage%20DMKBau">
+<span aria-hidden="true" class="chip">
+<svg fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24" width="18">
+<rect height="14" rx="2" width="18" x="3" y="5"></rect>
+<path d="M3 7l9 7 9-7"></path>
+</svg>
+</span>
+<span class="txt">info@dmk-bau.de</span>
+</a>
+<!-- Adresse / Showroom & Beratung -->
+<a class="dock-item" href="https://www.google.com/maps/search/?api=1&amp;query=Heidelberger+Stra%C3%9Fe+5,+64385+Reichelsheim" rel="noopener" target="_blank">
+<span aria-hidden="true" class="chip">
+<svg fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24" width="18">
+<path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0z"></path>
+<circle cx="12" cy="10" r="3"></circle>
+</svg>
+</span>
+<span class="txt">Showroom &amp; Beratung · Heidelberger Straße 5 · 64385 Reichelsheim</span>
+</a>
+</div>
+</aside>
+</div>
+<style>
+
+#dmk-side-dock{
+  --green1:#3A7D44;
+  --green2:#2E6C3A;
+  --panel-bg-1: rgba(255,255,255,0.60);
+  --panel-bg-2: rgba(255,255,255,0.38);
+  --shadow-dark: rgba(0,0,0,0.25);
+  --ink:#0f172a;
+  --ink-soft:#374151;
+}
+
+/* Container rechts mittig */
+#dmk-side-dock .kontakt-dock{
+  position:fixed;
+  top:50%;
+  right:0;
+  transform:translateY(-50%);
+  z-index:10000;
+  font-family:"Quicksand",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+
+/* === Öffnen-Button: "Fragen" + grüner ?-Kreis === */
+#dmk-side-dock .ask-btn{
+  position:absolute;
+  right:12px;
+  top:50%;
+  transform:translateY(-50%);
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:6px 10px 6px 14px;
+  border:0;
+  background:rgba(17,24,39,0.88);
+  color:white;
+  border-radius:999px;
+  cursor:pointer;
+  box-shadow:0 12px 24px rgba(0,0,0,0.28);
+}
+#dmk-side-dock .ask-btn__label{
+  font-weight:500;
+  font-size:14px;
+  letter-spacing:.2px;
+}
+#dmk-side-dock .ask-btn__bubble{
+  display:grid;
+  place-items:center;
+  width:44px;
+  height:44px;
+  border-radius:999px;
+  font-weight:700;
+  font-size:18px;
+  line-height:1;
+  background:linear-gradient(135deg,var(--green1),var(--green2));
+  color:#fff;
+  box-shadow:
+    0 10px 22px rgba(46,108,58,0.35),
+    inset 0 1px 0 rgba(255,255,255,0.35),
+    inset 0 -3px 8px rgba(0,0,0,0.12);
+  transition:transform .18s ease, filter .18s ease, box-shadow .18s ease;
+}
+/* dezentes Aufleuchten beim Hover */
+#dmk-side-dock .ask-btn:hover .ask-btn__bubble{
+  transform:translateY(-1px) scale(1.03);
+  filter:saturate(110%);
+  box-shadow:
+    0 14px 28px rgba(46,108,58,0.38),
+    inset 0 1px 0 rgba(255,255,255,0.4),
+    inset 0 -3px 8px rgba(0,0,0,0.12);
+}
+
+/* === Panel bündig rechts (ohne rechten Radius) === */
+#dmk-side-dock .dock-panel{
+  position:fixed;
+  right:0;
+  top:50%;
+  transform:translateY(-50%) translateX(100%);
+  opacity:0;
+  visibility:hidden;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  min-width:320px;
+  background:linear-gradient(180deg,var(--panel-bg-1),var(--panel-bg-2));
+  border-radius:20px 0 0 20px;
+  padding:18px 16px;
+  box-shadow:-18px 18px 40px var(--shadow-dark);
+  -webkit-backdrop-filter: blur(12px) saturate(140%);
+  backdrop-filter: blur(12px) saturate(140%);
+  transition: transform .35s ease, opacity .25s ease, visibility .25s step-end;
+  border-left:1px solid rgba(0,0,0,0.06);
+  outline:1px solid rgba(255,255,255,0.35);
+}
+#dmk-side-dock .kontakt-dock.open .dock-panel{
+  transform:translateY(-50%) translateX(0);
+  opacity:1;
+  visibility:visible;
+}
+
+/* === Reiter im Panel (exklusiv, ohne bunte Balken) === */
+#dmk-side-dock .dock-item{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  text-decoration:none;
+  color:var(--ink-soft);
+  font-weight:400;
+  font-size:14px;
+  padding:11px 14px;
+  border-radius:16px;
+  background:linear-gradient(145deg,rgba(255,255,255,0.96),rgba(255,255,255,0.72));
+  box-shadow:6px 10px 18px rgba(0,0,0,0.08), -6px -6px 12px rgba(255,255,255,0.55);
+  transition: transform .18s ease, box-shadow .18s ease, color .18s ease;
+}
+#dmk-side-dock .dock-item:hover{
+  transform:translateX(-2px);
+  color:#255838; /* dezentes Brand-Grün beim Hover */
+  box-shadow:10px 14px 22px rgba(0,0,0,0.10), -6px -6px 12px rgba(255,255,255,0.55);
+}
+
+/* Icon-Chip (Glas + feiner Grünring) */
+#dmk-side-dock .chip{
+  position:relative;
+  display:grid;
+  place-items:center;
+  width:34px;
+  height:34px;
+  border-radius:999px;
+  background:linear-gradient(180deg,rgba(255,255,255,0.76),rgba(255,255,255,0.56));
+  box-shadow:inset 0 1px 0 rgba(255,255,255,0.5), inset 0 -2px 6px rgba(0,0,0,0.06);
+}
+#dmk-side-dock .chip::before{
+  content:"";
+  position:absolute; inset:0; border-radius:inherit;
+  background:conic-gradient(from 210deg,#3A7D44,#2E6C3A,#3A7D44);
+  -webkit-mask:radial-gradient(circle at center, transparent 56%, #000 57%);
+          mask:radial-gradient(circle at center, transparent 56%, #000 57%);
+  opacity:.55; transition: opacity .18s ease, filter .18s ease;
+}
+#dmk-side-dock .dock-item:hover .chip::before{ opacity:.9; filter:saturate(112%); }
+#dmk-side-dock .chip svg{ width:18px; height:24px; }
+
+/* Text */
+#dmk-side-dock .txt{ line-height:1.3; }
+
+/* Mobile Feinschliff */
+@media (max-width: 768px){
+#dmk-side-dock .ask-btn__bubble{ width:42px; height:42px; font-size:17px; }
+#dmk-side-dock .ask-btn__label{ font-size:13px; }
+#dmk-side-dock .dock-panel{ min-width:300px; }
+}
+
+</style>
+<script>
+
+const dock = document.querySelector('#dmk-side-dock #kontaktDock');
+const toggle = document.querySelector('#dmk-side-dock #dockToggle');
+
+toggle.addEventListener('click', () => {
+  dock.classList.toggle('open');
+  toggle.setAttribute('aria-expanded', dock.classList.contains('open'));
+});
+
+document.addEventListener('click', (e) => {
+  if (!dock.contains(e.target) && dock.classList.contains('open')) {
+    dock.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }
+});
+
+</script>
+<!-- =========================
+     END: Navigation seitlich DMK Bau (voll isoliert)
+     ========================= -->
+<!-- === Eingefügte Partnersektion (isoliert) === -->
+<!-- Partner-Abschnitt: unter das Kontaktformular einfügen -->
+<section aria-label="DMK-Bau Bau-Partnerschaften – starke Marken, auf die wir bauen" class="partner-section is-grayscale" id="partnerschaften" style="background: #ffffff;">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<div class="partner-inner">
+<h2 class="partner-heading">Langjährige Bau-Partnerschaften &amp; Qualitätsmarken bei DMK-Bau</h2>
+<p class="partner-sub">
+      Unsere Kooperationen mit führenden Herstellern und Fachhändlern stehen für Vertrauen, Präzision und Qualität – Werte, auf die jedes unserer Projekte baut.
+    </p>
+<!-- Laufband -->
+<div aria-hidden="true" class="partner-scroller">
+<div class="partner-track">
+<!-- Logos (Satz 1) -->
+<img alt="Gutjahr" loading="lazy" src="images/dmk-bau-reichelsheim-partner-gutjahr.webp"/>
+<img alt="HFK" loading="lazy" src="images/dmk-bau-reichelsheim-partner-hfk.webp"/>
+<img alt="Sopro" loading="lazy" src="images/dmk-bau-reichelsheim-partner-sopro.webp"/>
+<img alt="Pinta" loading="lazy" src="images/dmk-bau-reichelsheim-partner-pinta-logo.webp"/>
+<img alt="Spalt" loading="lazy" src="images/dmk-bau-reichelsheim-partner-spalt-logo-klein.webp"/>
+<!-- Duplikat für nahtlosen Loop -->
+<img alt="Gutjahr" loading="lazy" src="images/dmk-bau-reichelsheim-partner-gutjahr.webp"/>
+<img alt="HFK" loading="lazy" src="images/dmk-bau-reichelsheim-partner-hfk.webp"/>
+<img alt="Sopro" loading="lazy" src="images/dmk-bau-reichelsheim-partner-sopro.webp"/>
+<img alt="Pinta" loading="lazy" src="images/dmk-bau-reichelsheim-partner-pinta-logo.webp"/>
+<img alt="Spalt" loading="lazy" src="images/dmk-bau-reichelsheim-partner-spalt-logo-klein.webp"/>
+</div>
+</div>
+</div>
+<style>
+    /* Abschnitt allgemein */
+    #partnerschaften.partner-section {
+      padding: 4rem 1.5rem;
+      position: relative;
+      overflow: hidden;
+      background: transparent;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    /* Inner Container */
+    .partner-inner {
+      max-width: 1440px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    /* Überschrift in Marken-Grün */
+    .partner-heading {
+      font-family: 'Quicksand', sans-serif;
+      font-size: clamp(1.5rem, 2.6vw, 2.1rem);
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      color: #3A7D44; /* Markengrün */
+      line-height: 1.3;
+      letter-spacing: 0.3px;
+    }
+
+    /* Untertext */
+    .partner-sub {
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 500;
+      font-size: clamp(1rem, 1.3vw, 1.1rem);
+      opacity: 0.9;
+      margin: 0 auto 2.5rem;
+      max-width: 720px;
+      color: #2a2a2a;
+    }
+
+    /* Laufband Wrapper */
+    .partner-scroller {
+      position: relative;
+      overflow: hidden;
+      --fade: 80px;
+      -webkit-mask-image: linear-gradient(to right, transparent 0, black var(--fade), black calc(100% - var(--fade)), transparent 100%);
+              mask-image: linear-gradient(to right, transparent 0, black var(--fade), black calc(100% - var(--fade)), transparent 100%);
+    }
+
+    /* Track mit Logos */
+    .partner-track {
+      display: inline-flex;
+      align-items: center;
+      gap: clamp(60px, 6vw, 110px);
+      animation: partner-marquee 70s linear infinite;
+      will-change: transform;
+    }
+
+    /* Logo-Styling */
+    .partner-track img {
+      height: clamp(85px, 9vw, 120px);
+      width: auto;
+      display: block;
+      user-select: none;
+      -webkit-user-drag: none;
+      transition:
+        transform 250ms cubic-bezier(.2,.7,.2,1),
+        filter 250ms cubic-bezier(.2,.7,.2,1),
+        opacity 250ms cubic-bezier(.2,.7,.2,1);
+      opacity: 0.95;
+      transform-origin: center;
+    }
+
+    /* Standard: Schwarz-Weiß (optional per Klasse) */
+    .partner-section.is-grayscale .partner-track img {
+      filter: grayscale(100%) contrast(1.1) brightness(1.05);
+    }
+
+    /* Hover: Farbe + Aufpoppen */
+    .partner-track img:hover,
+    .partner-track img:focus-visible {
+      transform: scale(1.15);
+      filter: none !important;
+      opacity: 1;
+    }
+
+    /* Laufband pausiert bei Hover */
+    .partner-scroller:hover .partner-track {
+      animation-play-state: paused;
+    }
+
+    /* Animation für Endloslauf */
+    @keyframes partner-marquee {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      #partnerschaften.partner-section { padding: 3rem 1rem; }
+      .partner-track { gap: 40px; }
+      .partner-track img { height: 70px; }
+    }
+  </style>
+</section>
+<footer aria-label="DMK Bau Footer" class="dmk-footer" role="contentinfo"><style>
+    :root{
+      --brand:#3A7D44;
+      --brand-2:#2E6C3A;
+      --ink:#1f1f1f;
+      --ring:#e7ece8;
+      --bg:#ffffff;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:"Quicksand",sans-serif;
+      background:#f9fafb;
+      color:var(--ink);
+    }
+
+    footer.dmk-footer{
+      background: var(--bg);
+      border-top: 1px solid #eef2ee;
+      padding: 48px 20px 24px;
+    }
+    .dmk-foot-wrap{
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 32px;
+      position: relative;
+    }
+    @media (min-width: 820px){
+      .dmk-foot-wrap{
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .dmk-foot-wrap::before,
+      .dmk-foot-wrap::after,
+      .dmk-foot-wrap section:nth-of-type(4)::before {
+        content: "";
+        position: absolute;
+        top: 0; bottom: 0;
+        width: 1px;
+        background: #e9eee9;
+      }
+      .dmk-foot-wrap::before { left: calc(25% - 0.5px); }
+      .dmk-foot-wrap::after { left: calc(50% - 0.5px); }
+      .dmk-foot-wrap section:nth-of-type(4)::before { left: calc(75% - 0.5px); }
+    }
+
+    .dmk-foot h4{
+      font-weight:700;
+      font-size:18px;
+      margin-bottom:14px;
+      background:linear-gradient(90deg,var(--brand),var(--brand-2));
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    .dmk-list{list-style:none;display:grid;gap:10px;}
+    .dmk-link{
+      text-decoration:none;
+      color:#2a2f2b;
+      font-weight:600;
+      display:inline-block;
+      transition:all .25s ease;
+    }
+    .dmk-link:hover{
+      color:var(--brand);
+      transform:translateY(-2px) scale(1.1);
+    }
+
+    /* Kontakt */
+    .dmk-contact{display:grid;gap:10px;color:#2b2f2c;}
+    .dmk-row{display:flex;align-items:flex-start;gap:10px;}
+    .dmk-ico{
+      width:20px;height:20px;flex:0 0 20px;
+      display:inline-flex;align-items:center;justify-content:center;
+      color:var(--brand);
+    }
+    .dmk-contact a{color:var(--brand);text-decoration:none;font-weight:700;}
+    .dmk-contact a:hover{text-decoration:underline;}
+
+    /* Social Media */
+    .dmk-social{display:flex;gap:18px;align-items:center;flex-wrap:wrap;}
+    .dmk-sbtn{
+      width:56px;height:56px;
+      border-radius:16px;
+      background:linear-gradient(145deg,#ffffff,#e9efe9);
+      box-shadow:6px 6px 12px #d9ded9,-6px -6px 12px #ffffff;
+      display:flex;align-items:center;justify-content:center;
+      transition:all .25s ease;
+      color:var(--brand-2);
+      position:relative;
+      overflow:hidden;
+    }
+    .dmk-sbtn svg{width:32px;height:24px;z-index:2;}
+    .dmk-sbtn span.label{
+      position:absolute;
+      left:65px;
+      opacity:0;
+      white-space:nowrap;
+      color:var(--brand-2);
+      font-weight:700;
+      transition:all .25s ease;
+      transform:translateX(-10px);
+    }
+    .dmk-sbtn:hover{
+      transform:translateY(-4px);
+      box-shadow:4px 4px 10px rgba(58,125,68,.25),-4px -4px 10px #ffffff;
+      background:linear-gradient(145deg,#f1f6f2,#ffffff);
+      color:var(--brand);
+    }
+    .dmk-sbtn:hover span.label{
+      opacity:1;
+      transform:translateX(0);
+    }
+    .dmk-sbtn:active{
+      transform:translateY(0);
+      box-shadow:inset 3px 3px 6px #d9ded9,inset -3px -3px 6px #ffffff;
+    }
+
+    /* Copyright */
+    .dmk-copy{
+      max-width:1200px;
+      margin:32px auto 0;
+      padding-top:18px;
+      border-top:1px solid #eef2ee;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      font-size:14px;
+      font-weight:600;
+      color:#4d534e;
+    }
+    .dmk-copy a{color:var(--brand);text-decoration:none;font-weight:700;}
+    .dmk-copy a:hover{text-decoration:underline;}
+  
+/* Innenausbau Auswahl – Modal Popup */
+.innenausbau-modal{
+  position:fixed;
+  inset:0;
+  z-index:99999;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:16px;
+  background:rgba(15,23,42,.75);
+}
+.innenausbau-modal.is-open{display:flex;}
+body.no-scroll{overflow:hidden;}
+.innenausbau-dialog{
+  position:relative;
+  background:#ffffff;
+  border-radius:20px;
+  box-shadow:0 20px 55px rgba(15,23,42,.45);
+  width:100%;
+  max-width:580px; /* 20% wider */
+  max-height:calc(100vh - 120px);
+  display:flex;
+  flex-direction:column;
+  padding:12px 12px 16px;
+}
+@media(min-width:768px){
+  .innenausbau-dialog{
+  position:relative;
+  background:#ffffff;
+  border-radius:20px;
+  box-shadow:0 20px 55px rgba(15,23,42,.45);
+  width:100%;
+  max-width:580px; /* 20% wider */
+  max-height:calc(100vh - 120px);
+  display:flex;
+  flex-direction:column;
+  padding:12px 12px 16px;
+}
+}
+.innen-header{
+  text-align:center;
+  background:#f3faf4;
+  margin-bottom:14px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:4px;
+  padding:10px 8px;
+  border-radius:10px;
+}
+.innen-kicker{
+  font-size:14px;
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  color:#2E6C3A;
+  font-weight:800;
+}
+.innen-title{
+  font-size:clamp(20px,3vw,24px);
+  font-weight:700;
+}
+.innen-accent{
+  width:96px;
+  height:3px;
+  border-radius:999px;
+  margin-top:10px;
+  background:linear-gradient(135deg,#3A7D44,#2E6C3A);
+}
+.innen-close{
+  position:absolute;
+  top:-18px;
+  right:-18px;
+  width:40px;
+  height:40px;
+  border-radius:999px;
+  border:1px solid rgba(15,23,42,.12);
+  background:#ffffff;
+  color:#111827;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 4px 14px rgba(0,0,0,.15);
+  transition:transform .15s,background .2s;
+}
+.innen-close:hover{
+  background:#e5e7eb;
+}
+.innen-card{
+  margin:0 auto;
+  width:100%;
+  max-width:100%;
+  background:transparent;
+  border-radius:0;
+  box-shadow:none;
+  padding:6px 6px 10px;
+  border:0;
+  max-height:360px; /* ca. 4 Einträge sichtbar, Rest scrollt */
+  overflow-y:auto;
+}
+@media(min-width:768px){
+  .innen-card{
+  margin:0 auto;
+  width:100%;
+  max-width:100%;
+  background:transparent;
+  border-radius:0;
+  box-shadow:none;
+  padding:6px 6px 10px;
+  border:0;
+  max-height:360px; /* ca. 4 Einträge sichtbar, Rest scrollt */
+  overflow-y:auto;
+}
+}
+.innen-gewerke-nav{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+.innen-link{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  padding:12px 16px;
+  border-radius:999px;
+  background:#f5f7f5;
+  text-decoration:none;
+  color:#202422;
+  position:relative;
+  overflow:hidden;
+  transition:background .12s ease, box-shadow .12s ease, transform .1s ease;
+}
+.innen-link::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg,rgba(58,125,68,.12),transparent);
+  opacity:0;
+  transition:opacity .18s ease;
+}
+.innen-link:hover{
+  background:#ecf6ee;
+  transform:translateY(-1px);
+  box-shadow:0 10px 18px rgba(24,57,34,.12);
+}
+.innen-link:hover::before{opacity:1;}
+.innen-dot-wrap{
+  width:32px;
+  height:24px;
+  border-radius:999px;
+  background:transparent;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 0 0 1px rgba(58,125,68,.22);
+  flex-shrink:0;
+}
+.innen-dot{
+  width:12px;
+  height:12px;
+  border-radius:999px;
+  background:linear-gradient(135deg,#3A7D44,#2E6C3A);
+}
+.innen-text{
+  display:flex;
+  flex-direction:column;
+  gap:2px;
+}
+.innen-link-title{
+  font-size:1.02rem;
+  font-weight:700;
+}
+.innen-link-teaser{
+  font-size:.94rem;
+  color:#5c645f;
+}
+.innen-chevron{
+  margin-left:auto;
+  font-size:1.4rem;
+  font-weight:700;
+  color:#2E6C3A;
+  flex-shrink:0;
+  transition:transform .12s ease;
+}
+.innen-link:hover .innen-chevron{transform:translateX(3px);}
+@media(max-width:640px){
+  .innenausbau-dialog{
+  position:relative;
+  background:#ffffff;
+  border-radius:20px;
+  box-shadow:0 20px 55px rgba(15,23,42,.45);
+  width:100%;
+  max-width:580px; /* 20% wider */
+  max-height:calc(100vh - 120px);
+  display:flex;
+  flex-direction:column;
+  padding:12px 12px 16px;
+}
+  .innen-card{
+  margin:0 auto;
+  width:100%;
+  max-width:100%;
+  background:transparent;
+  border-radius:0;
+  box-shadow:none;
+  padding:6px 6px 10px;
+  border:0;
+  max-height:360px; /* ca. 4 Einträge sichtbar, Rest scrollt */
+  overflow-y:auto;
+}
+}
+</style>
+<div class="dmk-foot-wrap">
+<section class="dmk-foot">
+<h4>Unternehmen</h4>
+<ul class="dmk-list">
+<li><a class="dmk-link" href="index.html#unternehmen">Über uns</a></li>
+<li><a class="dmk-link" href="news-dmk-bau-reichelsheim.html">News</a></li>
+<li><a class="dmk-link" href="faq-dmk-bau-reichelsheim.html">FAQ</a></li>
+</ul>
+</section>
+<section class="dmk-foot">
+<h4>Rechtliches</h4>
+<ul class="dmk-list">
+<li><a class="dmk-link" href="datenschutz.html">Datenschutz</a></li>
+<li><a class="dmk-link" href="impressum.html">Impressum</a></li>
+<li><a class="dmk-link" href="agb.html">AGB</a></li>
+</ul>
+</section>
+<section class="dmk-foot">
+<h4>Kontakt</h4>
+<div class="dmk-contact">
+<div class="dmk-row">
+<span class="dmk-ico">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0Z"></path>
+<circle cx="12" cy="10" r="3"></circle>
+</svg>
+</span>
+<div>Heidelberger Straße 5,<br/>64385 Reichelsheim</div>
+</div>
+<div class="dmk-row">
+<span class="dmk-ico">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.3 1.78.54 2.64a2 2 0 0 1-.45 2.11L8 9a16 16 0 0 0 7 7l.53-1.2a2 2 0 0 1 2.11-.45c.86.24 1.74.42 2.64.54A2 2 0 0 1 22 16.92z"></path>
+</svg>
+</span>
+<a href="tel:01607791280">0160 77 91 28 0</a>
+</div>
+<div class="dmk-row">
+<span class="dmk-ico">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"></path>
+<path d="m22 6-10 7L2 6"></path>
+</svg>
+</span>
+<a href="mailto:info@dmk-bau.de">info@dmk-bau.de</a>
+</div>
+<div class="dmk-row">
+<span class="dmk-ico">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="10"></circle>
+<path d="M12 6v6l4 2"></path>
+</svg>
+</span>
+<div>Mo–Fr: <strong>09:00–17:00</strong><br/>Sa–So: <strong>Geschlossen</strong></div>
+</div>
+</div>
+</section>
+<section class="dmk-foot">
+<h4>Social Media</h4>
+<div class="dmk-social">
+<a aria-label="Facebook" class="dmk-sbtn" href="https://www.facebook.com/people/DMK-bau/100057634561646/">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+</svg>
+<span class="label">Facebook</span>
+</a>
+<a aria-label="Instagram" class="dmk-sbtn" href="https://www.instagram.com/dmkbau/">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect>
+<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+<line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+</svg>
+<span class="label">Instagram</span>
+</a>
+<a aria-label="TikTok" class="dmk-sbtn" href="https://www.tiktok.com/@dmkbau">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M32.3 14.3a11 11 0 0 0 6.7 2.3v5.3a16 16 0 0 1-6.7-1.5v10.2c0 6.5-5.3 11.7-11.8 11.4A11.6 11.6 0 0 1 9 29.7c.2-6 5.4-10.9 11.5-10.9 1 0 2 .1 2.9.4v5.8a6 6 0 0 0-2.8-.6c-3.2 0-5.9 2.6-6 5.8a6 6 0 0 0 6.4 6.2c3.1-.2 5.5-2.9 5.5-6.1V6h5.8v8.3Z"></path>
+</svg>
+<span class="label">TikTok</span>
+</a>
+</div>
+</section>
+</div>
+<div class="dmk-copy">
+<span>©2025 DMK Bau</span>
+<span>Created by <a href="https://webpage-seo.de" rel="noopener noreferrer" target="_blank">webpage-seo.de</a></span>
+</div>
+
+<!-- Innenausbau-Auswahl Popup -->
+
+
+<div class="innenausbau-modal" id="bad-modal" aria-hidden="true">
+  <div class="innenausbau-dialog" role="dialog" aria-modal="true" aria-labelledby="bad-modal-title">
+    <button class="innen-close" type="button" aria-label="Auswahl schließen">&times;</button>
+    <header class="innen-header">
+      <div class="innen-kicker">Ihre Auswahl</div>
+      <h2 class="innen-title" id="bad-modal-title">Welche Art von Badsanierung planen Sie?</h2>
+      <div class="innen-accent"></div>
+    </header>
+    <section class="innen-card">
+      <nav class="innen-gewerke-nav" aria-label="Badsanierung Optionen">
+        <a class="innen-link" href="bestehendes-bad-sanieren.html">
+          <div class="innen-dot-wrap"><div class="innen-dot"></div></div>
+          <div class="innen-text">
+            <span class="innen-link-title">Bestehendes Bad sanieren</span>
+            <span class="innen-link-teaser">Ihr vorhandenes Bad modernisieren, ohne den Grundriss komplett zu verändern.</span>
+          </div>
+          <span class="innen-chevron">›</span>
+        </a>
+        <a class="innen-link" href="neubau-badezimmer.html">
+          <div class="innen-dot-wrap"><div class="innen-dot"></div></div>
+          <div class="innen-text">
+            <span class="innen-link-title">Neubau-Badezimmer umsetzen</span>
+            <span class="innen-link-teaser">Komplett neues Badezimmer – von der Planung bis zur fertigen Oberfläche.</span>
+          </div>
+          <span class="innen-chevron">›</span>
+        </a>
+        <a class="innen-link" href="fugenloses-bad.html">
+          <div class="innen-dot-wrap"><div class="innen-dot"></div></div>
+          <div class="innen-text">
+            <span class="innen-link-title">Fugenloses Bad gestalten</span>
+            <span class="innen-link-teaser">Nahtlose, pflegeleichte Oberflächen für ein ruhiges, modernes Bad-Design.</span>
+          </div>
+          <span class="innen-chevron">›</span>
+        </a>
+        <a class="innen-link" href="barrierefreies-bad-umbauen.html">
+          <div class="innen-dot-wrap"><div class="innen-dot"></div></div>
+          <div class="innen-text">
+            <span class="innen-link-title">Barrierefreies Bad umbauen</span>
+            <span class="innen-link-teaser">Dusche ohne Schwelle, mehr Bewegungsfläche und Details für ein wirklich barrierefreies Bad.</span>
+          </div>
+          <span class="innen-chevron">›</span>
+        </a>
+      </nav>
+    </section>
+  </div>
+</div>
+
+
+<div class="innenausbau-modal" id="aussen-modal" aria-hidden="true">
+  <div class="innenausbau-dialog" role="dialog" aria-modal="true" aria-labelledby="aussen-modal-title">
+    <button class="innen-close" type="button" aria-label="Auswahl schließen">&times;</button>
+    <header class="innen-header">
+      <div class="innen-kicker">Ihre Auswahl</div>
+      <h2 class="innen-title" id="aussen-modal-title">Welche Außenanlage planen Sie?</h2>
+      <div class="innen-accent"></div>
+    </header>
+    <section class="innen-card">
+      <nav class="innen-gewerke-nav" aria-label="Außenanlagen Optionen">
+        <a class="innen-link" href="fassadenarbeiten.html">
+          <div class="innen-dot-wrap"><div class="innen-dot"></div></div>
+          <div class="innen-text">
+            <span class="innen-link-title">Fassadenarbeiten</span>
+            <span class="innen-link-teaser">Putz, Dämmung und optische Aufwertung Ihrer Hausfassade aus einer Hand.</span>
+          </div>
+          <span class="innen-chevron">›</span>
+        </a>
+        <a class="innen-link" href="pflasterarbeiten.html">
+          <div class="innen-dot-wrap"><div class="innen-dot"></div></div>
+          <div class="innen-text">
+            <span class="innen-link-title">Pflasterarbeiten</span>
+            <span class="innen-link-teaser">Hof- und Wegeflächen, die dauerhaft tragfähig und optisch harmonisch sind.</span>
+          </div>
+          <span class="innen-chevron">›</span>
+        </a>
+        <a class="innen-link" href="terrassen-balkone-dmk-bau-reichelsheim.html">
+          <div class="innen-dot-wrap"><div class="innen-dot"></div></div>
+          <div class="innen-text">
+            <span class="innen-link-title">Terrassen und Balkone</span>
+            <span class="innen-link-teaser">Freisitzflächen, auf denen Sie gerne Zeit verbringen – technisch dicht und schön gestaltet.</span>
+          </div>
+          <span class="innen-chevron">›</span>
+        </a>
+        <a class="innen-link" href="aussentreppen-reichelsheim-odenwald.html">
+          <div class="innen-dot-wrap"><div class="innen-dot"></div></div>
+          <div class="innen-text">
+            <span class="innen-link-title">Treppen im Außenbereich</span>
+            <span class="innen-link-teaser">Sichere, rutschhemmende Treppenanlagen, die sich stimmig in Ihre Außenanlage einfügen.</span>
+          </div>
+          <span class="innen-chevron">›</span>
+        </a>
+      </nav>
+    </section>
+  </div>
+</div>
+
+<div class="innenausbau-modal" id="innenausbau-modal" aria-hidden="true">
+  <div class="innenausbau-dialog" role="dialog" aria-modal="true" aria-labelledby="innenausbau-title">
+    <button class="innen-close" type="button" aria-label="Auswahl schließen">&times;</button>
+    <header class="innen-header">
+      <div class="innen-kicker">Ihre Auswahl</div>
+      <h2 class="innen-title" id="innenausbau-title">Welche Leistung im Innenausbau interessiert Sie?</h2>
+      <div class="innen-accent"></div>
+    </header>
+    <section class="innen-card">
+      <nav class="innen-gewerke-nav" aria-label="Innenausbau Gewerke">
+        <a class="innen-link" href="trockenbau.html">
+          <div class="innen-dot-wrap"><div class="innen-dot"></div></div>
+          <div class="innen-text">
+            <span class="innen-link-title">Trockenbau</span>
+            <span class="innen-link-teaser">Leichte Innenwände, Decken, Schallschutz und flexible Raumaufteilung.</span>
+          </div>
+          <span class="innen-chevron">›</span>
+        </a>
+        <a class="innen-link" href="estricharbeiten.html">
+          <div class="innen-dot-wrap"><div class="innen-dot"></div></div>
+          <div class="innen-text">
+            <span class="innen-link-title">Estricharbeiten</span>
+            <span class="innen-link-teaser">Solide Basis für alle Bodenbeläge – eben, tragfähig und fachgerecht verlegt.</span>
+          </div>
+          <span class="innen-chevron">›</span>
+        </a>
+        <a class="innen-link" href="fenster-tueren-montage-reichelsheim-odenwald.html">
+          <div class="innen-dot-wrap"><div class="innen-dot"></div></div>
+          <div class="innen-text">
+            <span class="innen-link-title">Fenster- &amp; Türeinbau</span>
+            <span class="innen-link-teaser">Mehr Licht, Sicherheit und Energieeffizienz durch präzise Montage.</span>
+          </div>
+          <span class="innen-chevron">›</span>
+        </a>
+        <a class="innen-link" href="treppenbau.html">
+          <div class="innen-dot-wrap"><div class="innen-dot"></div></div>
+          <div class="innen-text">
+            <span class="innen-link-title">Treppenbau</span>
+            <span class="innen-link-teaser">Sichere und optisch stimmige Verbindung der Etagen – passend zu Ihrem Stil.</span>
+          </div>
+          <span class="innen-chevron">›</span>
+        </a>
+        <a class="innen-link" href="fliesenarbeiten.html">
+          <div class="innen-dot-wrap"><div class="innen-dot"></div></div>
+          <div class="innen-text">
+            <span class="innen-link-title">Fliesenarbeiten</span>
+            <span class="innen-link-teaser">Präzise verlegte Fliesen für Bäder, Küchen, Wohnräume und Treppen.</span>
+          </div>
+          <span class="innen-chevron">›</span>
+        </a>
+        <a class="innen-link" href="putzarbeiten.html">
+          <div class="innen-dot-wrap"><div class="innen-dot"></div></div>
+          <div class="innen-text">
+            <span class="innen-link-title">Putzarbeiten</span>
+            <span class="innen-link-teaser">Glatt, strukturiert oder kreativ – wir schaffen die Basis für perfekte Wände.</span>
+          </div>
+          <span class="innen-chevron">›</span>
+        </a>
+        <a class="innen-link" href="montagearbeiten.html">
+          <div class="innen-dot-wrap"><div class="innen-dot"></div></div>
+          <div class="innen-text">
+            <span class="innen-link-title">Fertigbauteile</span>
+            <span class="innen-link-teaser">Clever vorgefertigte Elemente, sauber integriert und exakt montiert.</span>
+          </div>
+          <span class="innen-chevron">›</span>
+        </a>
+        <a class="innen-link" href="barrierefreies-bauen.html">
+          <div class="innen-dot-wrap"><div class="innen-dot"></div></div>
+          <div class="innen-text">
+            <span class="innen-link-title">Barrierefreies Bauen</span>
+            <span class="innen-link-teaser">Komfortabel und sicher wohnen – mit durchdachten, schwellenlosen Lösungen.</span>
+          </div>
+          <span class="innen-chevron">›</span>
+        </a>
+      </nav>
+    </section>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var modal = document.getElementById('innenausbau-modal');
+  if (!modal) return;
+
+  function openModal(event) {
+    if (event) { event.preventDefault(); }
+    modal.classList.add('is-open');
+    document.body.classList.add('no-scroll');
+    modal.setAttribute('aria-hidden', 'false');
+  }
+
+  function closeModal() {
+    modal.classList.remove('is-open');
+    document.body.classList.remove('no-scroll');
+    modal.setAttribute('aria-hidden', 'true');
+  }
+
+  var triggerCard = document.querySelector('[data-innenausbau-card]');
+  if (triggerCard) {
+    triggerCard.addEventListener('click', function (e) {
+      // Button / Links innerhalb der Karte nicht zur Seite leiten, sondern Popup öffnen
+      if (e.target.closest('a')) {
+        e.preventDefault();
+      }
+      openModal();
+    });
+  }
+
+  var closeBtn = modal.querySelector('.innen-close');
+  if (closeBtn) {
+    closeBtn.addEventListener('click', function (e) {
+      e.preventDefault();
+      closeModal();
+    });
+  }
+
+  // Klick auf den dunklen Bereich schließt das Popup
+  modal.addEventListener('click', function (e) {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+
+  // Escape schließt das Popup
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && modal.classList.contains('is-open')) {
+      closeModal();
+    }
+  });
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var badModal = document.getElementById('bad-modal');
+  if (!badModal) return;
+
+  function openBadModal(event) {
+    if (event) { event.preventDefault(); }
+    badModal.classList.add('is-open');
+    document.body.classList.add('no-scroll');
+    badModal.setAttribute('aria-hidden', 'false');
+  }
+
+  function closeBadModal() {
+    badModal.classList.remove('is-open');
+    document.body.classList.remove('no-scroll');
+    badModal.setAttribute('aria-hidden', 'true');
+  }
+
+  var badCard = document.querySelector('[data-bad-card]');
+  if (badCard) {
+    badCard.addEventListener('click', function (e) {
+      if (e.target.closest('a')) {
+        e.preventDefault();
+      }
+      openBadModal(e);
+    });
+  }
+
+  var closeBtn = badModal.querySelector('.innen-close');
+  if (closeBtn) {
+    closeBtn.addEventListener('click', function (e) {
+      e.preventDefault();
+      closeBadModal();
+    });
+  }
+
+  badModal.addEventListener('click', function (e) {
+    if (e.target === badModal) {
+      closeBadModal();
+    }
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && badModal.classList.contains('is-open')) {
+      closeBadModal();
+    }
+  });
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var aussenModal = document.getElementById('aussen-modal');
+  if (!aussenModal) return;
+
+  function openAussenModal(event) {
+    if (event) { event.preventDefault(); }
+    aussenModal.classList.add('is-open');
+    document.body.classList.add('no-scroll');
+    aussenModal.setAttribute('aria-hidden', 'false');
+  }
+
+  function closeAussenModal() {
+    aussenModal.classList.remove('is-open');
+    document.body.classList.remove('no-scroll');
+    aussenModal.setAttribute('aria-hidden', 'true');
+  }
+
+  var aussenCard = document.querySelector('[data-aussen-card]');
+  if (aussenCard) {
+    aussenCard.addEventListener('click', function (e) {
+      if (e.target.closest('a')) {
+        e.preventDefault();
+      }
+      openAussenModal(e);
+    });
+  }
+
+  var closeBtn = aussenModal.querySelector('.innen-close');
+  if (closeBtn) {
+    closeBtn.addEventListener('click', function (e) {
+      e.preventDefault();
+      closeAussenModal();
+    });
+  }
+
+  aussenModal.addEventListener('click', function (e) {
+    if (e.target === aussenModal) {
+      closeAussenModal();
+    }
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && aussenModal.classList.contains('is-open')) {
+      closeAussenModal();
+    }
+  });
+});
+</script>
+
+
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  var toggle = document.querySelector('.nav-toggle');
+  var menu   = document.getElementById('primary-nav') || document.querySelector('header .menu');
+  if(!toggle || !menu) return;
+
+  function closeMenu(){
+    menu.classList.remove('open');
+    toggle.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }
+
+  toggle.addEventListener('click', function(){
+    var isOpen = !menu.classList.contains('open');
+    if(isOpen){
+      menu.classList.add('open');
+      toggle.classList.add('open');
+      toggle.setAttribute('aria-expanded', 'true');
+    }else{
+      closeMenu();
+    }
+  });
+
+  // Beim Klick auf einen Navigationslink im mobilen Modus wieder schließen
+  menu.querySelectorAll('.nav-link').forEach(function(link){
+    link.addEventListener('click', function(){
+      if(window.innerWidth <= 1024){
+        closeMenu();
+      }
+    });
+  });
+
+  // Beim Resize auf Desktop sicherstellen, dass Menü eingeklappt ist
+  window.addEventListener('resize', function(){
+    if(window.innerWidth > 1024 && menu.classList.contains('open')){
+      closeMenu();
+    }
+  });
+});
+</script>
+
+<!-- ReCAPTCHA Lazy Loading Script -->
+<script>
+  // Lazy Load reCAPTCHA nur wenn Benutzer im Kontaktformular Bereich ist
+  let recaptchaLoaded = false;
+  
+  function loadRecaptcha() {
+    if (!recaptchaLoaded) {
+      const script = document.createElement('script');
+      script.src = 'https://www.google.com/recaptcha/api.js?render=6Lf5p8IUAAAAADYKGk-KdEk_fbuuDFFfKRBjb6yI';
+      script.async = true;
+      document.head.appendChild(script);
+      recaptchaLoaded = true;
+      console.log('reCAPTCHA lazy loaded');
+    }
+  }
+  
+  // Intersection Observer für das Kontaktformular
+  const observerOptions = {
+    root: null,
+    rootMargin: '200px', // 200px vor dem Erreichen des Elements laden
+    threshold: 0.01
+  };
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        loadRecaptcha();
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+  
+  // Beobachte das Kontaktformular
+  const kontaktFormular = document.getElementById('dmk-sec6');
+  if (kontaktFormular) {
+    observer.observe(kontaktFormular);
+  }
+  
+  // Auch laden wenn der Benutzer auf den Kontakt-Link klickt
+  document.querySelectorAll('a[href="#dmk-sec6"], a[href="#kontaktformular"]').forEach(link => {
+    link.addEventListener('click', () => {
+      setTimeout(loadRecaptcha, 300);
+    });
+  });
+  
+  // Auch laden wenn das Formular selbst fokussiert wird
+  document.addEventListener('focusin', (e) => {
+    if (e.target.closest('#dmk-form')) {
+      loadRecaptcha();
+    }
+  });
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.getElementById('dmk-form');
+  if (!form) return;
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    // Warte auf reCAPTCHA falls noch nicht geladen
+    if (typeof grecaptcha === 'undefined') {
+      console.log('reCAPTCHA noch nicht geladen, lade jetzt...');
+      loadRecaptcha();
+      setTimeout(() => {
+        this.submit();
+      }, 1000);
+      return;
+    }
+
+    grecaptcha.ready(function () {
+      grecaptcha.execute('6Lf5p8IUAAAAADYKGk-KdEk_fbuuDFFfKRBjb6yI', { action: 'kontakt' })
+        .then(function (token) {
+          let input = form.querySelector('input[name="recaptcha_token"]');
+          if (!input) {
+            input = document.createElement('input');
+            input.type = 'hidden';
+            input.name = 'recaptcha_token';
+            form.appendChild(input);
+          }
+          input.value = token;
+          // form.submit(); // deaktiviert (AJAX Popup Fix)
+        });
+    });
+  });
+});
+</script>
+	<!-- ===== Kontaktformular Erfolgspopup ===== -->
+<style>
+#dmk-success-popup{
+  position:fixed; inset:0; display:none; align-items:center; justify-content:center;
+  background:rgba(0,0,0,.45); z-index:9999;
+}
+#dmk-success-popup .box{
+  background:#fff; border-radius:18px; padding:28px 26px; max-width:420px; width:90%;
+  box-shadow:0 20px 50px rgba(0,0,0,.25); text-align:center;
+}
+#dmk-success-popup h3{color:#369142;font-size:22px;margin-bottom:10px}
+#dmk-success-popup p{color:#333;font-size:15.5px;line-height:1.6}
+#dmk-success-popup button{
+  margin-top:18px; background:#369142; color:#fff; border:0;
+  padding:12px 18px; border-radius:12px; font-weight:700; cursor:pointer;
+}
+</style>
+
+<div id="dmk-success-popup" role="dialog" aria-modal="true">
+  <div class="box">
+    <h3>Vielen Dank!</h3>
+    <p>Wir haben Ihre Nachricht erhalten und melden uns in Kürze bei Ihnen.</p>
+    <button type="button" onclick="document.getElementById('dmk-success-popup').style.display='none'">
+      Schließen
+    </button>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.getElementById('dmk-form');
+  if (!form) return;
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    // Warte auf reCAPTCHA falls noch nicht geladen
+    if (typeof grecaptcha === 'undefined') {
+      console.log('reCAPTCHA noch nicht geladen, lade jetzt...');
+      loadRecaptcha();
+      setTimeout(() => {
+        submitFormWithRecaptcha();
+      }, 1500);
+      return;
+    }
+
+    submitFormWithRecaptcha();
+  });
+  
+  function submitFormWithRecaptcha() {
+    grecaptcha.ready(function () {
+      grecaptcha.execute('6Lf5p8IUAAAAADYKGk-KdEk_fbuuDFFfKRBjb6yI', { action: 'kontakt' })
+        .then(function (token) {
+
+          const fd = new FormData(form);
+          fd.set('recaptcha_token', token);
+
+          fetch(form.action, { method: 'POST', body: fd })
+            .then(res => res.text())
+            .then(text => {
+              if (/ok/i.test(text)) {
+                form.reset();
+                document.getElementById('dmk-success-popup').style.display = 'flex';
+              } else {
+                alert('Beim Senden ist ein Fehler aufgetreten.');
+              }
+            })
+            .catch(() => alert('Verbindungsfehler.'));
+        });
+    });
+  }
+});
+</script>
+<!-- ================= COOKIE BANNER START ================= -->
+<style>
+#cookie-banner{
+  --green-main:#4CAF50;
+  --green-soft:#E9F6EC;
+  --green-light:#F4FBF6;
+  --text-dark:#1f2d24;
+  --border:#d8eede;
+
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  position:fixed;
+  left:0; right:0; bottom:0;
+  max-width:1000px;
+  margin:auto;
+  background:linear-gradient(180deg,var(--green-light),var(--green-soft));
+  border-top:4px solid var(--green-main);
+  border-radius:22px 22px 0 0;
+  padding:26px;
+  color:var(--text-dark);
+  box-shadow:0 -10px 30px rgba(0,0,0,.15);
+  z-index:9999;
+  display:none;
+}
+
+#cookie-banner .cb-text{font-size:15px;line-height:1.6}
+#cookie-banner .cb-text a{color:var(--green-main);font-weight:500}
+
+#cookie-banner .cb-options{display:grid;gap:14px;margin:22px 0}
+#cookie-banner .cb-option{
+  display:flex;justify-content:space-between;align-items:center;
+  background:#fff;border:1px solid var(--border);
+  padding:14px 16px;border-radius:14px
+}
+
+#cookie-banner .switch{position:relative;width:44px;height:24px}
+#cookie-banner .switch input{opacity:0}
+
+#cookie-banner .slider{
+  position:absolute;inset:0;background:#dbeee0;
+  border-radius:30px;cursor:pointer;transition:.3s
+}
+#cookie-banner .slider:before{
+  content:"";position:absolute;width:18px;height:18px;
+  left:3px;top:3px;background:#fff;border-radius:50%;transition:.3s
+}
+
+#cookie-banner input:checked + .slider{background:var(--green-main)}
+#cookie-banner input:checked + .slider:before{transform:translateX(20px)}
+
+#cookie-banner .cb-actions{display:flex;flex-direction:column;gap:12px}
+#cookie-banner .cb-actions button{
+  padding:14px;font-size:15px;font-weight:600;
+  border-radius:14px;border:none;cursor:pointer
+}
+
+#cookie-banner .btn-main{background:var(--green-main);color:#fff}
+#cookie-banner .btn-alt{background:#fff;color:var(--green-main);border:1px solid var(--green-main)}
+#cookie-banner .btn-ghost{background:transparent;color:#4a6b56}
+</style>
+
+<div id="cookie-banner">
+  <p class="cb-text">
+    Wir verwenden Cookies, um grundlegende Funktionen bereitzustellen.
+    Optionale Cookies (z. B. Google reCAPTCHA v3) werden nur mit Ihrer Einwilligung geladen.
+    <a href="datenschutz.html">Datenschutzerklärung</a>
+  </p>
+
+  <div class="cb-options">
+    <div class="cb-option">
+      <strong>Notwendig</strong>
+      <label class="switch">
+        <input type="checkbox" checked disabled>
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="cb-option">
+      <strong>Statistik</strong>
+      <label class="switch">
+        <input type="checkbox" id="cb-stat">
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="cb-option">
+      <strong>Marketing</strong>
+      <label class="switch">
+        <input type="checkbox" id="cb-mark">
+        <span class="slider"></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="cb-actions">
+    <button class="btn-main" onclick="cbAccept()">Alle akzeptieren</button>
+    <button class="btn-alt" onclick="cbSave()">Auswahl speichern</button>
+    <button class="btn-ghost" onclick="cbReject()">Ablehnen</button>
+  </div>
+</div>
+
+<script>
+const CB_KEY="cookieConsent";
+
+function cbAccept(){
+  localStorage.setItem(CB_KEY,JSON.stringify({stat:true,mark:true}));
+  document.getElementById("cookie-banner").style.display="none";
+}
+function cbSave(){
+  localStorage.setItem(CB_KEY,JSON.stringify({
+    stat:document.getElementById("cb-stat").checked,
+    mark:document.getElementById("cb-mark").checked
+  }));
+  document.getElementById("cookie-banner").style.display="none";
+}
+function cbReject(){
+  localStorage.setItem(CB_KEY,JSON.stringify({stat:false,mark:false}));
+  document.getElementById("cookie-banner").style.display="none";
+}
+
+window.addEventListener("load",()=>{
+  if(!localStorage.getItem(CB_KEY)){
+    document.getElementById("cookie-banner").style.display="block";
+  }
+});
+</script>
+<!-- ================= COOKIE BANNER ENDE ================= -->
+
+	
+</body>
+</html>

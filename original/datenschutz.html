@@ -1,0 +1,1619 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Datenschutzerklärung – DMK Bau Reichelsheim | Odenwald</title>
+  <meta name="description" content="Datenschutzerklärung von DMK Bau Reichelsheim mit Informationen zur Verarbeitung personenbezogener Daten gemäß DSGVO." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index, follow" />
+	
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/dmk-bau-reichelsheim-favicon.webp" sizes="32x32">
+  <link rel="apple-touch-icon" href="images/dmk-bau-reichelsheim-favicon.webp">
+  <meta name="msapplication-TileImage" content="/images/dmk-bau-reichelsheim-favicon.webp">
+
+  <!-- Quicksand Schriftart -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root{
+      --brand:#369142;
+      --brand-2:#2B7A37;
+      --brand-dark:#2E6C3A;
+      --text:#1f1f1f;
+      --muted:#6b7280;
+      --card:#ffffff;
+      --bg:#ffffff;
+      --ring:#e3e8ee;
+      --shadow:0 12px 38px rgba(0,0,0,.08);
+      --radius:18px;
+      --flow:14px;
+      --max-width:1440px;
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0;}
+
+    body{
+      font-family:"Quicksand",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.5;
+    }
+
+    p{color:#525252;}
+    a{color:inherit;}
+
+    .flow > * + *{ margin-top: var(--flow); }
+
+    .sr-only{
+      position:absolute!important;
+      width:1px!important;
+      height:1px!important;
+      padding:0!important;
+      margin:-1px!important;
+      overflow:hidden!important;
+      clip:rect(0,0,0,0)!important;
+      white-space:nowrap!important;
+      border:0!important;
+    }
+
+    .container{
+      width:100%;
+      max-width:var(--max-width);
+      margin:0 auto;
+      padding:0 18px;
+    }
+
+    main{
+      padding:40px 0 72px;
+      background:#f9fbf9;
+    }
+
+    /* =========================
+       Header & Navigation – identisch zur Hauptseite
+       ========================= */
+    header{
+      background:var(--brand);
+      position:sticky;
+      top:0;
+      z-index:100;
+      box-shadow:0 1px 6px rgba(0,0,0,.06);
+    }
+    .nav-wrap{
+      max-width:1440px;
+      margin:0 auto;
+      padding:0 18px;
+      height:60px;
+      display:flex;
+      align-items:center;
+      justify-content:flex-end;
+      gap:12px;
+      position:relative;
+      flex-wrap:wrap;
+    }
+    .menu{display:flex;align-items:center;gap:22px;flex-wrap:wrap;justify-content:center;}
+    .nav-link{
+      color:#ffffff !important;
+      text-decoration:none !important;
+      font-weight:600;
+    }
+    .nav-link:hover{opacity:0.8;}
+    .call-display{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      background:#ffffff;
+      color:#000000 !important;
+      padding:8px 14px;
+      border-radius:10px;
+      text-decoration:none !important;
+      font-weight:600;
+      transition:background .2s;
+    }
+    .call-display svg{stroke:#000000;}
+    .call-display:hover{background:#f4f4f4;}
+    /* === Mobile Burger Menu === */
+    .nav-toggle{display:none;margin-left:auto;background:transparent;border:0;padding:7px;border-radius:999px;cursor:pointer;transform:translateY(0);transition:transform .16s ease,box-shadow .16s ease;}
+    .nav-toggle:hover{transform:translateY(-1px);}
+    .nav-toggle:active{transform:translateY(1px);}
+    .nav-toggle:focus-visible{outline:3px solid rgba(255,255,255,.85);outline-offset:3px;}
+    .nav-toggle-box{position:relative;width:32px;height:24px;display:inline-block;}
+    .nav-toggle-bar, .nav-toggle-bar::before, .nav-toggle-bar::after{content:"";position:absolute;left:0;right:0;height:3px;background:#ffffff;border-radius:999px;bottom:-8px;}
+    .nav-toggle-bar{top:50%;transform:translateY(-50%);}
+    .nav-toggle-bar::before{content:"";position:absolute;left:0;right:0;height:3px;background:#ffffff;border-radius:999px;top:-8px;}
+    .nav-toggle-bar::after{content:"";position:absolute;left:0;right:0;height:3px;background:#ffffff;border-radius:999px;bottom:-8px;}
+    .nav-toggle.open .nav-toggle-bar{top:50%;transform:translateY(-50%);}
+    .nav-toggle.open .nav-toggle-bar::before{content:"";position:absolute;left:0;right:0;height:3px;background:#ffffff;border-radius:999px;top:-8px;}
+    .nav-toggle.open .nav-toggle-bar::after{content:"";position:absolute;left:0;right:0;height:3px;background:#ffffff;border-radius:999px;bottom:-8px;}
+    /* Mobile Responsive */
+    @media (max-width: 1024px){
+      .nav-toggle{display:inline-flex;align-items:center;justify-content:center;}
+      header .nav-wrap{
+        height:60px;
+        padding-top:8px;
+        padding-bottom:8px;
+        justify-content:space-between;
+        align-items:center;
+        row-gap:0;
+        flex-wrap:nowrap;
+      }
+      header .menu{
+        position:absolute;
+        left:12px;
+        right:12px;
+        top:100%;
+        margin-top:8px;
+        background:linear-gradient(145deg, rgba(0,0,0,.24), rgba(0,0,0,.32));
+        backdrop-filter:blur(18px);
+        flex-direction:column;
+        align-items:flex-start;
+        gap:6px;
+        padding:12px 14px 14px;
+        border-radius:18px;
+        box-shadow:0 20px 38px rgba(0,0,0,.5);
+        max-height:0;
+        opacity:0;
+        overflow:hidden;
+        pointer-events:none;
+        transform:translateY(-8px) translateZ(0);
+        transition:max-height .26s ease, opacity .2s ease, transform .22s ease;
+      }
+      header .menu.open{
+        max-height:260px;
+        opacity:1;
+        pointer-events:auto;
+        transform:translateY(0) translateZ(0);
+      }
+      header .menu .nav-link{
+        width:100%;
+        padding:8px 4px;
+        border-radius:12px;
+        position:relative;
+        overflow:hidden;
+        transform:translateX(0);
+        transition:background .18s ease, transform .18s ease, box-shadow .18s ease;
+      }
+      header .menu .nav-link::before{
+        content:"";
+        position:absolute;
+        inset:0;
+        opacity:0;
+        background:linear-gradient(90deg, rgba(255,255,255,.15), rgba(255,255,255,0));
+        transform:translateX(-18px);
+        transition:opacity .18s ease, transform .22s ease;
+        pointer-events:none;
+      }
+      header .menu .nav-link:hover{
+        background:rgba(255,255,255,.09);
+        transform:translateX(4px);
+        box-shadow:0 6px 14px rgba(0,0,0,.45);
+      }
+      header .menu .nav-link:hover::before{
+        opacity:1;
+        transform:translateX(0);
+      }
+      header .menu .call-display{
+        width:100%;
+        justify-content:center;
+        margin-top:4px;
+      }
+    }
+    /* Focus styles */
+    :focus-visible{outline:3px solid rgba(54,145,66,.36);outline-offset:2px}
+    /* Anker-Versatz für Hauptnavigation */
+    #datenschutz-content{
+      scroll-margin-top: 92px;
+    }
+    @media (max-width: 900px){
+      #datenschutz-content{
+        scroll-margin-top: 76px;
+      }
+    }
+
+    /* =========================
+       Datenschutz spezifische Stile
+       ========================= */
+    .datenschutz-hero {
+      padding: 50px 0 30px;
+      background: radial-gradient(circle at top left, rgba(58,125,68,.12), transparent 55%);
+    }
+    
+    .datenschutz-hero h1 {
+      font-size: clamp(28px, 3.5vw, 36px);
+      line-height: 1.2;
+      font-weight: 700;
+      color: var(--brand-dark);
+      margin-top: 10px;
+    }
+    
+    .datenschutz-hero p {
+      margin-top: 14px;
+      font-size: 16px;
+      color: #374151;
+      max-width: 70ch;
+    }
+    
+    .datenschutz-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(54,145,66,0.06);
+      border: 1px solid rgba(54,145,66,0.18);
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--brand-dark);
+    }
+    
+    /* Datenschutz Content Stile */
+    .datenschutz-content {
+      margin-top: 30px;
+      background: #ffffff;
+      border-radius: 18px;
+      border: 1px solid #e2e8e4;
+      box-shadow: 0 10px 26px rgba(0,0,0,.06);
+      padding: 28px 30px 32px;
+    }
+    
+    .datenschutz-section {
+      margin-bottom: 32px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #eef2ee;
+    }
+    
+    .datenschutz-section:last-of-type {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    
+    .datenschutz-section h2 {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--brand-dark);
+      margin-bottom: 16px;
+    }
+    
+    .datenschutz-section h3 {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--brand-dark);
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    
+    .datenschutz-section h4 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #374151;
+      margin-top: 16px;
+      margin-bottom: 8px;
+    }
+    
+    .datenschutz-section p {
+      margin-bottom: 12px;
+      line-height: 1.6;
+    }
+    
+    .datenschutz-section ul, 
+    .datenschutz-section ol {
+      margin-left: 20px;
+      margin-bottom: 16px;
+    }
+    
+    .datenschutz-section li {
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+    
+    .datenschutz-section strong {
+      color: var(--brand-dark);
+      font-weight: 600;
+    }
+    
+    /* Rechtshinweis-Box */
+    .rechtliche-hinweise {
+      background: #f9fbf9;
+      border-left: 4px solid var(--brand);
+      padding: 16px 20px;
+      margin: 24px 0;
+      border-radius: 0 12px 12px 0;
+    }
+    
+    .rechtliche-hinweise p {
+      margin-bottom: 0;
+      font-size: 14px;
+      color: #4b5563;
+    }
+    
+    /* Hervorgehobene Box für wichtige Informationen */
+    .info-box {
+      background: #f0f7f1;
+      border: 1px solid #d1e3d5;
+      border-radius: 12px;
+      padding: 18px 20px;
+      margin: 20px 0;
+    }
+    
+    .info-box-title {
+      font-weight: 700;
+      color: var(--brand-dark);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .info-box-title::before {
+      content: "ℹ️";
+    }
+    
+    /* Warnbox für Sicherheitshinweise */
+    .security-box {
+      background: #fff8f0;
+      border: 1px solid #ffddb3;
+      border-radius: 12px;
+      padding: 18px 20px;
+      margin: 20px 0;
+    }
+    
+    .security-box-title {
+      font-weight: 700;
+      color: #c2410c;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .security-box-title::before {
+      content: "🔒";
+    }
+    
+    /* Kontaktdaten-Box */
+    .kontakt-daten-box {
+      background: #f0f7ff;
+      border: 1px solid #c2d9ff;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 24px 0;
+    }
+    
+    .kontakt-daten-box h3 {
+      margin-top: 0;
+      color: #1e40af;
+    }
+    
+    /* Tabelle für Übersicht */
+    .datenschutz-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 14px;
+    }
+    
+    .datenschutz-table th {
+      background: #f9fbf9;
+      border: 1px solid #e2e8e4;
+      padding: 12px 15px;
+      text-align: left;
+      font-weight: 600;
+      color: var(--brand-dark);
+    }
+    
+    .datenschutz-table td {
+      border: 1px solid #e2e8e4;
+      padding: 12px 15px;
+      vertical-align: top;
+    }
+    
+    .datenschutz-table tr:nth-child(even) {
+      background: #f9fbf9;
+    }
+    
+    /* =========================
+       Footer – identisch zur Hauptseite
+       ========================= */
+    :root{
+      --brand:#3A7D44;
+      --brand-2:#2E6C3A;
+      --ink:#1f1f1f;
+      --ring:#e7ece8;
+      --bg:#ffffff;
+    }
+    footer.dmk-footer{
+      background: var(--bg);
+      border-top: 1px solid #eef2ee;
+      padding: 48px 20px 24px;
+      width: 100%;
+    }
+    .dmk-foot-wrap{
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 32px;
+      position: relative;
+    }
+    @media (min-width: 820px){
+      .dmk-foot-wrap{
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .dmk-foot-wrap::before,
+      .dmk-foot-wrap::after,
+      .dmk-foot-wrap section:nth-of-type(4)::before {
+        content: "";
+        position: absolute;
+        top: 0; bottom: 0;
+        width: 1px;
+        background: #e9eee9;
+      }
+      .dmk-foot-wrap::before { left: calc(25% - 0.5px); }
+      .dmk-foot-wrap::after { left: calc(50% - 0.5px); }
+      .dmk-foot-wrap section:nth-of-type(4)::before { left: calc(75% - 0.5px); }
+    }
+    .dmk-foot h4{
+      font-weight:700;
+      font-size:18px;
+      margin-bottom:14px;
+      background:linear-gradient(90deg,var(--brand),var(--brand-2));
+      -webkit-background-clip:text;
+      background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+    .dmk-list{list-style:none;display:grid;gap:10px;padding:0;margin:0;}
+    .dmk-link{
+      text-decoration:none;
+      color:#2a2f2b;
+      font-weight:600;
+      display:inline-block;
+      transition:all .25s ease;
+    }
+    .dmk-link:hover{
+      color:var(--brand);
+      transform:translateY(-2px) scale(1.1);
+    }
+    .dmk-contact{display:grid;gap:10px;color:#2b2f2c;}
+    .dmk-row{display:flex;align-items:flex-start;gap:10px;}
+    .dmk-ico{
+      width:20px;height:20px;flex:0 0 20px;
+      display:inline-flex;align-items:center;justify-content:center;
+      color:var(--brand);
+    }
+    .dmk-contact a{
+      color:var(--brand);
+      text-decoration:none;
+      font-weight:700;
+    }
+    .dmk-contact a:hover{text-decoration:underline;}
+    .dmk-contact div{
+      font-weight:500;
+    }
+    .dmk-contact strong{
+      font-weight:700;
+    }
+    .dmk-social{display:flex;gap:18px;align-items:center;flex-wrap:wrap;}
+    .dmk-sbtn{
+      width:56px;height:56px;
+      border-radius:16px;
+      background:linear-gradient(145deg,#ffffff,#e9efe9);
+      box-shadow:6px 6px 12px #d9ded9,-6px -6px 12px #ffffff;
+      display:flex;align-items:center;justify-content:center;
+      transition:all .25s ease;
+      color:var(--brand-2);
+      position:relative;
+      overflow:hidden;
+    }
+    .dmk-sbtn svg{width:32px;height:24px;z-index:2;}
+    .dmk-sbtn span.label{
+      position:absolute;
+      left:65px;
+      opacity:0;
+      white-space:nowrap;
+      color:var(--brand-2);
+      font-weight:700;
+      transition:all .25s ease;
+      transform:translateX(-10px);
+    }
+    .dmk-sbtn:hover{
+      transform:translateY(-4px);
+      box-shadow:4px 4px 10px rgba(58,125,68,.25),-4px -4px 10px #ffffff;
+      background:linear-gradient(145deg,#f1f6f2,#ffffff);
+      color:var(--brand);
+    }
+    .dmk-sbtn:hover span.label{
+      opacity:1;
+      transform:translateX(0);
+    }
+    .dmk-sbtn:active{
+      transform:translateY(0);
+      box-shadow:inset 3px 3px 6px #d9ded9,inset -3px -3px 6px #ffffff;
+    }
+    .dmk-copy{
+      max-width:1200px;
+      margin:32px auto 0;
+      padding-top:18px;
+      border-top:1px solid #eef2ee;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      font-size:14px;
+      font-weight:600;
+      color:#4d534e;
+    }
+    .dmk-copy a{
+      color:var(--brand);
+      text-decoration:none;
+      font-weight:700;
+    }
+    .dmk-copy a:hover{text-decoration:underline;}
+    
+    /* Responsive Anpassungen */
+    @media (max-width: 768px) {
+      .datenschutz-content {
+        padding: 20px 22px 24px;
+      }
+      
+      .datenschutz-section h2 {
+        font-size: 20px;
+      }
+      
+      .datenschutz-section h3 {
+        font-size: 17px;
+      }
+      
+      .datenschutz-table {
+        display: block;
+        overflow-x: auto;
+      }
+    }
+    
+    /* Akkordeon für lange Listen */
+    .akkordeon {
+      margin: 20px 0;
+    }
+    
+    .akkordeon-details {
+      border: 1px solid #e2e8e4;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
+    
+    .akkordeon-summary {
+      padding: 14px 18px;
+      background: #f9fbf9;
+      cursor: pointer;
+      font-weight: 600;
+      color: var(--brand-dark);
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .akkordeon-summary::-webkit-details-marker {
+      display: none;
+    }
+    
+    .akkordeon-summary::after {
+      content: "➕";
+      font-size: 14px;
+      transition: transform 0.3s;
+    }
+    
+    .akkordeon-details[open] .akkordeon-summary::after {
+      content: "➖";
+    }
+    
+    .akkordeon-content {
+      padding: 18px;
+      border-top: 1px solid #e2e8e4;
+    }
+  </style>
+</head>
+<body>
+
+<a href="datenschutz.html#main" class="sr-only">Zum Hauptinhalt springen</a>
+
+<!-- =========================
+     Header & Navigation – identisch zur Hauptseite
+     ========================= -->
+<header>
+  <nav class="nav-wrap" aria-label="Hauptnavigation">
+	  <!-- LOGO LINKS – CONTENT-BÜNDIG -->
+<a href="index.html" class="nav-logo">
+  <img src="images/dmk-bau-firmenlogo-reichelsheim-odenwald-1.webp" alt="DMK Bau Logo">
+</a>
+
+<style>
+  /* Logo ist Teil des normalen Layouts */
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto; /* schiebt Menü & Call-Button nach rechts */
+  }
+
+  .nav-logo img {
+    height: 42px;
+    width: auto;
+    display: block;
+  }
+</style>
+    <button class="nav-toggle" aria-label="Hauptmenü öffnen" aria-expanded="false" type="button">
+      <span class="nav-toggle-box">
+        <span class="nav-toggle-bar"></span>
+      </span>
+    </button>
+    
+    <div class="menu" id="primary-nav">
+      <a class="nav-link" href="index.html#unternehmen">Unternehmen</a>
+      <a class="nav-link" href="index.html#dmk-sec3">Leistungen</a>
+      <a class="nav-link" href="index.html#kontaktformular">Kontaktformular</a>
+      
+      <a aria-label="Jetzt anrufen: 0160 7791280" class="call-display" href="tel:01607791280">
+        <svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="18">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6
+                   19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.3 1.78.54 2.64
+                   a2 2 0 0 1-.45 2.11L8 9a16 16 0 0 0 7 7l.53-1.2a2 2 0 0 1 2.11-.45c.86.24 1.74.42 2.64.54A2 2 0 0 1 22 16.92z"></path>
+        </svg>
+        0160 7791280
+      </a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+  
+  <!-- =========================
+       Datenschutz Hero-Bereich
+       ========================= -->
+  <section class="datenschutz-hero" aria-labelledby="datenschutz-title">
+    <div class="container">
+      <div class="flow">
+        <div class="datenschutz-badge">Datenschutz & Datensicherheit</div>
+        <h1 id="datenschutz-title">Datenschutzerklärung – DMK Bau Reichelsheim</h1>
+        <p>Datenschutzerklärung – DMK Bau Reichelsheim: Transparenz und Sicherheit im Umgang mit Ihren Daten: Hier erfahren Sie, wie wir Ihre personenbezogenen Daten bei der Nutzung unserer Website im Odenwald, im Kontaktformular und bei WhatsApp-Kommunikation schützen und verarbeiten.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- =========================
+       Datenschutz Hauptinhalt
+       ========================= -->
+  <div class="container">
+    <article id="datenschutz-content" class="datenschutz-content" aria-label="Datenschutzerklärung-Inhalt">
+      
+      <!-- H2: Einleitung -->
+      <section class="datenschutz-section">
+        <h2>1. Einleitung & Verantwortlicher</h2>
+        
+        <p>Wir, die DMK Bau Reichelsheim (Inhaber: Dariusz Krzysztoń), nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Diese Datenschutzerklärung informiert Sie darüber, wie wir personenbezogene Daten erheben, verarbeiten und nutzen, wenn Sie unsere Website besuchen, unser Kontaktformular nutzen oder mit uns über WhatsApp kommunizieren.</p>
+        
+        <h3>Verantwortliche Stelle</h3>
+        <p>
+Verantwortlich für die Datenverarbeitung auf dieser Website ist die DMK Bau Reichelsheim.
+Inhaber des Unternehmens ist Dariusz Krzysztoń mit Sitz in der Heidelberger Straße 5,
+64385 Reichelsheim, Deutschland.Sie erreichen uns telefonisch unter 06164&nbsp;5039805 oder per E-Mail an
+<a href="mailto:info@dmk-bau.de">info@dmk-bau.de</a>.
+</p>
+
+<p>
+Weitere Informationen zu unserem Unternehmen finden Sie auf unserer Website unter
+<a href="index.html" target="_blank" rel="noopener">https://dmk-bau.de</a>.
+</p>
+
+        
+        <div class="rechtliche-hinweise">
+          <p>Rechtliche Grundlage: Diese Datenschutzerklärung erfüllt die gesetzlichen Anforderungen der Datenschutz-Grundverordnung (DSGVO), des Bundesdatenschutzgesetzes (BDSG) und des Telemediengesetzes (TMG).</p>
+        </div>
+      </section>
+      
+      <!-- H2: WhatsApp-Datenschutz -->
+      <section class="datenschutz-section">
+        <h2>2. WhatsApp-Kommunikation</h2>
+        
+        <div class="info-box">
+          <div class="info-box-title">Wichtige Informationen zur WhatsApp-Nutzung</div>
+          <p>Wir bieten die Möglichkeit, uns über WhatsApp zu kontaktieren. Bitte beachten Sie folgende datenschutzrechtliche Hinweise zur Nutzung dieses Dienstes.</p>
+        </div>
+        
+        <h3>Welche Daten werden bei WhatsApp übermittelt?</h3>
+        <p>Bei der Kontaktaufnahme über WhatsApp werden folgende Daten an uns übermittelt:</p>
+        <ul>
+          <li>Ihre WhatsApp-Registrierungsdaten (Telefonnummer, ggf. Profilname)</li>
+          <li>Alle Nachrichteninhalte, die Sie uns senden</li>
+          <li>Zeitpunkt der Nachrichtenübermittlung</li>
+          <li>Bei Medien: Fotos, Dokumente, Standortdaten (falls gesendet)</li>
+        </ul>
+        
+        <h3>Verarbeitungszweck und Rechtsgrundlage</h3>
+        <p>Wir nutzen WhatsApp zur schnellen und unkomplizierten Kommunikation mit unseren Kunden und Interessenten. Die Rechtsgrundlage für die Verarbeitung ist Art. 6 Abs. 1 lit. b DSGVO (Vertragsanbahnung oder Vertragserfüllung) bzw. Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an effizienter Kundenkommunikation).</p>
+        
+        <h3>Hinweise zu Meta (WhatsApp-Anbieter)</h3>
+        <p>WhatsApp wird von Meta Platforms Ireland Limited (4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Irland) betrieben. Bei der Nutzung von WhatsApp gelten die <a href="https://www.whatsapp.com/legal/" rel="noopener" target="_blank">Datenschutzrichtlinien von WhatsApp</a>. Meta verarbeitet Daten teilweise in den USA. Die Datenübermittlung in die USA erfolgt auf Grundlage der EU-Standardvertragsklauseln.</p>
+        
+        <div class="security-box">
+          <div class="security-box-title">Sicherheitshinweis</div>
+          <p>Wichtig: WhatsApp ist ein Dienst von Meta. Wir haben keinen Einfluss auf die Datenverarbeitung durch Meta. Für vertrauliche Informationen empfehlen wir alternative Kommunikationswege (Telefon, E-Mail).</p>
+        </div>
+        
+        <h3>Speicherdauer bei WhatsApp-Kommunikation</h3>
+        <p>Ihre WhatsApp-Nachrichten speichern wir so lange, wie es für die Bearbeitung Ihrer Anfrage erforderlich ist. Bei Vertragsverhältnissen bewahren wir die Kommunikation gemäß gesetzlicher Aufbewahrungsfristen (i.d.R. 6-10 Jahre) auf. Sie können jederzeit Löschung Ihrer Nachrichten verlangen, soweit keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</p>
+        
+        <h3>Ihre Rechte bezüglich WhatsApp-Daten</h3>
+        <ul>
+          <li>Auskunft über gespeicherte WhatsApp-Kommunikation</li>
+          <li>Berichtigung unrichtiger Daten</li>
+          <li>Löschung, sofern keine Aufbewahrungspflichten bestehen</li>
+          <li>Einschränkung der Verarbeitung</li>
+          <li>Datenübertragbarkeit</li>
+          <li>Widerspruch gegen die Verarbeitung</li>
+        </ul>
+        
+        <h3>Alternative Kontaktmöglichkeiten</h3>
+        <p>Wenn Sie WhatsApp nicht nutzen möchten, können Sie uns auch kontaktieren über:</p>
+        <ul>
+          <li>Telefon: <a href="tel:01607791280">0160 77 91 28 0</a></li>
+          <li>E-Mail: <a href="mailto:info@dmk-bau.de">info@dmk-bau.de</a></li>
+          <li>Kontaktformular auf unserer Website</li>
+          <li>Persönlich vor Ort nach Terminvereinbarung</li>
+        </ul>
+      </section>
+      
+      <!-- H2: Kontaktformular -->
+      <section class="datenschutz-section">
+        <h2>3. Kontaktformular & E-Mail-Kommunikation</h2>
+        
+        <h3>Datenverarbeitung im Kontaktformular</h3>
+        <p>Wenn Sie unser Kontaktformular nutzen, erheben wir folgende personenbezogene Daten:</p>
+        
+        <table class="datenschutz-table">
+          <thead>
+            <tr>
+              <th>Datenkategorie</th>
+              <th>Beispiele</th>
+              <th>Verarbeitungszweck</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Kontaktdaten</td>
+              <td>Name, E-Mail-Adresse, Telefonnummer</td>
+              <td>Zur Kontaktaufnahme und Kommunikation</td>
+            </tr>
+            <tr>
+              <td>Projektdaten</td>
+              <td>Projektbeschreibung, gewünschte Leistungen</td>
+              <td>Zur Erstellung eines Angebots</td>
+            </tr>
+            <tr>
+              <td>Adressdaten</td>
+              <td>Straße, Hausnummer, PLZ, Ort</td>
+              <td>Für Vor-Ort-Termine und Angebotserstellung</td>
+            </tr>
+            <tr>
+              <td>Metadaten</td>
+              <td>Zeitpunkt der Übermittlung, IP-Adresse</td>
+              <td>Sicherheit und Missbrauchsverhinderung</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <h3>Rechtsgrundlage</h3>
+        <p>Die Verarbeitung der Daten aus dem Kontaktformular erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO (Vertragsanbahnung) oder Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Beantwortung Ihrer Anfrage).</p>
+        
+        <h3>Weitergabe an Dritte</h3>
+        <p>Ihre Daten werden grundsätzlich nicht an Dritte weitergegeben, außer:</p>
+        <ul>
+          <li>An Subunternehmer, die für uns tätig werden (z.B. spezialisierte Handwerker)</li>
+          <li>Bei rechtlicher Verpflichtung (z.B. an Behörden)</li>
+          <li>Mit Ihrer ausdrücklichen Einwilligung</li>
+        </ul>
+        
+        <h3>Speicherdauer</h3>
+        <p>Wir speichern Ihre Kontaktdaten:</p>
+        <ul>
+          <li>Für Anfragen ohne Vertragsabschluss: max. 12 Monate</li>
+          <li>Bei Vertragsabschluss: 10 Jahre nach Vertragsende (steuerrechtliche Aufbewahrungspflicht)</li>
+          <li>Bei Widerruf der Einwilligung: unverzügliche Löschung</li>
+        </ul>
+        
+        <div class="info-box">
+          <div class="info-box-title">Verschlüsselung & Sicherheit</div>
+          <p>Unser Kontaktformular wird über eine verschlüsselte SSL-Verbindung übertragen. Die Daten werden auf gesicherten Servern in Deutschland gespeichert.</p>
+        </div>
+      </section>
+      
+      <!-- H2: Website-Nutzung -->
+      <section class="datenschutz-section">
+        <h2>4. Datenverarbeitung bei Website-Nutzung</h2>
+        
+        <h3>Server-Logfiles</h3>
+        <p>Bei jedem Aufruf unserer Website werden automatisch folgende Daten erfasst:</p>
+        <ul>
+          <li>IP-Adresse des anfragenden Geräts</li>
+          <li>Datum und Uhrzeit des Zugriffs</li>
+          <li>Name und URL der abgerufenen Datei</li>
+          <li>Website, von der aus der Zugriff erfolgt (Referrer-URL)</li>
+          <li>Verwendeter Browser und Betriebssystem</li>
+          <li>Name Ihres Access-Providers</li>
+        </ul>
+        
+        <p>Diese Daten werden nicht mit anderen Datenquellen zusammengeführt. Die Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der technischen Betriebsfähigkeit).</p>
+        
+        <h3>Cookies</h3>
+        <p>Unsere Website verwendet technisch notwendige Cookies zur Gewährleistung der Funktionsfähigkeit:</p>
+        
+        <table class="datenschutz-table">
+          <thead>
+            <tr>
+              <th>Cookie-Name</th>
+              <th>Zweck</th>
+              <th>Speicherdauer</th>
+              <th>Typ</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>session_cookie</td>
+              <td>Aufrechterhaltung der Benutzersitzung</td>
+              <td>Sitzungsende</td>
+              <td>Technisch notwendig</td>
+            </tr>
+            <tr>
+              <td>cookie_consent</td>
+              <td>Speicherung Ihrer Cookie-Einstellungen</td>
+              <td>1 Jahr</td>
+              <td>Technisch notwendig</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <h3>Externe Dienste</h3>
+        <p>Wir nutzen folgende externe Dienste:</p>
+        
+        <div class="akkordeon">
+          <details class="akkordeon-details">
+            <summary class="akkordeon-summary">Google Fonts</summary>
+            <div class="akkordeon-content">
+              <p>Zur einheitlichen Darstellung verwenden wir Google Fonts. Beim Aufruf unserer Website lädt Ihr Browser die benötigten Schriftarten von Google-Servern. Dabei kann Google Ihre IP-Adresse erfassen. Weitere Informationen: <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Google Privacy Policy</a>.</p>
+            </div>
+          </details>
+          
+          <details class="akkordeon-details">
+            <summary class="akkordeon-summary">Externe Karten (Google Maps)</summary>
+            <div class="akkordeon-content">
+              <p>Zur Standortdarstellung nutzen wir Google Maps. Bei Nutzung werden Daten an Google übertragen. Nutzung nur nach expliziter Einwilligung.</p>
+            </div>
+          </details>
+        </div>
+        
+        <h3>Analysedienste</h3>
+        <p>Wir verwenden aktuell keine Analysetools wie Google Analytics. Sollten wir solche Dienste zukünftig einsetzen, werden wir Sie hierüber informieren und eine entsprechende Einwilligung einholen.</p>
+      </section>
+      
+      <!-- H2: Datenweitergabe -->
+      <section class="datenschutz-section">
+        <h2>5. Datenweitergabe & Empfänger</h2>
+        
+        <h3>Interne Datenweitergabe</h3>
+        <p>Innerhalb unseres Unternehmens haben nur solche Personen Zugriff auf Ihre Daten, die diese zur Vertragserfüllung oder zur Erfüllung gesetzlicher Pflichten benötigen.</p>
+        
+        <h3>Externe Dienstleister (Auftragsverarbeiter)</h3>
+        <p>Für bestimmte Verarbeitungstätigkeiten setzen wir externe Dienstleister ein:</p>
+        
+        <table class="datenschutz-table">
+          <thead>
+            <tr>
+              <th>Dienstleister</th>
+              <th>Verarbeitungstätigkeit</th>
+              <th>Standort</th>
+              <th>Datenschutz</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Webhosting-Anbieter</td>
+              <td>Bereitstellung der Website</td>
+              <td>Deutschland</td>
+              <td>Vertrag zur Auftragsverarbeitung</td>
+            </tr>
+            <tr>
+              <td>E-Mail-Provider</td>
+              <td>E-Mail-Kommunikation</td>
+              <td>Deutschland</td>
+              <td>Vertrag zur Auftragsverarbeitung</td>
+            </tr>
+            <tr>
+              <td>Buchhaltungssoftware</td>
+              <td>Rechnungsstellung & Buchhaltung</td>
+              <td>Deutschland</td>
+              <td>Vertrag zur Auftragsverarbeitung</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <h3>Weitergabe an Behörden</h3>
+        <p>Eine Weitergabe an staatliche Stellen erfolgt nur bei gesetzlicher Verpflichtung (z.B. Steuerbehörden, Gerichte).</p>
+        
+        <h3>Internationale Datenübermittlung</h3>
+        <p>Grundsätzlich erfolgt die Datenverarbeitung innerhalb der EU/EWR. Bei Nutzung von WhatsApp (Meta) erfolgt eine Datenübermittlung in die USA auf Basis der EU-Standardvertragsklauseln.</p>
+        
+        <div class="security-box">
+          <div class="security-box-title">Datensicherheit</div>
+          <p>Wir treffen technische und organisatorische Maßnahmen zum Schutz Ihrer Daten, insbesondere:</p>
+          <ul>
+            <li>Verschlüsselte Datenübertragung (SSL/TLS)</li>
+            <li>Zugangsbeschränkungen und Berechtigungskonzepte</li>
+            <li>Regelmäßige Sicherheitsupdates</li>
+            <li>Datensicherungen</li>
+            <li>Schulung unserer Mitarbeiter</li>
+          </ul>
+        </div>
+      </section>
+      
+      <!-- H2: Betroffenenrechte -->
+      <section class="datenschutz-section">
+        <h2>6. Ihre Rechte als Betroffener</h2>
+        
+        <p>Gemäß der Datenschutz-Grundverordnung (DSGVO) haben Sie folgende Rechte:</p>
+        
+        <div class="akkordeon">
+          <details class="akkordeon-details">
+            <summary class="akkordeon-summary">Auskunftsrecht (Art. 15 DSGVO)</summary>
+            <div class="akkordeon-content">
+              <p>Sie haben das Recht, eine Bestätigung darüber zu verlangen, ob wir personenbezogene Daten, die Sie betreffen, verarbeiten, und wenn ja, welche dies sind, sowie weitere Informationen über die Verarbeitung.</p>
+            </div>
+          </details>
+          
+          <details class="akkordeon-details">
+            <summary class="akkordeon-summary">Recht auf Berichtigung (Art. 16 DSGVO)</summary>
+            <div class="akkordeon-content">
+              <p>Sie können die Berichtigung unrichtiger personenbezogener Daten verlangen.</p>
+            </div>
+          </details>
+          
+          <details class="akkordeon-details">
+            <summary class="akkordeon-summary">Recht auf Löschung (Art. 17 DSGVO)</summary>
+            <div class="akkordeon-content">
+              <p>Sie können die Löschung Ihrer personenbezogenen Daten verlangen, sofern die gesetzlichen Voraussetzungen vorliegen.</p>
+            </div>
+          </details>
+          
+          <details class="akkordeon-details">
+            <summary class="akkordeon-summary">Recht auf Einschränkung (Art. 18 DSGVO)</summary>
+            <div class="akkordeon-content">
+              <p>Sie können die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten verlangen.</p>
+            </div>
+          </details>
+          
+          <details class="akkordeon-details">
+            <summary class="akkordeon-summary">Recht auf Datenübertragbarkeit (Art. 20 DSGVO)</summary>
+            <div class="akkordeon-content">
+              <p>Sie haben das Recht, die Sie betreffenden personenbezogenen Daten in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten.</p>
+            </div>
+          </details>
+          
+          <details class="akkordeon-details">
+            <summary class="akkordeon-summary">Widerspruchsrecht (Art. 21 DSGVO)</summary>
+            <div class="akkordeon-content">
+              <p>Sie haben das Recht, aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit gegen die Verarbeitung Ihrer personenbezogenen Daten Widerspruch einzulegen.</p>
+            </div>
+          </details>
+          
+          <details class="akkordeon-details">
+            <summary class="akkordeon-summary">Beschwerderecht (Art. 77 DSGVO)</summary>
+            <div class="akkordeon-content">
+              <p>Sie haben das Recht, sich bei einer Aufsichtsbehörde zu beschweren, wenn Sie der Ansicht sind, dass die Verarbeitung Ihrer personenbezogenen Daten gegen die DSGVO verstößt.</p>
+            </div>
+          </details>
+        </div>
+        
+        <div class="kontakt-daten-box">
+          <h3>So können Sie Ihre Rechte geltend machen</h3>
+          <p>Um Ihre Rechte auszuüben, wenden Sie sich bitte an:</p>
+          <p>DMK Bau Reichelsheim<br>
+          Inhaber: Dariusz Krzysztoń<br>
+          Heidelberger Straße 5<br>
+          64385 Reichelsheim<br>
+          E-Mail: <a href="mailto:info@dmk-bau.de">info@dmk-bau.de</a><br>
+          Telefon: <a href="tel:061645039805">06164 5039805</a></p>
+          <p>Hinweis: Zur Identifizierung können wir Sie um geeignete Nachweise bitten.</p>
+        </div>
+        
+        <h3>Widerruf von Einwilligungen</h3>
+        <p>Sofern wir Ihre Daten auf Grundlage Ihrer Einwilligung verarbeiten (Art. 6 Abs. 1 lit. a DSGVO), haben Sie das Recht, diese Einwilligung jederzeit mit Wirkung für die Zukunft zu widerrufen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt davon unberührt.</p>
+      </section>
+      
+      <!-- H2: Speicherdauer -->
+      <section class="datenschutz-section">
+        <h2>7. Speicherdauer & Löschung</h2>
+        
+        <h3>Grundsätze</h3>
+        <p>Wir speichern personenbezogene Daten nur so lange, wie es für die Erfüllung des Verarbeitungszwecks erforderlich ist oder gesetzliche Aufbewahrungsfristen dies vorschreiben.</p>
+        
+        <h3>Konkrete Speicherfristen</h3>
+        
+        <table class="datenschutz-table">
+          <thead>
+            <tr>
+              <th>Datenkategorie</th>
+              <th>Speicherdauer</th>
+              <th>Rechtsgrundlage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Vertragsdaten</td>
+              <td>10 Jahre nach Vertragsende</td>
+              <td>§ 147 AO (steuerrechtliche Aufbewahrung)</td>
+            </tr>
+            <tr>
+              <td>Anfragen ohne Vertragsschluss</td>
+              <td>12 Monate</td>
+              <td>Berechtigtes Interesse (Nachfrage)</td>
+            </tr>
+            <tr>
+              <td>Bewerbungsunterlagen</td>
+              <td>6 Monate nach Absage</td>
+              <td>§ 15 AGG</td>
+            </tr>
+            <tr>
+              <td>Server-Logfiles</td>
+              <td>7 Tage</td>
+              <td>Technische Notwendigkeit</td>
+            </tr>
+            <tr>
+              <td>WhatsApp-Kommunikation</td>
+              <td>Wie Vertragsdaten oder 12 Monate</td>
+              <td>Siehe Vertragsanbahnung/-erfüllung</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <h3>Löschungsverfahren</h3>
+        <p>Nach Ablauf der Speicherfristen werden die Daten regelmäßig und sicher gelöscht. Daten in Papierform werden geschreddert, digitale Daten werden durch mehrfaches Überschreiben unlesbar gemacht.</p>
+        
+        <div class="info-box">
+          <div class="info-box-title">Archivierung</div>
+          <p>Bestimmte Daten müssen aus rechtlichen Gründen (z.B. steuerrechtliche Aufbewahrungspflichten) archiviert werden. Diese Daten sind für laufende Verarbeitungszwecke gesperrt und werden nur im erforderlichen Umfang verarbeitet.</p>
+        </div>
+      </section>
+      
+      <!-- H2: Besondere Kategorien -->
+      <section class="datenschutz-section">
+        <h2>8. Besondere Kategorien personenbezogener Daten</h2>
+        
+        <h3>Grundsätzlicher Umgang</h3>
+        <p>Wir verarbeiten grundsätzlich keine besonderen Kategorien personenbezogener Daten im Sinne des Art. 9 DSGVO (z.B. Gesundheitsdaten, religiöse Überzeugungen, politische Meinungen).</p>
+        
+        <h3>Ausnahmen</h3>
+        <p>Im Rahmen von Bauprojekten kann es erforderlich sein, Gesundheitsdaten zu verarbeiten, wenn es um barrierefreies Bauen geht. In solchen Fällen:</p>
+        <ul>
+          <li>Erfolgt die Verarbeitung nur mit Ihrer ausdrücklichen Einwilligung</li>
+          <li>Werden die Daten besonders geschützt</li>
+          <li>Werden die Daten nach Erledigung des Zwecks gelöscht</li>
+        </ul>
+        
+        <div class="security-box">
+          <div class="security-box-title">Sensibilitätshinweis</div>
+          <p>Bitte teilen Sie uns keine besonderen Kategorien personenbezogener Daten mit, es sei denn, dies ist für die Vertragserfüllung unbedingt erforderlich. In diesem Fall klären wir die rechtlichen Grundlagen und Schutzmaßnahmen mit Ihnen ab.</p>
+        </div>
+      </section>
+      
+      <!-- H2: Datensicherheit -->
+      <section class="datenschutz-section">
+        <h2>9. Datensicherheitsmaßnahmen</h2>
+        
+        <h3>Technische Maßnahmen</h3>
+        <ul>
+          <li>Verschlüsselung: SSL/TLS-Verschlüsselung für Datenübertragungen</li>
+          <li>Firewalls: Mehrstufige Firewall-Systeme</li>
+          <li>Backups: Regelmäßige, verschlüsselte Datensicherungen</li>
+          <li>Virenschutz: Aktuelle Antivirensoftware</li>
+          <li>Updates: Regelmäßige Sicherheitsupdates aller Systeme</li>
+        </ul>
+        
+        <h3>Organisatorische Maßnahmen</h3>
+        <ul>
+          <li>Zugangskontrolle: Berechtigungskonzept nach Need-to-know-Prinzip</li>
+          <li>Mitarbeiterschulungen: Regelmäßige Schulungen zum Datenschutz</li>
+          <li>Verfahrensverzeichnis: Dokumentation aller Verarbeitungstätigkeiten</li>
+          <li>Verträge zur Auftragsverarbeitung: Mit allen externen Dienstleistern</li>
+          <li>Datenschutzmanagement: Kontinuierliche Verbesserung der Maßnahmen</li>
+        </ul>
+        
+        <h3>Incident-Response</h3>
+        <p>Für den Fall von Datenschutzverletzungen haben wir ein Verfahren zur Meldung und Behandlung von Incidents etabliert. Bei einer möglichen Gefährdung Ihrer Rechte und Freiheiten informieren wir Sie und die zuständige Aufsichtsbehörde unverzüglich.</p>
+        
+        <div class="security-box">
+          <div class="security-box-title">Ihre Mitwirkung</div>
+          <p>Sie können zur Datensicherheit beitragen, indem Sie:</p>
+          <ul>
+            <li>Starke Passwörter verwenden</li>
+            <li>Ihre Geräte gegen unbefugten Zugriff schützen</li>
+            <li>Vorsichtig mit Links und Anhängen in E-Mails umgehen</li>
+            <li>Regelmäßig Updates installieren</li>
+            <li>Vertrauliche Informationen nur über sichere Kanäle übermitteln</li>
+          </ul>
+        </div>
+      </section>
+      
+      <!-- H2: Kontakt & Aktualisierung -->
+      <section class="datenschutz-section">
+        <h2>10. Kontakt & Aktualisierungen</h2>
+        
+        <h3>Datenschutzbeauftragter</h3>
+        <p>Bei einem Einzelunternehmen ist die Bestellung eines betrieblichen Datenschutzbeauftragten nur unter bestimmten Voraussetzungen verpflichtend. Da wir diese Voraussetzungen aktuell nicht erfüllen, haben wir keinen externen Datenschutzbeauftragten bestellt.</p>
+        <p>Fragen zum Datenschutz richten Sie bitte direkt an:</p>
+        <p>DMK Bau Reichelsheim<br>
+        Inhaber: Dariusz Krzysztoń<br>
+        E-Mail: <a href="mailto:info@dmk-bau.de">info@dmk-bau.de</a><br>
+        Telefon: <a href="tel:061645039805">06164 5039805</a></p>
+        
+        <h3>Beschwerderecht bei Aufsichtsbehörde</h3>
+        <p>Sie haben das Recht, sich bei der zuständigen Datenschutz-Aufsichtsbehörde zu beschweren:</p>
+        <p>Der Hessische Beauftragte für Datenschutz und Informationsfreiheit<br>
+        Postfach 3163<br>
+        65021 Wiesbaden<br>
+        Telefon: <a href="tel:0611140820">0611 1408-0</a><br>
+        E-Mail: <a href="mailto:poststelle@datenschutz.hessen.de">poststelle@datenschutz.hessen.de</a><br>
+        Website: <a href="https://datenschutz.hessen.de" rel="noopener" target="_blank">https://datenschutz.hessen.de</a></p>
+        
+        <h3>Aktualisierung dieser Datenschutzerklärung</h3>
+        <p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen. Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung.</p>
+        
+        <div class="rechtliche-hinweise">
+          <p>Stand dieser Datenschutzerklärung: 10. Dezember 2025</p>
+          <p>Letzte wesentliche Änderung: Integration spezifischer Regelungen für WhatsApp-Kommunikation und Kontaktformular</p>
+        </div>
+        
+        <div class="info-box">
+          <div class="info-box-title">Haftungsausschluss</div>
+          <p>Diese Datenschutzerklärung dient der Information gemäß den gesetzlichen Vorgaben. Sie stellt keine Rechtsberatung dar. Bei spezifischen datenschutzrechtlichen Fragen konsultieren Sie bitte einen Fachanwalt für Datenschutzrecht.</p>
+        </div>
+        
+        <p style="margin-top: 30px; padding-top: 20px; border-top: 2px solid #e2e8e4; font-style: italic; color: #6b7280;">
+          Unser Versprechen: Bei DMK Bau Reichelsheim behandeln wir Ihre persönlichen Daten mit derselben Sorgfalt und Professionalität, die wir auch in unseren Bau-Projekten an den Tag legen. Transparenz, Sicherheit und Vertrauen sind die Grundlage unserer Kundenbeziehungen.
+        </p>
+      </section>
+      
+    </article>
+  </div>
+  
+</main>
+	<!-- BEGIN: DMK Related Section (Checkbox Style, Expandable, Isolated) -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+
+/* ISOLATION */
+.dmk-related-checkbox * {
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif !important;
+}
+
+/* SECTION */
+.dmk-related-checkbox {
+    margin-top: 70px;
+    padding-bottom: 40px;
+}
+
+.dmk-related-checkbox .wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 18px;
+}
+
+.dmk-related-checkbox .title {
+    font-size: 1.55rem;
+    font-weight: 500;
+    color: #224a2c;
+    margin-bottom: 26px;
+}
+
+/* GRID */
+.dmk-related-checkbox .grid {
+    display: grid;
+    gap: 14px;
+    grid-template-columns: 1fr;
+}
+@media (min-width: 540px) {
+    .dmk-related-checkbox .grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 880px) {
+    .dmk-related-checkbox .grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (min-width: 1280px) {
+    .dmk-related-checkbox .grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* CARD (Checkbox Look) */
+.dmk-related-checkbox .card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 18px;
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid rgba(0,0,0,0.07);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    text-decoration: none;
+    transition: all .2s ease;
+}
+
+.dmk-related-checkbox .card:hover {
+    transform: translateY(-3px);
+    border-color: #3A7D44;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+/* CHECKMARK BOX */
+.dmk-related-checkbox .checkbox {
+    width: 22px;
+    height: 22px;
+    border-radius: 6px;
+    border: 2px solid #3A7D44;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dmk-related-checkbox .checkbox svg {
+    width: 18px;
+    height: 18px;
+    stroke: #3A7D44;
+    stroke-width: 3;
+    fill: none;
+}
+
+/* TEXT */
+.dmk-related-checkbox .text {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #2a2a2a;
+}
+
+/* HIDDEN */
+.dmk-related-checkbox .card.hidden {
+    display: none;
+}
+
+/* BUTTON */
+.dmk-related-checkbox .more-btn {
+    margin-top: 22px;
+    background: #2E6C3A;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background .2s;
+}
+.dmk-related-checkbox .more-btn:hover {
+    background: #3A7D44;
+}
+</style>
+
+<section class="dmk-related-checkbox">
+  <div class="wrapper">
+
+    <h2 class="title">Das könnte dich auch interessieren</h2>
+
+    <div class="grid">
+
+<!-- ############################ -->
+<!--  ALLE 21 LEISTUNGEN         -->
+<!-- ############################ -->
+
+<!-- 1 -->
+<a href="aussentreppen-reichelsheim-odenwald.html" class="card">
+  <div class="checkbox">
+    <svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg>
+  </div>
+  <div class="text">Außentreppen Reichelsheim</div>
+</a>
+
+<!-- 2 -->
+<a href="barrierefreies-bad-umbauen.html" class="card">
+  <div class="checkbox">
+    <svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg>
+  </div>
+  <div class="text">Barrierefreies Bad umbauen</div>
+</a>
+
+<!-- 3 -->
+<a href="barrierefreies-bauen.html" class="card">
+  <div class="checkbox"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></div>
+  <div class="text">Barrierefreies Bauen</div>
+</a>
+
+<!-- 4 -->
+<a href="bestehendes-bad-sanieren.html" class="card">
+  <div class="checkbox"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></div>
+  <div class="text">Bestehendes Bad sanieren</div>
+</a>
+
+<!-- 5 -->
+<a href="dmk-bau-foerdermittelberatung-antragstellung-reichelsheim-odenwald.html" class="card">
+  <div class="checkbox"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></div>
+  <div class="text">Fördermittelberatung & Antragstellung</div>
+</a>
+
+<!-- 6 -->
+<a href="dmk-bau-immobilienservice-verkauf-maklerdienste-reichelsheim-odenwald.html" class="card">
+  <div class="checkbox"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></div>
+  <div class="text">Immobilienservice & Maklerdienste</div>
+</a>
+
+<!-- 7 -->
+<a href="dmk-bau-individuelle-sonderloesungen-reichelsheim-odenwald.html" class="card">
+  <div class="checkbox"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></div>
+  <div class="text">Individuelle Sonderlösungen</div>
+</a>
+
+<!-- 8 -->
+<a href="estricharbeiten.html" class="card">
+  <div class="checkbox"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></div>
+  <div class="text">Estricharbeiten</div>
+</a>
+
+<!-- AB HIER HIDDEN ITEMS (Rest über Button) -->
+
+<!-- 9 -->
+<a href="fassadenarbeiten.html" class="card hidden">
+  <div class="checkbox"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></div>
+  <div class="text">Fassadenarbeiten</div>
+</a>
+
+<!-- 10 -->
+<a href="fenster-tueren-montage-reichelsheim-odenwald.html" class="card hidden">
+  <div class="checkbox"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></div>
+  <div class="text">Fenster & Türen Montage</div>
+</a>
+
+<!-- 11 -->
+<a href="fliesenarbeiten.html" class="card hidden">
+  <div class="checkbox"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></div>
+  <div class="text">Fliesenarbeiten</div>
+</a>
+
+<!-- 12 -->
+<a href="fugenloses-bad.html" class="card hidden">
+  <div class="checkbox"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></div>
+  <div class="text">Fugenloses Bad</div>
+</a>
+
+<!-- 13 -->
+<a href="montagearbeiten.html" class="card hidden">
+  <div class="checkbox"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></div>
+  <div class="text">Montagearbeiten</div>
+</a>
+
+<!-- 14 -->
+<a href="neubau-badezimmer.html" class="card hidden">
+  <div class="checkbox"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></div>
+  <div class="text">Neubau Badezimmer</div>
+</a>
+
+<!-- 15 -->
+<a href="pflasterarbeiten.html" class="card hidden">
+  <div class="checkbox"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></div>
+  <div class="text">Pflasterarbeiten</div>
+</a>
+
+<!-- 16 -->
+<a href="putzarbeiten.html" class="card hidden">
+  <div class="checkbox"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></div>
+  <div class="text">Putzarbeiten</div>
+</a>
+
+<!-- 17 -->
+<a href="regionale-beratung-reichelsheim-odenwald-dmk-bau.html" class="card hidden">
+  <div class="checkbox"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></div>
+  <div class="text">Regionale Beratung</div>
+</a>
+
+<!-- 18 -->
+<a href="renovierung-modernisierung-reichelsheim-odenwald.html" class="card hidden">
+  <div class="checkbox"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></div>
+  <div class="text">Renovierung & Modernisierung</div>
+</a>
+
+<!-- 19 -->
+<a href="terrassen-balkone-dmk-bau-reichelsheim.html" class="card hidden">
+  <div class="checkbox"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></div>
+  <div class="text">Terrassen & Balkone</div>
+</a>
+
+<!-- 20 -->
+<a href="treppenbau.html" class="card hidden">
+  <div class="checkbox"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></div>
+  <div class="text">Treppenbau</div>
+</a>
+
+<!-- 21 -->
+<a href="trockenbau.html" class="card hidden">
+  <div class="checkbox"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></div>
+  <div class="text">Trockenbau</div>
+</a>
+
+    </div>
+
+    <div class="more-btn" id="dmk-more-btn">Mehr anzeigen</div>
+
+  </div>
+</section>
+
+<script>
+(function(){
+    const btn = document.getElementById("dmk-more-btn");
+    const cards = document.querySelectorAll(".dmk-related-checkbox .card.hidden");
+    let expanded = false;
+
+    btn.addEventListener("click", function(){
+
+        expanded = !expanded;
+
+        if(expanded){
+            cards.forEach(c => c.style.display = "flex");
+            btn.textContent = "Weniger anzeigen";
+        } else {
+            const limit = window.innerWidth < 880 ? 4 : 8;
+            cards.forEach((c, index) => {
+                if(index + 9 > limit) c.style.display = "none";
+            });
+            btn.textContent = "Mehr anzeigen";
+        }
+    });
+
+})();
+</script>
+<!-- END: DMK Related Section -->
+
+
+<!-- =========================
+     Footer – identisch zur Hauptseite
+     ========================= -->
+<footer aria-label="DMK Bau Footer" class="dmk-footer" role="contentinfo">
+  <div class="dmk-foot-wrap">
+    <section class="dmk-foot">
+      <h4>Unternehmen</h4>
+      <ul class="dmk-list">
+        <li><a class="dmk-link" href="index.html#unternehmen">Über uns</a></li>
+        <li><a class="dmk-link" href="news-dmk-bau-reichelsheim.html">News</a></li>
+        <li><a class="dmk-link" href="faq-dmk-bau-reichelsheim.html">FAQ</a></li>
+      </ul>
+    </section>
+    
+    <section class="dmk-foot">
+      <h4>Rechtliches</h4>
+      <ul class="dmk-list">
+        <li><a class="dmk-link" href="datenschutz.html" aria-current="page">Datenschutz</a></li>
+        <li><a class="dmk-link" href="impressum.html">Impressum</a></li>
+        <li><a class="dmk-link" href="agb.html">AGB</a></li>
+      </ul>
+    </section>
+    
+    <section class="dmk-foot">
+      <h4>Kontakt</h4>
+      <div class="dmk-contact">
+        <div class="dmk-row">
+          <span class="dmk-ico">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0Z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+          </span>
+          <div>Heidelberger Straße 5,<br/>64385 Reichelsheim</div>
+        </div>
+        <div class="dmk-row">
+          <span class="dmk-ico">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 a19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.3 1.78.54 2.64a2 2 0 0 1-.45 2.11L8 9a16 16 0 0 0 7 7l.53-1.2a2 2 0 0 1 2.11-.45c.86.24 1.74.42 2.64.54A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+          </span>
+          <a href="tel:01607791280">0160 77 91 28 0</a>
+        </div>
+        <div class="dmk-row">
+          <span class="dmk-ico">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+              <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"></path>
+              <path d="m22 6-10 7L2 6"></path>
+            </svg>
+          </span>
+          <a href="mailto:info@dmk-bau.de">info@dmk-bau.de</a>
+        </div>
+        <div class="dmk-row">
+          <span class="dmk-ico">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M12 6v6l4 2"></path>
+            </svg>
+          </span>
+          <div>Mo–Fr: 09:00–17:00<br/>Sa–So: Geschlossen</div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="dmk-foot">
+      <h4>Social Media</h4>
+      <div class="dmk-social">
+        <a aria-label="Facebook" class="dmk-sbtn" href="https://www.facebook.com/people/DMK-bau/100057634561646/">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+          </svg>
+          <span class="label">Facebook</span>
+        </a>
+        <a aria-label="Instagram" class="dmk-sbtn" href="https://www.instagram.com/dmkbau/">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+            <rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+          </svg>
+          <span class="label">Instagram</span>
+        </a>
+		   <a aria-label="TikTok" class="dmk-sbtn" href="https://www.tiktok.com/@dmkbau">
+          <svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+            <path d="M32.3 14.3a11 11 0 0 0 6.7 2.3v5.3a16 16 0 0 1-6.7-1.5v10.2c0 6.5-5.3 11.7-11.8 11.4A11.6 11.6 0 0 1 9 29.7c.2-6 5.4-10.9 11.5-10.9 1 0 2 .1 2.9.4v5.8a6 6 0 0 0-2.8-.6c-3.2 0-5.9 2.6-6 5.8a6 6 0 0 0 6.4 6.2c3.1-.2 5.5-2.9 5.5-6.1V6h5.8v8.3Z"></path>
+          </svg>
+          <span class="label">TikTok</span>
+        </a>
+      </div>
+    </section>
+  </div>
+  
+  <div class="dmk-copy">
+    <span>©2025 DMK Bau</span>
+    <span>Created by <a href="https://webpage-seo.de" rel="noopener noreferrer" target="_blank">webpage-seo.de</a></span>
+  </div>
+</footer>
+
+<script>
+  // Mobile Navigation Toggle Script
+  document.addEventListener('DOMContentLoaded', function(){
+    var toggle = document.querySelector('.nav-toggle');
+    var menu   = document.getElementById('primary-nav') || document.querySelector('header .menu');
+    if(!toggle || !menu) return;
+
+    function closeMenu(){
+      menu.classList.remove('open');
+      toggle.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+
+    toggle.addEventListener('click', function(){
+      var isOpen = !menu.classList.contains('open');
+      if(isOpen){
+        menu.classList.add('open');
+        toggle.classList.add('open');
+        toggle.setAttribute('aria-expanded', 'true');
+      }else{
+        closeMenu();
+      }
+    });
+
+    // Beim Klick auf einen Navigationslink im mobilen Modus wieder schließen
+    menu.querySelectorAll('.nav-link').forEach(function(link){
+      link.addEventListener('click', function(){
+        if(window.innerWidth <= 1024){
+          closeMenu();
+        }
+      });
+    });
+
+    // Beim Resize auf Desktop sicherstellen, dass Menü eingeklappt ist
+    window.addEventListener('resize', function(){
+      if(window.innerWidth > 1024 && menu.classList.contains('open')){
+        closeMenu();
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

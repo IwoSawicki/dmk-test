@@ -1,0 +1,108 @@
+---
+const partners = [
+  { src: "/images/dmk-bau-reichelsheim-partner-gutjahr.webp", alt: "Gutjahr" },
+  { src: "/images/dmk-bau-reichelsheim-partner-hfk.webp",     alt: "HFK" },
+  { src: "/images/dmk-bau-reichelsheim-partner-sopro.webp",   alt: "Sopro" },
+  { src: "/images/dmk-bau-reichelsheim-partner-pinta-logo.webp", alt: "Pinta" },
+  { src: "/images/dmk-bau-reichelsheim-partner-spalt-logo-klein.webp", alt: "Spalt" },
+];
+---
+
+<section aria-label="DMK-Bau Bau-Partnerschaften – starke Marken, auf die wir bauen"
+         class="partner-section is-grayscale" id="partnerschaften"
+         style="background:#ffffff;">
+  <div class="partner-inner">
+    <h2 class="partner-heading">Langjährige Bau-Partnerschaften &amp; Qualitätsmarken bei DMK-Bau</h2>
+    <p class="partner-sub">
+      Unsere Kooperationen mit führenden Herstellern und Fachhändlern stehen für Vertrauen,
+      Präzision und Qualität – Werte, auf die jedes unserer Projekte baut.
+    </p>
+
+    <!-- Laufband – rein CSS, kein JS -->
+    <div aria-hidden="true" class="partner-scroller">
+      <div class="partner-track">
+        {partners.map(p => <img src={p.src} alt={p.alt} loading="lazy" />)}
+        {/* Duplikat für nahtlosen Loop */}
+        {partners.map(p => <img src={p.src} alt={p.alt} loading="lazy" aria-hidden="true" />)}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  #partnerschaften.partner-section {
+    padding: 4rem 1.5rem;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    font-family: "Quicksand", sans-serif;
+  }
+
+  .partner-inner { max-width: 1440px; margin: 0 auto; text-align: center; }
+
+  .partner-heading {
+    font-family: "Quicksand", sans-serif;
+    font-size: clamp(1.5rem, 2.6vw, 2.1rem);
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: #3A7D44;
+    line-height: 1.3;
+    letter-spacing: 0.3px;
+  }
+  .partner-sub {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    font-size: clamp(1rem, 1.3vw, 1.1rem);
+    opacity: 0.9;
+    margin: 0 auto 2.5rem;
+    max-width: 720px;
+    color: #2a2a2a;
+  }
+
+  .partner-scroller {
+    position: relative;
+    overflow: hidden;
+    --fade: 80px;
+    -webkit-mask-image: linear-gradient(to right, transparent 0, black var(--fade), black calc(100% - var(--fade)), transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0, black var(--fade), black calc(100% - var(--fade)), transparent 100%);
+  }
+
+  .partner-track {
+    display: inline-flex;
+    align-items: center;
+    gap: clamp(60px, 6vw, 110px);
+    animation: partner-marquee 70s linear infinite;
+    will-change: transform;
+  }
+  .partner-scroller:hover .partner-track { animation-play-state: paused; }
+
+  @keyframes partner-marquee {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+
+  .partner-track img {
+    height: clamp(85px, 9vw, 120px);
+    width: auto;
+    display: block;
+    user-select: none;
+    -webkit-user-drag: none;
+    transition: transform 250ms cubic-bezier(.2,.7,.2,1), filter 250ms cubic-bezier(.2,.7,.2,1), opacity 250ms cubic-bezier(.2,.7,.2,1);
+    opacity: 0.95;
+    transform-origin: center;
+  }
+  .partner-section.is-grayscale .partner-track img {
+    filter: grayscale(100%) contrast(1.1) brightness(1.05);
+  }
+  .partner-track img:hover, .partner-track img:focus-visible {
+    transform: scale(1.15);
+    filter: none !important;
+    opacity: 1;
+  }
+
+  @media (max-width: 600px) {
+    #partnerschaften.partner-section { padding: 3rem 1rem; }
+    .partner-track { gap: 40px; }
+    .partner-track img { height: 70px; }
+  }
+</style>

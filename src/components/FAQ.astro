@@ -1,0 +1,226 @@
+---
+const faqs = [
+  // Spalte links
+  {
+    col: 1,
+    q: "Wie startet die Zusammenarbeit – was passiert in der Erstberatung?",
+    a: "Wir klären Ziel, Budget und Zeitfenster, prüfen Machbarkeit vor Ort und nehmen Aufmaß. Danach erhalten Sie ein <strong>klar strukturiertes Festpreis-Angebot</strong> inkl. Zeitplan."
+  },
+  {
+    col: 1,
+    q: "Wie lange dauern Bad, Trockenbau oder Pflasterarbeiten?",
+    a: "Die Ausführungszeit hängt vom Umfang und der Komplexität des Projekts ab (Gewerke, Fläche, Material- und Trocknungszeiten). Nach dem Aufmaß erstellen wir gemeinsam mit Ihnen einen detaillierten, realistischen Zeitplan mit klaren Meilensteinen. Dieser wird verbindlich abgestimmt und bei Bedarf transparent aktualisiert – terminsicher und planbar."
+  },
+  {
+    col: 1,
+    q: "Unterstützt ihr bei KfW/BAFA-Förderung und Anträgen?",
+    a: "Ja. Wir prüfen Förderfähigkeit, stellen die nötigen Unterlagen zusammen und koordinieren auf Wunsch den Antrag mit Energie-Effizienz-Experten."
+  },
+  {
+    col: 1,
+    q: "In welchen Orten seid ihr unterwegs?",
+    a: "Reichelsheim (Odenwald) und Umfeld: Odenwaldkreis, Reinheim, Michelstadt, Höchst, Brensbach, Erbach, Groß-Bieberau u. a."
+  },
+  // Spalte rechts
+  {
+    col: 2,
+    q: "Festpreis oder Nachträge – wie kalkuliert DMK Bau?",
+    a: "Wir arbeiten bevorzugt mit <strong>Festpreis</strong> basierend auf sauberem Aufmaß und Leistungsbeschreibung. Nur bei <em>zusätzlichen</em> Kundenwünschen oder verdeckten Schäden stimmen wir Nachträge vor Ausführung schriftlich ab."
+  },
+  {
+    col: 2,
+    q: "Wie schützt ihr mein Zuhause vor Staub und Schmutz?",
+    a: "Staubschutztüren, Abklebungen, Abdeckvlies, Absaugung und tägliche Reinigung der Laufwege gehören zum Standard. Möbel und Böden werden zuverlässig geschützt."
+  },
+  {
+    col: 2,
+    q: "Stellt ihr Materialien oder können wir selbst einkaufen?",
+    a: "Beides möglich. Wir liefern Markenmaterial inkl. Gewährleistung oder verbauen kundenseitig beigestellte Ware nach Prüfung der Eignung."
+  },
+  {
+    col: 2,
+    q: "Welche Gewährleistung erhalte ich?",
+    a: "Nach BGB/VOB: <strong>5 Jahre</strong> auf Bauleistungen gemäß gesetzlicher Gewährleistung. Für Produkte gelten die jeweiligen Hersteller-Garantien."
+  },
+];
+
+const col1 = faqs.filter(f => f.col === 1);
+const col2 = faqs.filter(f => f.col === 2);
+---
+
+<section aria-labelledby="dmk-sec5-title" data-dmk="5" id="dmk-sec5">
+  <div class="wrap">
+    <div class="container">
+      <div class="head">
+        <h3 id="dmk-sec5-title">FAQ – DMK Bau Reichelsheim</h3>
+        <p class="lead">Kompakte Antworten zu Ablauf, Kosten, Dauer, Staubschutz, Fördermitteln und Region – mit DMK Bau.</p>
+      </div>
+
+      <div class="faq-grid" id="dmk-faq" role="list">
+        <!-- Spalte 1 -->
+        <div class="col">
+          {col1.map((item) => (
+            <article class="item" role="listitem">
+              <button aria-expanded="false" class="q">
+                <span class="qt">{item.q}</span>
+                <span aria-hidden="true" class="ico">
+                  <svg class="plus" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M12 5v14M5 12h14"></path>
+                  </svg>
+                  <svg class="minus" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="display:none">
+                    <path d="M5 12h14"></path>
+                  </svg>
+                </span>
+              </button>
+              <div class="a">
+                <div>
+                  <div class="body">
+                    <p set:html={item.a}></p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+
+        <!-- Spalte 2 -->
+        <div class="col">
+          {col2.map((item) => (
+            <article class="item" role="listitem">
+              <button aria-expanded="false" class="q">
+                <span class="qt">{item.q}</span>
+                <span aria-hidden="true" class="ico">
+                  <svg class="plus" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M12 5v14M5 12h14"></path>
+                  </svg>
+                  <svg class="minus" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="display:none">
+                    <path d="M5 12h14"></path>
+                  </svg>
+                </span>
+              </button>
+              <div class="a">
+                <div>
+                  <div class="body">
+                    <p set:html={item.a}></p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Schema.org -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Wie startet die Zusammenarbeit – was passiert in der Erstberatung?", "acceptedAnswer": { "@type": "Answer", "text": "Wir klären Ziel, Budget und Zeitfenster, prüfen Machbarkeit vor Ort und nehmen Aufmaß. Danach erhalten Sie ein klar strukturiertes Festpreis-Angebot inklusive Zeitplan." } },
+      { "@type": "Question", "name": "Festpreis oder Nachträge – wie kalkuliert DMK Bau?", "acceptedAnswer": { "@type": "Answer", "text": "Wir arbeiten bevorzugt mit Festpreis basierend auf sauberem Aufmaß und Leistungsbeschreibung. Nur bei zusätzlichen Kundenwünschen oder verdeckten Schäden stimmen wir Nachträge vor Ausführung schriftlich ab." } },
+      { "@type": "Question", "name": "Wie lange dauern Bad, Trockenbau oder Pflasterarbeiten?", "acceptedAnswer": { "@type": "Answer", "text": "Die Ausführungszeit hängt vom Umfang ab. Nach dem Aufmaß erstellen wir einen detaillierten, realistischen Zeitplan mit klaren Meilensteinen." } },
+      { "@type": "Question", "name": "Wie schützt ihr mein Zuhause vor Staub und Schmutz?", "acceptedAnswer": { "@type": "Answer", "text": "Staubschutztüren, Abklebungen, Abdeckvlies, Absaugung und tägliche Reinigung der Laufwege gehören zum Standard. Möbel und Böden werden zuverlässig geschützt." } },
+      { "@type": "Question", "name": "Unterstützt ihr bei KfW/BAFA-Förderung und Anträgen?", "acceptedAnswer": { "@type": "Answer", "text": "Ja. Wir prüfen Förderfähigkeit, stellen die nötigen Unterlagen zusammen und koordinieren auf Wunsch den Antrag mit Energie-Effizienz-Experten." } },
+      { "@type": "Question", "name": "Stellt ihr Materialien oder können wir selbst einkaufen?", "acceptedAnswer": { "@type": "Answer", "text": "Beides möglich. Wir liefern Markenmaterial inklusive Gewährleistung oder verbauen kundenseitig beigestellte Ware nach Prüfung der Eignung." } },
+      { "@type": "Question", "name": "In welchen Orten seid ihr unterwegs?", "acceptedAnswer": { "@type": "Answer", "text": "Reichelsheim (Odenwald) und Umfeld: Odenwaldkreis, Reinheim, Michelstadt, Höchst, Brensbach, Erbach, Groß-Bieberau u. a." } },
+      { "@type": "Question", "name": "Welche Gewährleistung erhalte ich?", "acceptedAnswer": { "@type": "Answer", "text": "Nach BGB/VOB: 5 Jahre auf Bauleistungen gemäß gesetzlicher Gewährleistung. Für Produkte gelten die jeweiligen Hersteller-Garantien." } }
+    ]
+  }
+</script>
+
+<style>
+  #dmk-sec5[data-dmk="5"] {
+    --brand: #369142; --brand-2: #2B7A37;
+    --ink: #1f1f1f; --muted: #4a5157; --ring: #e2ebe4; --radius: 18px;
+    font-family: "Quicksand", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    background: transparent;
+    color: var(--ink);
+  }
+  #dmk-sec5[data-dmk="5"] .wrap { width: 100%; padding: 70px 18px 84px; }
+  #dmk-sec5[data-dmk="5"] .container { width: 100%; max-width: 1440px; margin: 0 auto; }
+
+  #dmk-sec5[data-dmk="5"] .head { max-width: 980px; margin: 0 0 26px 0; }
+  #dmk-sec5-title {
+    margin: 0 0 10px 0;
+    font-weight: 700;
+    line-height: 1.12;
+    letter-spacing: .2px;
+    font-size: clamp(28px, 4vw, 42px);
+    background: linear-gradient(90deg, var(--brand), var(--brand-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  #dmk-sec5[data-dmk="5"] .lead {
+    margin: 0;
+    color: var(--muted);
+    font-weight: 500;
+    font-size: clamp(15px, 1vw + 12px, 17px);
+    line-height: 1.6;
+  }
+
+  /* 2-Spalten-Grid */
+  .faq-grid { display: flex; flex-direction: column; gap: 14px; }
+  .col { display: flex; flex-direction: column; gap: 14px; }
+  @media (min-width: 980px) {
+    .faq-grid { flex-direction: row; }
+    .col { flex: 1; }
+  }
+
+  /* FAQ-Item */
+  .item {
+    border: 1.5px solid var(--ring);
+    border-radius: var(--radius);
+    background: transparent;
+    box-shadow: 0 6px 18px rgba(0,0,0,.05);
+    transition: border-color .2s, box-shadow .2s, transform .08s;
+  }
+  .item:hover { border-color: #d4e2d8; box-shadow: 0 12px 28px rgba(0,0,0,.09); transform: translateY(-1px); }
+
+  .q {
+    width: 100%; border: 0; background: transparent; cursor: pointer;
+    display: flex; align-items: center; justify-content: space-between; gap: 14px;
+    padding: 16px 18px; border-radius: var(--radius); text-align: left;
+    font-family: inherit;
+  }
+  .qt { font-weight: 500; font-size: 16px; line-height: 1.35; color: #213021; letter-spacing: .1px; }
+
+  .ico {
+    flex: 0 0 22px; width: 22px; height: 22px;
+    color: var(--brand);
+    display: inline-grid; place-items: center;
+  }
+  .ico svg { width: 22px; height: 22px; display: block; }
+  .q:hover .ico { color: var(--brand-2); }
+
+  /* CSS Grid Row Trick für sanftes Öffnen */
+  .a {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows .25s ease, padding .25s ease;
+  }
+  .a > div { overflow: hidden; }
+  .body { padding: 0 18px 0; }
+  .item.open .a { grid-template-rows: 1fr; }
+  .item.open .body { padding: 0 18px 16px; }
+  .a p { margin: 0; color: #2a392a; font-weight: 600; font-size: 14.5px; line-height: 1.65; }
+</style>
+
+<script>
+  document.querySelectorAll<HTMLElement>('#dmk-sec5[data-dmk="5"] .item').forEach(item => {
+    const btn  = item.querySelector<HTMLButtonElement>('.q');
+    const plus  = btn?.querySelector<SVGElement>('.plus');
+    const minus = btn?.querySelector<SVGElement>('.minus');
+    if (!btn) return;
+
+    btn.addEventListener('click', () => {
+      const open = item.classList.toggle('open');
+      btn.setAttribute('aria-expanded', String(open));
+      if (plus)  plus.style.display  = open ? 'none'  : 'block';
+      if (minus) minus.style.display = open ? 'block' : 'none';
+    });
+  });
+</script>

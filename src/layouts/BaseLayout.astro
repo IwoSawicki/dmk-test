@@ -1,0 +1,117 @@
+---
+export interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'DMK Bau Reichelsheim – Bauunternehmen für Innen & Außen',
+  description = 'DMK Bau Reichelsheim – Ihr Bauunternehmen für Innenausbau, Sanierung, Fliesenarbeiten und Trockenbau im Odenwald. Jetzt unverbindlich anfragen.',
+} = Astro.props;
+
+const year = new Date().getFullYear();
+---
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/webp" href="/images/dmk-bau-reichelsheim-favicon.webp" />
+
+  <!-- OG Tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content="/images/dmk-bau-innenausbau-trockenbau-badsanierung-aussenanlagen-reichelsheim.webp" />
+
+  <!-- LCP preload -->
+  <link rel="preload" as="image" fetchpriority="high"
+        href="/images/dmk-bau-innenausbau-trockenbau-badsanierung-aussenanlagen-reichelsheim.webp" />
+
+  <!-- Google Fonts – non-blocking -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+  <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap"
+        onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" />
+  </noscript>
+
+  <!-- JSON-LD LocalBusiness -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "DMK Bau",
+      "image": "/images/dmk-bau-firmenlogo-reichelsheim-odenwald-1.webp",
+      "url": "https://dmk-bau.de",
+      "telephone": ["+49-160-7791280", "+49-6164-5039805"],
+      "email": "info@dmk-bau.de",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Heidelberger Straße 5",
+        "postalCode": "64385",
+        "addressLocality": "Reichelsheim (Odenwald)",
+        "addressCountry": "DE"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+          "opens": "09:00",
+          "closes": "17:00"
+        }
+      ],
+      "areaServed": "Odenwald",
+      "priceRange": "€€"
+    }
+  </script>
+
+  <style is:global>
+    /* ========================= Design Tokens ========================= */
+    :root {
+      --brand: #369142;
+      --brand-2: #2B7A37;
+      --text: #1f1f1f;
+      --muted: #6b7280;
+      --card: #fff;
+      --bg: #f9fafb;
+      --ring: #e3e8ee;
+      --shadow: 0 12px 38px rgba(0,0,0,.08);
+      --radius: 18px;
+      --speed: 160ms;
+      --flow: 14px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Quicksand", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    p { color: #525252; }
+
+    .flow > * + * { margin-top: var(--flow); }
+
+    .sr-only {
+      position: absolute !important; width: 1px !important; height: 1px !important;
+      padding: 0 !important; margin: -1px !important; overflow: hidden !important;
+      clip: rect(0,0,0,0) !important; white-space: nowrap !important; border: 0 !important;
+    }
+
+    :focus-visible { outline: 3px solid rgba(54,145,66,.36); outline-offset: 2px; }
+  </style>
+</head>
+<body>
+  <slot />
+</body>
+</html>

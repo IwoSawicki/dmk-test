@@ -1,0 +1,394 @@
+---
+const reviews = [
+  {
+    name: "Kevin Scriba", when: "vor 2 Monaten",
+    text: "Ich bin absolut begeistert von der Arbeit der Firma DMK Bau! Unser Bad wurde komplett renoviert – alte Badewanne raus, moderne Dusche rein, Wände und Böden neu gefliest, hochwertige Badmöbel aufgebaut und ein stabiler Sockel für Waschmaschine und Trockner gefertigt. Alles wurde zuverlässig, pünktlich und sauber umgesetzt – mit hohem Qualitätsanspruch. Wir können DMK Bau uneingeschränkt weiterempfehlen!"
+  },
+  {
+    name: "Jana Seemann", when: "vor 1 Monat",
+    text: "Unser Eingangsbereich wurde komplett renoviert: verputzt, Estrich neu, abgehängte Decke mit integrierten Lampen, Fenster und Türen neu eingebaut. Alles sauber, termingerecht und zuverlässig ausgeführt. Wir sind sehr zufrieden und empfehlen DMK Bau uneingeschränkt weiter!"
+  },
+  {
+    name: "Andrea Sponagel", when: "vor 5 Monaten",
+    text: "Wir sind mit DMK Bau sehr zufrieden. Es wurde gründlich und sauber gearbeitet. Auch bei Problemen wurden tolle Lösungen gefunden. Besonders lobenswert: die Zeit, die sich das Team für Fragen nahm, und die Erreichbarkeit. Vielen Dank an Chef und Chefin für den tollen Service und das kleine Geschenk zum Abschluss!"
+  },
+  {
+    name: "Svenja", when: "vor 1 Woche",
+    text: "Das DMK-Bau Team hat einen super Job gemacht. Sehr ordentlich und zuverlässig gearbeitet, das Ergebnis ist wunderschön geworden. Wir würden das Team jederzeit wieder engagieren!"
+  },
+  {
+    name: "Stella Dabura", when: "vor 1 Jahr",
+    text: "Wir haben DMK Bau mit der kompletten Sanierung unseres Hauses beauftragt – Decken, Wände, Böden, Türen, Bad und Gäste-WC. Alles perfekt umgesetzt! Kompetent, lösungsorientiert und immer erreichbar. Hervorragende Arbeit, pünktlich, sauber, nett und höflich. Sehr empfehlenswert!"
+  },
+  {
+    name: "Thomas Pfeifer", when: "vor 1 Jahr",
+    text: "Wir haben unser 20 Jahre altes Bad barrierefrei renovieren lassen und sind sehr zufrieden. Jedes Problem wurde professionell und kreativ gelöst. Besonders positiv: die saubere Arbeitsweise. Wir werden DMK Bau wieder anfragen!"
+  },
+  {
+    name: "Angela Ebert", when: "vor 1 Jahr",
+    text: "Ich bin äußerst zufrieden mit den Arbeiten von DMK Bau. Bad und Gäste-WC wurden saniert, Kommunikation und Ausführung waren top. Sehr angenehmer Kontakt mit Herrn Krzysztoń und seinem Team. Ergebnisse absolut überzeugend – klare Weiterempfehlung!"
+  },
+  {
+    name: "Markus Lorenz", when: "vor 11 Monaten",
+    text: "DMK Bau war von der Planungsphase bis zur Fertigstellung an unserer Seite. Kompetente Beratung, pünktliche Ausführung, saubere Baustelle. Das Ergebnis hat unsere Erwartungen übertroffen. Danke an Mirek und das Team für Professionalität und Herzblut!"
+  },
+  {
+    name: "Gerald Reingardt", when: "vor 2 Monaten",
+    text: "Zum zweiten Mal hat DMK Bau bei uns sehr ordentliche Arbeit abgeliefert – dieses Mal die Sanierung der Außentreppe. Sauber, zügig, zuverlässig und mit stets guter Kommunikation. Absolut empfehlenswert!"
+  },
+  {
+    name: "Heinz Vetter", when: "vor 2 Jahren",
+    text: "Die Firma DMK Bau hat unseren Hof saniert. Unsere Erwartungen wurden weit übertroffen: tolle und saubere Arbeit, freundliche, fachkundige Arbeiter. Mit Herrn Krzysztoń wurden Probleme schnell und kompetent gelöst. Vielen Dank, Christine + Heinz Vetter."
+  }
+];
+
+function initials(name: string) {
+  const parts = name.split(' ');
+  return (parts[0]?.[0] ?? '') + (parts[1]?.[0] ?? '');
+}
+---
+
+<section aria-labelledby="dmk-sec4-title" data-dmk="4" id="dmk-sec4">
+  <div class="wrap">
+    <div class="container">
+      <div class="head">
+        <h3 id="dmk-sec4-title">Echte Erfahrungen mit DMK Bau</h3>
+        <p class="lead">
+          Erfahren Sie, wie <strong>DMK Bau Reichelsheim</strong> im <strong>Innenausbau</strong>,
+          <strong>Trockenbau</strong>, bei <strong>Badsanierungen</strong> und
+          <strong>Pflasterarbeiten</strong> im <strong>Odenwald</strong> überzeugt.
+          Unsere Kunden berichten von <strong>sauberer Arbeit</strong>,
+          <strong>verlässlichen Terminen</strong> und
+          <em>handwerklicher Präzision bis ins Detail</em>.
+        </p>
+      </div>
+
+      <div class="slider" aria-label="Bewertungen Slider" role="region">
+        <div class="rail" id="sec4Rail" tabindex="0" aria-label="Bewertungsliste (horizontal scrollen)">
+          {reviews.map((r, idx) => (
+            <div class="slide">
+              <div class="card-wrap">
+                <div class="headbar">
+                  <div class="avatar">{initials(r.name)}</div>
+                  <div>
+                    <div class="name">{r.name}</div>
+                    <div class="meta">
+                      {r.when}
+                      <span class="stars" aria-hidden="true">
+                        {[0,1,2,3,4].map(() => (
+                          <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill="#FFC107" d="M12 2l3.09 6.34 7 1.02-5.05 4.92 1.19 6.98L12 17.77 5.77 21.26l1.19-6.98L1.91 9.36l7-1.02L12 2z"/>
+                          </svg>
+                        ))}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="body">
+                  <p class="text">{r.text}</p>
+                  <div class="actions">
+                    <div class="verified">
+                      <svg aria-hidden="true" viewBox="0 0 24 24" width="14" height="14" fill="none"
+                           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="9"></circle>
+                        <path d="M9 12.5l2 2 4-4"></path>
+                      </svg>
+                      Verifiziert über Google
+                    </div>
+                    <button class="btn-more" type="button" data-idx={idx}>Weiter lesen</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div class="ctrl" aria-hidden="true">
+          <button class="btn" id="sec4Prev" aria-label="Zurück">
+            <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <button class="btn" id="sec4Next" aria-label="Weiter">
+            <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="foot">
+        <a class="btn-brand" href="https://share.google/H7Urx8joBSNdlnLaa" rel="noopener" target="_blank">
+          <svg viewBox="0 0 48 48">
+            <path d="M43.6 20.5h-1.8H24v7h11.3C33.8 31.8 29.5 35 24 35c-6.1 0-11-4.9-11-11s4.9-11 11-11c2.8 0 5.3 1.1 7.2 2.8l4.9-4.9C33.4 8.1 28.9 6 24 6 13 6 4 15 4 26s9 20 20 20 20-9 20-20c0-1.9-.2-3.3-.4-5.5z"></path>
+          </svg>
+          Alle Google-Bewertungen
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Volltext-Modal -->
+<div class="modal" id="sec4Modal" role="dialog" aria-modal="true"
+     aria-labelledby="sec4DlgTitle" aria-hidden="true">
+  <div class="dialog" role="document">
+    <div class="dialog-head">
+      <div class="dialog-title">
+        <div class="avatar" id="sec4DlgAvatar"></div>
+        <div>
+          <div class="name" id="sec4DlgName"></div>
+          <div class="meta" id="sec4DlgMeta"></div>
+        </div>
+      </div>
+      <button class="close" id="sec4DlgClose" aria-label="Schließen">
+        <svg fill="none" height="16" stroke="#1e2d1e" stroke-linecap="round"
+             stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="16">
+          <line x1="18" x2="6" y1="6" y2="18"></line>
+          <line x1="6" x2="18" y1="6" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <div class="dialog-body">
+      <p class="full-text" id="sec4DlgText"></p>
+    </div>
+  </div>
+</div>
+
+<style>
+  #dmk-sec4[data-dmk="4"] {
+    --brand: #3A7D44; --brand-2: #2E6C3A; --gold: #FFC107;
+    --ink: #1f1f1f; --muted: #475547; --ring: #dce8dd; --wash: #f9faf9;
+    font-family: "Quicksand", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    background: linear-gradient(180deg, #f9faf9 0%, #ffffff 60%);
+    color: var(--ink);
+  }
+
+  #dmk-sec4[data-dmk="4"] .wrap { padding: 58px 18px 64px 200px; width: 100%; }
+  @media (max-width: 1200px) { #dmk-sec4[data-dmk="4"] .wrap { padding-left: 140px; } }
+  @media (max-width: 900px)  { #dmk-sec4[data-dmk="4"] .wrap { padding-left: 26px; } }
+  #dmk-sec4[data-dmk="4"] .container { width: min(1440px, 100%); }
+
+  /* Kopf */
+  #dmk-sec4[data-dmk="4"] .head { max-width: 880px; margin-bottom: 18px; }
+  #dmk-sec4[data-dmk="4"] h3#dmk-sec4-title {
+    font-weight: 700;
+    font-size: clamp(28px, 4vw, 42px);
+    line-height: 1.15;
+    margin-bottom: 6px;
+    background: linear-gradient(90deg, var(--brand), var(--brand-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  #dmk-sec4[data-dmk="4"] .lead {
+    color: #344234;
+    font-size: clamp(14px, 1vw + 11px, 16px);
+    font-weight: 500;
+    line-height: 1.6;
+  }
+
+  /* Slider */
+  #dmk-sec4[data-dmk="4"] .slider { position: relative; margin-top: 20px; }
+  #dmk-sec4[data-dmk="4"] .rail {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 16px;
+    grid-auto-columns: minmax(clamp(260px, 35vw, 360px), 1fr);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 28px;
+    scrollbar-width: thin;
+  }
+  @media (max-width: 768px) {
+    #dmk-sec4[data-dmk="4"] .rail { grid-auto-columns: minmax(260px, 88vw); }
+  }
+  #dmk-sec4[data-dmk="4"] .rail:focus { outline: 3px solid rgba(58,125,68,.35); outline-offset: 2px; }
+  #dmk-sec4[data-dmk="4"] .rail::-webkit-scrollbar { height: 6px; }
+  #dmk-sec4[data-dmk="4"] .rail::-webkit-scrollbar-thumb { background: #c9dacb; border-radius: 99px; }
+  #dmk-sec4[data-dmk="4"] .slide { scroll-snap-align: start; }
+
+  /* Karten */
+  #dmk-sec4[data-dmk="4"] .card-wrap {
+    border-radius: 16px;
+    border: 1px solid var(--ring);
+    background: transparent;
+    box-shadow: 0 6px 14px rgba(0,0,0,.08);
+    transition: transform .25s, box-shadow .25s;
+  }
+  #dmk-sec4[data-dmk="4"] .card-wrap:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,.12); }
+
+  #dmk-sec4[data-dmk="4"] .headbar {
+    display: flex; align-items: center; gap: 10px; padding: 10px 14px;
+    background: linear-gradient(90deg, rgba(58,125,68,.08), rgba(46,108,58,.05));
+    border-bottom: 1px solid #e4ede6;
+    border-radius: 16px 16px 0 0;
+  }
+  #dmk-sec4[data-dmk="4"] .avatar {
+    width: 36px; height: 36px; border-radius: 999px;
+    background: linear-gradient(135deg, var(--brand), var(--brand-2));
+    color: #fff; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 13px; letter-spacing: .4px;
+  }
+  #dmk-sec4[data-dmk="4"] .name { font-weight: 700; font-size: 14.5px; color: #1c2b1f; }
+  #dmk-sec4[data-dmk="4"] .meta { font-size: 12.5px; color: var(--muted); font-weight: 600; }
+  #dmk-sec4[data-dmk="4"] .stars { display: inline-flex; gap: 3px; margin-left: 4px; vertical-align: middle; }
+  #dmk-sec4[data-dmk="4"] .stars svg { width: 13px; height: 13px; filter: drop-shadow(0 1px 0 rgba(0,0,0,.08)); }
+
+  #dmk-sec4[data-dmk="4"] .body { padding: 12px 14px 14px; display: flex; flex-direction: column; gap: 10px; }
+  #dmk-sec4[data-dmk="4"] .text {
+    font-size: 14.5px; line-height: 1.6; color: #1e271f; font-weight: 500;
+    display: -webkit-box; -webkit-line-clamp: 4; line-clamp: 4;
+    -webkit-box-orient: vertical; overflow: hidden;
+  }
+  #dmk-sec4[data-dmk="4"] .actions {
+    display: flex; align-items: center; justify-content: space-between; margin-top: 6px;
+  }
+  #dmk-sec4[data-dmk="4"] .verified {
+    display: flex; align-items: center; gap: 6px;
+    font-size: 12.6px; color: #2b3c2b; font-weight: 700;
+  }
+  #dmk-sec4[data-dmk="4"] .verified svg { color: #34A853; stroke: #34A853; }
+
+  #dmk-sec4[data-dmk="4"] .btn-more {
+    padding: 8px 12px; border-radius: 10px; border: 0; cursor: pointer;
+    font-weight: 700; font-size: 13px; color: #fff;
+    background: linear-gradient(90deg, var(--brand), var(--brand-2));
+    box-shadow: 0 6px 14px rgba(46,108,58,.25);
+    transition: transform .15s, filter .2s;
+    font-family: inherit;
+  }
+  #dmk-sec4[data-dmk="4"] .btn-more:hover { transform: translateY(-1px); filter: brightness(.96); }
+
+  /* Pfeile */
+  #dmk-sec4[data-dmk="4"] .ctrl { position: absolute; right: 0; top: -8px; display: flex; gap: 8px; }
+  #dmk-sec4[data-dmk="4"] .btn {
+    width: 34px; height: 34px; border-radius: 999px;
+    background: transparent; border: 1.5px solid #cfe0d3;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,.1);
+    cursor: pointer; transition: transform .15s, background .2s;
+  }
+  #dmk-sec4[data-dmk="4"] .btn:hover { background: #F1F6F2; transform: translateY(-2px); }
+  #dmk-sec4[data-dmk="4"] .btn svg { width: 14px; height: 14px; stroke: #1e2d1e; }
+
+  /* Footer */
+  #dmk-sec4[data-dmk="4"] .foot { margin-top: 18px; }
+  #dmk-sec4[data-dmk="4"] .btn-brand {
+    background: linear-gradient(90deg, var(--brand), var(--brand-2));
+    color: #fff; padding: 10px 16px; border-radius: 10px;
+    font-weight: 700; display: inline-flex; align-items: center; gap: 8px;
+    box-shadow: 0 6px 18px rgba(46,108,58,.35);
+    transition: transform .15s, filter .2s; text-decoration: none; font-size: 14px;
+  }
+  #dmk-sec4[data-dmk="4"] .btn-brand:hover { transform: translateY(-2px); filter: brightness(.96); }
+  #dmk-sec4[data-dmk="4"] .btn-brand svg { width: 16px; height: 16px; fill: #fff; }
+
+  /* Modal */
+  .modal {
+    position: fixed; inset: 0; display: none; place-items: center;
+    padding: 18px; z-index: 1000;
+    background: rgba(0,0,0,.35); backdrop-filter: blur(2px);
+  }
+  .modal.open { display: grid; }
+  .dialog {
+    width: min(760px, 92vw); max-height: 85vh; overflow: auto;
+    border-radius: 16px; background: #ffffff;
+    box-shadow: 0 24px 60px rgba(0,0,0,.25);
+    transform: scale(.96); opacity: 0;
+    transition: transform .2s ease, opacity .2s ease;
+  }
+  .modal.open .dialog { transform: scale(1); opacity: 1; }
+  .dialog-head {
+    display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    padding: 12px 14px; border-bottom: 1px solid #e9efe9;
+    background: linear-gradient(90deg, rgba(58,125,68,.08), rgba(46,108,58,.05));
+    border-radius: 16px 16px 0 0;
+  }
+  .dialog-title { display: flex; align-items: center; gap: 10px; }
+  .close {
+    border: 0; background: transparent; border: 1px solid #dfe8e1;
+    width: 34px; height: 34px; border-radius: 10px; cursor: pointer;
+    display: inline-flex; align-items: center; justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,.1); transition: transform .15s, background .2s;
+  }
+  .close:hover { background: #F1F6F2; transform: translateY(-1px); }
+  .dialog-body { padding: 14px 16px 18px; }
+  .full-text { font-size: 15.5px; line-height: 1.75; color: #1f251f; font-weight: 600; }
+</style>
+
+<script>
+  (function () {
+    const rail = document.getElementById('sec4Rail');
+    const prev = document.getElementById('sec4Prev');
+    const next = document.getElementById('sec4Next');
+    const modal    = document.getElementById('sec4Modal');
+    const dlgClose = document.getElementById('sec4DlgClose');
+    const dlgName  = document.getElementById('sec4DlgName');
+    const dlgMeta  = document.getElementById('sec4DlgMeta');
+    const dlgAvatar = document.getElementById('sec4DlgAvatar');
+    const dlgText  = document.getElementById('sec4DlgText');
+
+    if (!rail || !modal) return;
+
+    const starSVG = `<svg viewBox="0 0 24 24" aria-hidden="true" style="width:13px;height:13px"><path fill="#FFC107" d="M12 2l3.09 6.34 7 1.02-5.05 4.92 1.19 6.98L12 17.77 5.77 21.26l1.19-6.98L1.91 9.36l7-1.02L12 2z"/></svg>`;
+    const starsHTML = `<span class="stars">${starSVG.repeat(5)}</span>`;
+
+    function initials(n: string) {
+      const p = n.split(' ');
+      return (p[0]?.[0] ?? '') + (p[1]?.[0] ?? '');
+    }
+
+    function scrollBy(dir: number) {
+      rail.scrollBy({ left: dir * rail.clientWidth * 0.85, behavior: 'smooth' });
+    }
+    prev?.addEventListener('click', () => scrollBy(-1));
+    next?.addEventListener('click', () => scrollBy(1));
+    rail.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') scrollBy(1);
+      if (e.key === 'ArrowLeft')  scrollBy(-1);
+    });
+
+    function openModal(name: string, when: string, text: string) {
+      if (dlgAvatar) dlgAvatar.textContent = initials(name);
+      if (dlgName)   dlgName.textContent   = name;
+      if (dlgMeta)   dlgMeta.innerHTML     = `${when} ${starsHTML}`;
+      if (dlgText)   dlgText.textContent   = text;
+      modal.classList.add('open');
+      modal.setAttribute('aria-hidden', 'false');
+      document.documentElement.style.overflow = 'hidden';
+      dlgClose?.focus();
+    }
+    function closeModal() {
+      modal.classList.remove('open');
+      modal.setAttribute('aria-hidden', 'true');
+      document.documentElement.style.overflow = '';
+    }
+
+    modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+    dlgClose?.addEventListener('click', closeModal);
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modal.classList.contains('open')) closeModal();
+    });
+
+    // Hole Reviewdaten aus den gerenderten Karten via data-idx
+    const reviewData: { name: string; when: string; text: string }[] = [];
+    rail.querySelectorAll<HTMLElement>('.slide').forEach((slide, idx) => {
+      const name = slide.querySelector('.name')?.textContent?.trim() ?? '';
+      const metaEl = slide.querySelector('.meta');
+      // when ist der Textknoten vor den Sternen
+      const when = metaEl?.firstChild?.textContent?.trim() ?? '';
+      const text = slide.querySelector('.text')?.textContent?.trim() ?? '';
+      reviewData[idx] = { name, when, text };
+    });
+
+    rail.addEventListener('click', (e) => {
+      const btn = (e.target as HTMLElement).closest<HTMLButtonElement>('.btn-more');
+      if (!btn) return;
+      const idx = parseInt(btn.dataset.idx ?? '0', 10);
+      const r = reviewData[idx];
+      if (r) openModal(r.name, r.when, r.text);
+    });
+  })();
+</script>
