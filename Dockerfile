@@ -1,4 +1,3 @@
-cat > Dockerfile <<'EOF'
 FROM node:lts-alpine AS build
 
 WORKDIR /app
@@ -14,4 +13,3 @@ FROM nginx:alpine AS runtime
 COPY --from=build /app/dist /usr/share/nginx/html
 
 EXPOSE 80
-EOF
